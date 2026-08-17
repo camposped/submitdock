@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "example",
+    "name": "Example",
+    "tagline": "One line, under 60 characters",
+    "url": "https://example.com",
+    "contactEmail": "",
+    "descriptionShort": "About 60 characters, for the tightest fields",
+    "descriptionMedium": "About 160 characters. Most directories ask for something this size, so it is the one worth writing well and reusing everywhere.",
+    "descriptionLong": "About 500 characters. What the product does, who it is for, and what makes it different, in plain sentences a stranger can follow without knowing your category.",
+    "categories": "[\"saas\", \"developer-tools\"]",
+    "logoOnLight": "",
+    "logoOnDark": "",
+    "iconOnLight": "",
+    "iconOnDark": "",
+    "screenshots": "[]",
+    "pricing": "Free, or say what it costs",
+    "x": "",
+    "github": ""
+  }
+]
