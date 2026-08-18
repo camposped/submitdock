@@ -3,12 +3,14 @@ import { Hand, Link2, Radio, Rocket, Send, Signal, type LucideIcon } from 'lucid
 
 import { HowItWorks } from '@/components/how-it-works'
 import { OutcomeDonut, outcomeSlices } from '@/components/outcome-donut'
+import { CopyPrompt } from '@/components/copy-prompt'
 import { ScreenEmptyState } from '@/components/screen-empty-state'
 import { TimeSavedCard } from '@/components/time-saved-card'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Reveal } from '@/components/ui/reveal'
 import { cn } from '@/lib/utils'
+import { passPrompt, passSize } from '@/lib/agent-prompt'
 import { activeProduct } from '@/lib/product-selection'
 import { countNeedsHuman, getCampaignStats } from '@/lib/queries'
 
@@ -126,6 +128,46 @@ export default async function DashboardPage() {
           />
         </CardContent>
       </Card>
+
+      {/*
+        The handover. It sits under the piles because that is the reading
+        order: here is what is waiting, and here is the thing you paste to
+        make it happen. The text is built from the selected product and the
+        real count, so nobody has to edit it before using it.
+      */}
+      {product && (
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-sm font-semibold">Hand this to your agent</CardTitle>
+            <CardDescription>
+              {stats.readyToSend > 0
+                ? 'Paste it into Claude Code, Codex or whatever you run inside this folder.'
+                : 'Nothing is ready to send right now, so there is nothing to hand over yet.'}
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            {stats.readyToSend > 0 ? (
+              <CopyPrompt
+                text={passPrompt({
+                  productName: product.name,
+                  take: passSize(stats.readyToSend),
+                })}
+              />
+            ) : (
+              <p className="text-[13px] text-muted-foreground">
+                Clear something from{' '}
+                <Link
+                  href="/catalog?view=needs-you"
+                  className="cursor-pointer font-medium text-primary hover:underline"
+                >
+                  Needs you
+                </Link>{' '}
+                and it will show up here.
+              </p>
+            )}
+          </CardContent>
+        </Card>
+      )}
 
       {!product && (
         <Card>
