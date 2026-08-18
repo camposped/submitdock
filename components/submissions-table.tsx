@@ -1,10 +1,11 @@
 'use client'
 
 import { useState } from 'react'
-import { ChevronRight, ExternalLink } from 'lucide-react'
+import { Camera, ChevronRight, ExternalLink } from 'lucide-react'
 
 import { DirectorySheet } from '@/components/directory-sheet'
 import { BacklinkTag, StateTag } from '@/components/submission-status'
+import { formatDuration } from '@/lib/timing'
 import {
   Table,
   TableBody,
@@ -92,6 +93,7 @@ export function SubmissionsTable({
               <TableHead className="w-28">Status</TableHead>
               <TableHead className="w-28">Backlink</TableHead>
               <TableHead>What happened</TableHead>
+              <TableHead className="w-24">Took</TableHead>
               <TableHead className="w-28">Sent</TableHead>
               <TableHead className="w-10" />
             </TableRow>
@@ -156,6 +158,26 @@ export function SubmissionsTable({
                       title={outcome.text}
                     >
                       {outcome.text || 'Nothing recorded yet'}
+                    </span>
+                  </TableCell>
+
+                  {/* The clock, and whether there is a picture behind it. An
+                      attempt with no duration says so rather than showing a
+                      zero, because nobody measured it. */}
+                  <TableCell>
+                    <span className="flex items-center gap-1.5 text-[13px] text-muted-foreground">
+                      {row.submission.attemptStartedAt ? (
+                        <span className="text-info">running</span>
+                      ) : row.submission.durationMs ? (
+                        <span className="tabular-nums">
+                          {formatDuration(row.submission.durationMs)}
+                        </span>
+                      ) : (
+                        <span className="text-muted-foreground/50">not timed</span>
+                      )}
+                      {row.submission.screenshotPath && (
+                        <Camera className="size-3.5 shrink-0 text-muted-foreground/60" />
+                      )}
                     </span>
                   </TableCell>
 

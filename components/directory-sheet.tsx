@@ -6,6 +6,8 @@ import { useFormStatus } from 'react-dom'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { assetSrc } from '@/lib/asset-src'
+import { formatDuration } from '@/lib/timing'
 import { Select } from '@/components/ui/select'
 import {
   Sheet,
@@ -232,6 +234,41 @@ export function DirectorySheet({
                     defaultValue={submission?.notes ?? ''}
                   />
                 </div>
+
+                {/*
+                  The proof, and the clock. A "thanks for submitting" screen is
+                  the only receipt most directories ever hand out, so the
+                  picture is worth more here than any state the agent set: it
+                  is the one thing on this sheet nobody could have typed in.
+                */}
+                {(submission?.screenshotPath || submission?.durationMs) && (
+                  <div className="flex flex-col gap-2">
+                    <div className="flex items-baseline justify-between">
+                      <span className="text-xs text-muted-foreground">The attempt</span>
+                      {submission.durationMs ? (
+                        <span className="text-xs tabular-nums text-muted-foreground">
+                          took {formatDuration(submission.durationMs)}
+                        </span>
+                      ) : null}
+                    </div>
+                    {submission.screenshotPath && (
+                      <a
+                        href={assetSrc(submission.screenshotPath)}
+                        target="_blank"
+                        rel="noreferrer"
+                        title="Open the full screenshot"
+                        className="cursor-pointer overflow-hidden rounded-lg border bg-muted/30"
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element -- an absolute path off disk, served by /api/asset */}
+                        <img
+                          src={assetSrc(submission.screenshotPath)}
+                          alt={`The last thing the agent saw on ${row.domain}`}
+                          className="max-h-64 w-full object-cover object-top"
+                        />
+                      </a>
+                    )}
+                  </div>
+                )}
 
                 <Fact label="Backlink">
                   {!submission?.lastVerifiedAt ? (

@@ -36,6 +36,13 @@
       "when": 1787001471021,
       "tag": "0004_agent_runs",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1787056952134,
+      "tag": "0005_submission_timing_and_shots",
+      "breakpoints": true
     }
   ]
 }

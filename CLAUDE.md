@@ -169,6 +169,29 @@ The stamp covers the open run, the newest event, and an aggregate over `submissi
 so an agent writing straight to the tables still moves the UI. Polling is 2s while a
 run is open and 10s while nothing is.
 
+## Timing an attempt, and the picture at the end of it
+
+Two columns on `submissions` carry proof rather than claims.
+
+`durationMs` is **measured, never reported**. `npm run submit -- begin` stamps
+`attemptStartedAt` and `done` subtracts, so the number belongs to the tool. A single
+command taking `--seconds` would be asking the agent how long it took, and an attempt
+recorded without a `begin` is stored as null rather than guessed at. `lib/timing.ts`
+then counts only the rows that carry one.
+
+The dashboard's saving is the only figure on that screen that is an argument rather
+than a count, so it shows its working: `MANUAL_MINUTES` is printed beside the result,
+the agent's own time is subtracted rather than ignored, and untimed attempts are named
+instead of filled in at an average. "You saved 4 hours" is the same genre of claim as
+"submitted to 300 sites", which is the thing this product exists to distrust.
+
+`screenshotPath` is the end state of the page, and `submit done --shot` copies the
+file into `data/shots/<slug>/` rather than registering it where it lay: evidence a
+temp file can overwrite is not evidence. It is served through the same `/api/asset`
+gate as the brand art, which is why `isRegisteredAsset` checks submissions too, and
+why `assetSrc` had to move to `lib/asset-src.ts`: `lib/assets.ts` is `server-only` and
+the sheet is a client component.
+
 ## The campaign model
 
 Three different things, which the first pass conflated:

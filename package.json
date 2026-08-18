@@ -20,7 +20,8 @@
     "seed:products": "tsx scripts/seed-products.ts",
     "typecheck": "tsc --noEmit",
     "agent": "tsx scripts/run.ts",
-    "demo": "tsx scripts/demo.ts"
+    "demo": "tsx scripts/demo.ts",
+    "submit": "tsx scripts/submit.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

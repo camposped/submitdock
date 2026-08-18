@@ -26,14 +26,11 @@ import {
   type BrandSlot,
   type SingleAssetField,
 } from '@/lib/asset-fields'
+import { assetSrc } from '@/lib/asset-src'
 import { cn } from '@/lib/utils'
 
 /** Matches lib/assets.ts. Kept here so the picker and the server agree. */
 const ACCEPT = '.svg,.png,.jpg,.jpeg,.webp,.gif,.avif'
-
-function assetSrc(filePath: string) {
-  return `/api/asset?p=${encodeURIComponent(filePath)}`
-}
 
 function fileName(filePath: string) {
   return filePath.split('/').pop() ?? filePath

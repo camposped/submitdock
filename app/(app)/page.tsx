@@ -4,6 +4,7 @@ import { Hand, Link2, Radio, Rocket, Send, Signal, type LucideIcon } from 'lucid
 import { HowItWorks } from '@/components/how-it-works'
 import { OutcomeDonut, outcomeSlices } from '@/components/outcome-donut'
 import { ScreenEmptyState } from '@/components/screen-empty-state'
+import { TimeSavedCard } from '@/components/time-saved-card'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Reveal } from '@/components/ui/reveal'
@@ -96,6 +97,8 @@ export default async function DashboardPage() {
           )}
         </CardContent>
       </Card>
+
+      {stats.attempted > 0 && <TimeSavedCard time={stats.time} attempted={stats.attempted} />}
 
       <Card>
         <CardHeader>

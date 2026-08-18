@@ -155,6 +155,26 @@ export const submissions = sqliteTable(
     backlinkRel: text('backlink_rel').$type<BacklinkRel>(),
     lastVerifiedAt: text('last_verified_at'),
     notes: text('notes'),
+    /**
+     * The clock on one attempt, measured rather than reported.
+     *
+     * `attemptStartedAt` is stamped when the agent says it is starting this
+     * directory and cleared when it finishes, so `durationMs` is arithmetic
+     * the tool does. Asking the agent how long it took would be asking it to
+     * invent a number, which is the one thing AGENTS.md forbids.
+     *
+     * A non-null `attemptStartedAt` also means an attempt is in flight, which
+     * is how a row can show as being worked on right now.
+     */
+    attemptStartedAt: text('attempt_started_at'),
+    durationMs: integer('duration_ms'),
+    /**
+     * The final state of the page, as a picture. Absolute path, same as the
+     * product's brand slots: what the agent saw is worth more than what it
+     * says it saw, and a "thanks for submitting" screen is the only proof a
+     * directory ever gives you.
+     */
+    screenshotPath: text('screenshot_path'),
   },
   (t) => [
     uniqueIndex('submissions_product_domain_idx').on(t.productSlug, t.domain),

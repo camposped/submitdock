@@ -97,6 +97,16 @@ db.insert(products).values(DEMO_PRODUCT).onConflictDoUpdate({
 }).run()
 
 let inserted = 0
+/**
+ * A stable pseudo-duration between 45s and 3m30s, derived from the domain so
+ * two runs of this seeder produce the same screenshots. Demo data only: the
+ * real column is written by `npm run submit`, which subtracts two timestamps.
+ */
+function fakeDuration(domain: string): number {
+  const hash = [...domain].reduce((acc, ch) => (acc * 31 + ch.charCodeAt(0)) % 100_000, 7)
+  return 45_000 + (hash % 165_000)
+}
+
 let missing = 0
 
 for (const [domain, state, days, listingUrl, verdict] of ROWS) {
@@ -118,6 +128,10 @@ for (const [domain, state, days, listingUrl, verdict] of ROWS) {
       backlinkRel: verified && verdict !== 'none' ? verdict : null,
       lastVerifiedAt: verified ? iso(1) : null,
       notes: NOTES[domain] ?? null,
+      // A plausible spread rather than one number, so the dashboard's total is
+      // an addition of different attempts and not a multiplication. `skipped`
+      // rows carry none: nothing was attempted, so nothing was timed.
+      durationMs: state === 'skipped' ? null : fakeDuration(domain),
     })
     .run()
   inserted += 1

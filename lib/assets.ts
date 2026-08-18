@@ -3,11 +3,18 @@ import 'server-only'
 import path from 'node:path'
 
 import { db } from '@/db'
-import { products } from '@/db/schema'
+import { products, submissions } from '@/db/schema'
 import { parseJsonArray } from '@/lib/domain'
 
 /** Where uploads land. Outside public/ so Next never tries to serve them raw. */
 export const ASSET_DIR = path.join(process.cwd(), 'data', 'assets')
+
+/**
+ * Where submission screenshots land. Separate from ASSET_DIR because these are
+ * evidence rather than brand art: they are per attempt, they are never reused,
+ * and deleting a product should take its proof with it.
+ */
+export const SHOT_DIR = path.join(process.cwd(), 'data', 'shots')
 
 const CONTENT_TYPES: Record<string, string> = {
   '.svg': 'image/svg+xml',
@@ -55,14 +62,36 @@ export function registeredAssetPaths(): Set<string> {
   return paths
 }
 
-export function isRegisteredAsset(filePath: string) {
-  return registeredAssetPaths().has(filePath)
+/**
+ * Every screenshot path a submission currently points at.
+ *
+ * Same allowlist idea as registeredAssetPaths, for the same reason: the route
+ * behind these is reading absolute paths off a query string, and the only
+ * thing keeping it from being a disk browser is that it will not serve a path
+ * the app was not already going to render.
+ */
+export function registeredScreenshotPaths(): Set<string> {
+  const rows = db.select({ shot: submissions.screenshotPath }).from(submissions).all()
+  const paths = new Set<string>()
+  for (const row of rows) if (row.shot) paths.add(row.shot)
+  return paths
 }
 
-/** The URL that renders a registered asset in an <img>. */
-export function assetSrc(filePath: string) {
-  return `/api/asset?p=${encodeURIComponent(filePath)}`
+export function isRegisteredAsset(filePath: string) {
+  return registeredAssetPaths().has(filePath) || registeredScreenshotPaths().has(filePath)
 }
+
+/**
+ * True when the path is a screenshot this app took custody of, which is what
+ * makes deleting it safe. Resolved first, so `data/shots/../../etc/passwd`
+ * cannot pass as ours.
+ */
+export function isInsideShotDir(filePath: string) {
+  const resolved = path.resolve(filePath)
+  return resolved === SHOT_DIR || resolved.startsWith(`${SHOT_DIR}${path.sep}`)
+}
+
+export { assetSrc } from '@/lib/asset-src'
 
 /**
  * True when the path is a copy this app made, which is what makes deleting it

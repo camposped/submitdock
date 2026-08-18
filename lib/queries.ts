@@ -2,6 +2,7 @@ import 'server-only'
 
 import { and, desc, eq, sql } from 'drizzle-orm'
 
+import { timeSaved, type TimeSaved } from '@/lib/timing'
 import { db } from '@/db'
 import {
   directories,
@@ -15,7 +16,14 @@ import {
 export type CatalogRow = Directory & {
   submission: Pick<
     Submission,
-    'state' | 'listingUrl' | 'backlinkLive' | 'backlinkRel' | 'lastVerifiedAt' | 'notes'
+    | 'state'
+    | 'listingUrl'
+    | 'backlinkLive'
+    | 'backlinkRel'
+    | 'lastVerifiedAt'
+    | 'notes'
+    | 'durationMs'
+    | 'screenshotPath'
   > | null
 }
 
@@ -59,6 +67,8 @@ export function listCatalog(productSlug: string | null, filters: CatalogFilters 
           backlinkRel: submissions.backlinkRel,
           lastVerifiedAt: submissions.lastVerifiedAt,
           notes: submissions.notes,
+          durationMs: submissions.durationMs,
+          screenshotPath: submissions.screenshotPath,
         })
         .from(directories)
         .leftJoin(
@@ -77,6 +87,8 @@ export function listCatalog(productSlug: string | null, filters: CatalogFilters 
                 backlinkRel: r.backlinkRel,
                 lastVerifiedAt: r.lastVerifiedAt,
                 notes: r.notes,
+                durationMs: r.durationMs,
+                screenshotPath: r.screenshotPath,
               }
             : null,
         }))
@@ -148,6 +160,13 @@ export type CampaignStats = {
   waiting: number
   deadEnd: number
   attempted: number
+  /**
+   * What the agent's clock adds up to. `timed` is separate from `attempted`
+   * on purpose: attempts made before this was measured, or recorded without a
+   * `submit begin`, carry no duration, and folding them in at an average
+   * would be inventing the number.
+   */
+  time: TimeSaved
 }
 
 /**
@@ -180,6 +199,7 @@ export function getCampaignStats(productSlug: string | null): CampaignStats {
     waiting: 0,
     deadEnd: 0,
     attempted: 0,
+    time: timeSaved([]),
   }
   if (!productSlug) {
     return { ...empty, readyToSend: listCatalog(null).filter(isReadyToSend).length }
@@ -191,12 +211,17 @@ export function getCampaignStats(productSlug: string | null): CampaignStats {
       backlinkLive: submissions.backlinkLive,
       rel: submissions.backlinkRel,
       lastVerifiedAt: submissions.lastVerifiedAt,
+      durationMs: submissions.durationMs,
     })
     .from(submissions)
     .where(eq(submissions.productSlug, productSlug))
     .all()
 
-  const stats = { ...empty, readyToSend: listCatalog(productSlug).filter(isReadyToSend).length }
+  const stats = {
+    ...empty,
+    readyToSend: listCatalog(productSlug).filter(isReadyToSend).length,
+    time: timeSaved(rows.map((row) => row.durationMs)),
+  }
   for (const row of rows) {
     stats[row.state] += 1
     if (row.state !== 'todo') stats.worked += 1
@@ -261,7 +286,13 @@ export function countNeedsHuman(productSlug: string | null): number {
 }
 
 export type SubmissionRow = CatalogRow & {
-  submission: NonNullable<CatalogRow['submission']> & { submittedAt: string | null }
+  submission: NonNullable<CatalogRow['submission']> & {
+    submittedAt: string | null
+    durationMs: number | null
+    screenshotPath: string | null
+    /** Non-null while an attempt is in flight, which is a row being worked on. */
+    attemptStartedAt: string | null
+  }
   /** The last thing a script or a click reported about this domain. */
   lastEvent: { action: string; at: string; ok: boolean; detail: string } | null
 }
@@ -277,7 +308,14 @@ export function listSubmissions(productSlug: string | null): SubmissionRow[] {
   if (!productSlug) return []
 
   const rows = db
-    .select({ domain: submissions.domain, state: submissions.state, submittedAt: submissions.submittedAt })
+    .select({
+      domain: submissions.domain,
+      state: submissions.state,
+      submittedAt: submissions.submittedAt,
+      durationMs: submissions.durationMs,
+      screenshotPath: submissions.screenshotPath,
+      attemptStartedAt: submissions.attemptStartedAt,
+    })
     .from(submissions)
     .where(eq(submissions.productSlug, productSlug))
     .all()
@@ -313,6 +351,9 @@ export function listSubmissions(productSlug: string | null): SubmissionRow[] {
       submission: {
         ...row.submission!,
         submittedAt: attempted.get(row.domain)?.submittedAt ?? null,
+        durationMs: attempted.get(row.domain)?.durationMs ?? null,
+        screenshotPath: attempted.get(row.domain)?.screenshotPath ?? null,
+        attemptStartedAt: attempted.get(row.domain)?.attemptStartedAt ?? null,
       },
       lastEvent: latest.get(row.domain) ?? null,
     }))
