@@ -63,7 +63,7 @@ export async function updateDirectory(domain: string, patch: DirectoryPatch) {
 
 // -- Submissions -------------------------------------------------------------
 
-/** Rows are created on first touch, so 367 x N empty rows never exist. */
+/** Rows are created on first touch, so 353 x N empty rows never exist. */
 function ensureSubmission(productSlug: string, domain: string) {
   const [existing] = db
     .select()

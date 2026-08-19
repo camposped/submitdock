@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils'
  * Whether the domain answered the last probe, shown only when it did not.
  *
  * This used to be a coloured dot on every row, which told you nothing: 333 of
- * the 367 are alive, so the dot was lit and mute nine rows in ten, and the one
+ * the 353 are alive, so the dot was lit and mute nine rows in ten, and the one
  * row that needed attention looked the same size as the rest. Marking only the
  * exception makes it findable and gives the other 333 their space back.
  */

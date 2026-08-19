@@ -56,7 +56,7 @@ function Fact({ label, children }: { label: string; children: React.ReactNode })
  * One directory, opened from its row.
  *
  * Everything editable about a domain lives here rather than in the table: the
- * catalog is 367 rows and eleven columns of inline inputs was unreadable. The
+ * catalog is 353 rows and eleven columns of inline inputs was unreadable. The
  * split inside matters, because the two halves have different owners: the top
  * is the shared catalog, the bottom belongs to the selected product only.
  */
@@ -120,7 +120,6 @@ export function DirectorySheet({
                   className={cn(
                     row.status === 'alive' && 'text-good',
                     row.status === 'blocked' && 'text-foreground',
-                    row.status === 'dead' && 'text-bad',
                   )}
                 >
                   {row.status}

@@ -53,7 +53,7 @@ export function getProduct(slug: string) {
 
 /**
  * One query for the whole catalog, left joined to the selected product so each
- * row can carry that product's submission state. Filtering happens in JS: 367
+ * row can carry that product's submission state. Filtering happens in JS: 353
  * rows is nothing, and it keeps the flag filters readable.
  */
 export function listCatalog(productSlug: string | null, filters: CatalogFilters = {}): CatalogRow[] {
@@ -258,7 +258,6 @@ export function listEvents(limit = 40, productSlug?: string | null) {
  * Directories the agent cannot finish on its own. Not a submission state: it
  * is a property of the DIRECTORY (captcha, account, payment, reciprocal link),
  * which is why it lives as a catalog filter rather than a screen of its own.
- * Dead domains are left out, because a captcha on a dead site is not a task.
  */
 export function isReadyToSend(row: CatalogRow) {
   return (
@@ -274,7 +273,6 @@ export function isReadyToSend(row: CatalogRow) {
 
 export function needsHuman(row: CatalogRow) {
   return (
-    row.status !== 'dead' &&
     (row.submission?.state ?? 'todo') !== 'skipped' &&
     !row.submission?.backlinkLive &&
     (row.requiresCaptcha || row.requiresAccount || row.requiresPayment || row.requiresBacklink)

@@ -12,7 +12,7 @@ import {
 export const TIERS = ['a', 'b', 'c'] as const
 export type Tier = (typeof TIERS)[number]
 
-export const DIRECTORY_STATUSES = ['alive', 'blocked', 'dead'] as const
+export const DIRECTORY_STATUSES = ['alive', 'blocked'] as const
 export type DirectoryStatus = (typeof DIRECTORY_STATUSES)[number]
 
 export const CAPTCHA_VENDORS = ['recaptcha', 'turnstile', 'hcaptcha'] as const

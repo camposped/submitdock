@@ -32,7 +32,7 @@ agent is doing live, and hands you the forms it cannot finish alone.
 ```bash
 npm install
 npm run db:migrate     # create data/submitdock.db
-npm run import         # load the 367 directory catalog that ships with this repo
+npm run import         # load the 353 directory catalog that ships with this repo
 npm run dev            # http://localhost:3007
 ```
 
@@ -46,14 +46,14 @@ does badly anyway.
 
 ## What comes in the box
 
-`data/catalog.export.json` holds 367 directories, deduplicated across two sources:
+`data/catalog.export.json` holds 353 directories, deduplicated across two sources:
 
 | source | rows | what it carries |
 |---|---|---|
-| `supapin-2025` | 251 | a crawl: reachability, submit URLs, captcha and account flags |
-| `rushout09-gh` | 162 (116 new) | [rushout09/directory-submission-sites](https://github.com/rushout09/directory-submission-sites), plus a Domain Rating |
+| `supapin-2025` | 237 | a crawl: reachability, submit URLs, captcha and account flags |
+| `rushout09-gh` | 161 (116 new) | [rushout09/directory-submission-sites](https://github.com/rushout09/directory-submission-sites), plus a Domain Rating |
 
-161 of them carry a DR. Where a `submitUrl` is null it means "not found yet", not "has
+160 of them carry a DR. Where a `submitUrl` is null it means "not found yet", not "has
 no form": the crawler reads static HTML and plenty of these sites are SPAs.
 
 ## The model

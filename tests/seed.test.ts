@@ -33,8 +33,8 @@ const supapinFile = () => parseSeedFile(JSON.parse(readFileSync(SUPAPIN_JSON, 'u
 
 /**
  * A crawl in miniature, in the shape the real file has. One of everything the
- * merge has to handle: a graded row, a row with no form found, a blocked one
- * and a dead one.
+ * merge has to handle: a graded row, a row with no form found, and a blocked
+ * one. No dead row, because parseSeedFile drops those before this stage.
  */
 const CRAWLED: CatalogRow[] = [
   {
@@ -92,7 +92,7 @@ const CRAWLED: CatalogRow[] = [
     notes: null,
   },
   {
-    domain: 'gone.example',
+    domain: 'walled.example',
     name: null,
     submitUrl: null,
     tier: null,
@@ -104,8 +104,8 @@ const CRAWLED: CatalogRow[] = [
     captchaVendor: null,
     thirdPartyForm: false,
     price: null,
-    status: 'dead',
-    httpStatus: 0,
+    status: 'blocked',
+    httpStatus: 403,
     lastCheckedAt: '2026-08-17',
     notes: null,
   },
@@ -158,14 +158,38 @@ describe('parseRushoutReadme', () => {
   })
 })
 
+describe('parsing a crawl file', () => {
+  /**
+   * The catalog does not carry domains that no longer answer, and the rule
+   * lives here rather than in a status column so a re-seed cannot undo it.
+   * Dropping the value from the enum alone would have mapped these to `alive`
+   * and put dead domains at the top of the ready queue.
+   */
+  it('drops the domains a crawl reports as dead', () => {
+    const rows = parseSeedFile([
+      { domain: 'alive.example', status: 'alive' },
+      { domain: 'gone.example', status: 'dead' },
+      { domain: 'walled.example', status: 'blocked' },
+    ])
+    expect(rows.map((r) => r.domain)).toEqual(['alive.example', 'walled.example'])
+  })
+
+  it('keeps a row whose status the crawl never set', () => {
+    const rows = parseSeedFile([{ domain: 'unknown.example' }])
+    expect(rows).toHaveLength(1)
+    expect(rows[0].status).toBe('alive')
+  })
+})
+
 describeSupapin('the real crawl file', () => {
-  it('reads all 251 crawled domains and flattens the requires object', () => {
+  it('keeps the 237 reachable domains and flattens the requires object', () => {
     const rows = supapinFile()
-    expect(rows).toHaveLength(251)
+    // 251 in the file, minus the 14 it reports as dead.
+    expect(rows).toHaveLength(237)
     expect(rows.filter((r) => r.status === 'alive')).toHaveLength(217)
     expect(rows.filter((r) => r.status === 'blocked')).toHaveLength(20)
-    expect(rows.filter((r) => r.status === 'dead')).toHaveLength(14)
-    expect(rows.filter((r) => r.submitUrl)).toHaveLength(156)
+    // One of the 14 dead rows carried a submit URL, so this drops with them.
+    expect(rows.filter((r) => r.submitUrl)).toHaveLength(155)
     expect(rows.filter((r) => r.requiresCaptcha)).toHaveLength(31)
     expect(rows.filter((r) => r.requiresAccount)).toHaveLength(68)
     expect(rows.filter((r) => r.requiresPayment)).toHaveLength(28)

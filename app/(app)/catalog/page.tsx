@@ -32,9 +32,8 @@ function many(value: string | string[] | undefined) {
 const VIEWS: Record<string, (row: CatalogRow) => boolean> = {
   ready: isReadyToSend,
   'needs-you': needsHuman,
-  'no-form': (row) => !row.submitUrl && row.status !== 'dead',
+  'no-form': (row) => !row.submitUrl,
   'tier-a': (row) => row.tier === 'a',
-  dead: (row) => row.status === 'dead',
 }
 
 export default async function CatalogPage(props: PageProps<'/catalog'>) {
@@ -65,13 +64,12 @@ export default async function CatalogPage(props: PageProps<'/catalog'>) {
     { value: 'needs-you', label: 'Needs you', count: count('needs-you'), tone: 'info' },
     { value: 'no-form', label: 'No form found', count: count('no-form') },
     { value: 'tier-a', label: 'Tier A', count: count('tier-a') },
-    { value: 'dead', label: 'Dead', count: count('dead'), tone: 'bad' },
   ]
 
   return (
     <div className="flex min-h-0 flex-1 flex-col overflow-y-auto">
       {/* Wider than the max-w-5xl of a tiles-and-chart screen: this one is a
-          table, and squeezing 367 rows into the reading column helps nobody. */}
+          table, and squeezing 353 rows into the reading column helps nobody. */}
       <Reveal
       from="up"
       duration={400}

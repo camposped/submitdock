@@ -67,7 +67,7 @@ truth; the rules that bind here:
 
 Deviations from the boilerplate, both deliberate:
 
-1. `/catalog` uses `max-w-7xl` instead of `max-w-5xl`. It is a 367-row table, not a
+1. `/catalog` uses `max-w-7xl` instead of `max-w-5xl`. It is a 353-row table, not a
    tiles-and-chart screen, and the reading column strangles it.
 2. `components/ui/reveal.tsx` picks its IntersectionObserver threshold by height. The
    boilerplate hardcodes `0.15`, which an element taller than the viewport can never
@@ -134,7 +134,7 @@ Three columns, and they are not the same thing:
   override, not as data.
 - **`dr`** is Domain Rating, 0 to 100, third party authority. Objective, and the reason
   tier can stay an override. Populated from the Score column of the rushout09 README,
-  which the first seed was throwing away: 161 of 367 rows have one. Null means nobody
+  which the first seed was throwing away: 160 of 353 rows have one. Null means nobody
   has scored the domain, which is not the same as scoring it zero, and the UI says so.
   Filling the other 206 needs a real source (Ahrefs or Moz, both paid).
 - **`linkRel`** is what the directory hands out, written by `verify.ts` whenever it
@@ -266,7 +266,7 @@ one of the two shows that one in both, which beats a placeholder.
 open. Scripts import from `db/connect`, the app imports from `db/index`. Never import
 `db/index` or `lib/queries` from a client component: they are `server-only`.
 
-Submission rows are created lazily, on first touch, so 367 x N empty rows never exist.
+Submission rows are created lazily, on first touch, so 353 x N empty rows never exist.
 
 `lib/actions.ts` is a `'use server'` module, so it may only export async functions.
 Constants and types belong somewhere else, which is why `lib/product-selection.ts` and

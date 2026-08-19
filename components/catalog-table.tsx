@@ -40,7 +40,7 @@ export function CatalogTable({
         <ScreenEmptyState
           icon={SearchX}
           title="No directory matches"
-          description="Nothing in the catalog fits these filters. Widen one, or clear them all to see the full 367."
+          description="Nothing in the catalog fits these filters. Widen one, or clear them all to see the full 353."
         />
       </div>
     )
@@ -93,7 +93,6 @@ export function CatalogTable({
                 onClick={() => setOpenDomain(row.domain)}
                 className={cn(
                   'cursor-pointer',
-                  row.status === 'dead' && 'text-muted-foreground',
                 )}
               >
                 <TableCell>

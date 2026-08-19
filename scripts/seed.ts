@@ -18,7 +18,7 @@ import {
 /**
  * The first source is a crawl I ran once, so there is no sensible default path
  * for anyone else. Cloning this repo you do not need it: `npm run import` loads
- * the same 367 domains from the committed snapshot. This script exists for
+ * the same 353 domains from the committed snapshot. This script exists for
  * rebuilding the catalog from its sources.
  */
 const SUPAPIN_JSON = process.env.SUPAPIN_SEED ?? ''
@@ -68,7 +68,7 @@ async function main() {
 
   console.log('seeding catalog')
 
-  // Source 1: a crawl of the 251 domains a paid service submitted Supapin to.
+  // Source 1: a crawl of the domains a paid service submitted Supapin to.
   // Skipped when the file is not around, which is the normal case for a clone.
   let supapin: UpsertStats | null = null
   if (SUPAPIN_SEED_AVAILABLE) {

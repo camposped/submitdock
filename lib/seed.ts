@@ -87,6 +87,17 @@ export function parseSeedFile(raw: unknown): CatalogRow[] {
   for (const record of raw as SeedFileRecord[]) {
     const domain = normalizeDomain(record?.domain)
     if (!domain) continue
+
+    /**
+     * A crawl can report a domain as dead, and this catalog does not carry
+     * those: a list of places to submit to should not include places that no
+     * longer answer. Dropping it here rather than storing a status is what
+     * makes the rule survive a re-seed. Mapping it to `alive` instead, which
+     * is what removing the enum value alone would have done, would put dead
+     * domains back at the top of the ready queue.
+     */
+    if (record.status === 'dead') continue
+
     rows.push({
       domain,
       name: record.name ?? null,

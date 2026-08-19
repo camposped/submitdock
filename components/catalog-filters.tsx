@@ -76,7 +76,6 @@ export function CatalogFilters({
             { value: '', label: 'Any status' },
             { value: 'alive', label: 'Alive' },
             { value: 'blocked', label: 'Blocked' },
-            { value: 'dead', label: 'Dead' },
           ]}
         />
 
