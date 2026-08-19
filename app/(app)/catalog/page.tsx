@@ -47,7 +47,7 @@ export default async function CatalogPage(props: PageProps<'/catalog'>) {
     submitUrl: one(searchParams.submitUrl) as Filters['submitUrl'],
     state: one(searchParams.state),
     requires: many(searchParams.requires),
-    dr: one(searchParams.dr),
+    as: one(searchParams.as),
     linkRel: one(searchParams.linkRel),
     sort: one(searchParams.sort),
   }

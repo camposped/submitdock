@@ -1,5 +1,4 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
-import path from 'node:path'
+import { existsSync, readFileSync } from 'node:fs'
 
 import { sql } from 'drizzle-orm'
 
@@ -7,9 +6,7 @@ import { openDb } from '../db/connect'
 import { logEvent } from '../db/events'
 import { directories } from '../db/schema'
 import {
-  SOURCE_RUSHOUT,
   SOURCE_SUPAPIN,
-  parseRushoutReadme,
   parseSeedFile,
   upsertDirectories,
   type UpsertStats,
@@ -24,35 +21,6 @@ import {
 const SUPAPIN_JSON = process.env.SUPAPIN_SEED ?? ''
 
 const SUPAPIN_SEED_AVAILABLE = Boolean(SUPAPIN_JSON) && existsSync(SUPAPIN_JSON)
-
-const RUSHOUT_README_URL =
-  'https://api.github.com/repos/rushout09/directory-submission-sites/contents/README.md'
-
-/** Cached so a second seed run works with the network off. */
-const RUSHOUT_CACHE = path.join(process.cwd(), 'data', 'rushout09.README.md')
-
-async function loadRushoutReadme(): Promise<{ markdown: string; from: 'network' | 'cache' }> {
-  try {
-    const response = await fetch(RUSHOUT_README_URL, {
-      headers: {
-        accept: 'application/vnd.github.raw',
-        'user-agent': 'submitdock-seed',
-      },
-      signal: AbortSignal.timeout(20_000),
-    })
-    if (!response.ok) throw new Error(`GitHub responded ${response.status}`)
-    const markdown = await response.text()
-    mkdirSync(path.dirname(RUSHOUT_CACHE), { recursive: true })
-    writeFileSync(RUSHOUT_CACHE, markdown)
-    return { markdown, from: 'network' }
-  } catch (error) {
-    if (existsSync(RUSHOUT_CACHE)) {
-      console.warn(`  fetch failed (${(error as Error).message}), using cached README`)
-      return { markdown: readFileSync(RUSHOUT_CACHE, 'utf8'), from: 'cache' }
-    }
-    throw error
-  }
-}
 
 function report(label: string, stats: UpsertStats) {
   console.log(
@@ -81,16 +49,6 @@ async function main() {
     console.log('  (npm run import loads the same domains from data/catalog.export.json)')
   }
 
-  // Source 2: the public free-directory list, deduped against source 1.
-  const { markdown, from } = await loadRushoutReadme()
-  const rushoutRows = parseRushoutReadme(markdown)
-  const rushout = upsertDirectories(db, SOURCE_RUSHOUT, rushoutRows, { crawled: false })
-  report(SOURCE_RUSHOUT, rushout)
-  logEvent(db, {
-    action: 'seed.source',
-    detail: { readmeFrom: from, ...rushout, insertedDomains: undefined },
-  })
-
   const [{ total }] = db
     .select({ total: sql<number>`count(*)` })
     .from(directories)
@@ -98,22 +56,16 @@ async function main() {
 
   console.log('')
   console.log(`  catalog total: ${total} domains`)
-  console.log(`  new from ${SOURCE_RUSHOUT}: ${rushout.inserted}`)
-  if (rushout.inserted > 0) {
-    console.log(`  (these have never been probed, so triage.ts has ${rushout.inserted} to chew on)`)
-    writeFileSync(
-      path.join(process.cwd(), 'data', 'new-domains.txt'),
-      `${rushout.insertedDomains.join('\n')}\n`,
-    )
-    console.log('  wrote data/new-domains.txt')
-  }
+  console.log('')
+  console.log('  authority is not part of this. Semrush Authority Score arrives')
+  console.log('  through `npm run authority`, on its own clock: the catalog')
+  console.log('  changes when a directory appears or dies, the scores monthly.')
 
   logEvent(db, {
     action: 'seed.done',
     detail: {
       total,
       supapin: supapin ? { inserted: supapin.inserted, updated: supapin.updated } : 'skipped',
-      rushout: { inserted: rushout.inserted, updated: rushout.updated },
     },
   })
 }

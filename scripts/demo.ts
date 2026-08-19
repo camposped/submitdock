@@ -82,7 +82,7 @@ const NOTES: Record<string, string> = {
   'techinasia.com': 'Editorial pick only, not an open directory. Nothing to submit.',
   'springwise.com': 'They only cover launches in their own themes. Not a fit this quarter.',
   'theresanaiforthat.com': 'Paid listing. Revisit once there is budget for it.',
-  'aixploria.com': 'Paid listing, and the DR does not justify it yet.',
+  'aixploria.com': 'Paid listing, and the AS does not justify it yet.',
   'dailytoolz.com': 'Wants a reciprocal link in the footer. Not doing that.',
   'crozdesk.com': 'Listing is up but the profile links out with a redirect, not a plain link.',
 }

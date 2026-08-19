@@ -6,9 +6,7 @@ import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { directories } from '@/db/schema'
 import { normalizeDomain } from '@/lib/domain'
 import {
-  SOURCE_RUSHOUT,
   SOURCE_SUPAPIN,
-  parseRushoutReadme,
   parseSeedFile,
   upsertDirectories,
   type CatalogRow,
@@ -111,23 +109,6 @@ const CRAWLED: CatalogRow[] = [
   },
 ]
 
-const README = `
-# 250+ free Directory submission sites list
-
-| Website | Score | URL | Pricing |
-|---------|--------|-----|----------|
-| SaaSHub | 71 | http://saashub.com/submit | Free |
-| Product Hunt | 89 | http://www.producthunt.com/ | Free |
-| Dang | 67 | http://dang.ai/submit | Paid |
-| Dupe Of SaaSHub | 40 | https://saashub.com/other | Free |
-| Not A Link | 10 | just some text | Free |
-
-## Paid tools
-
-| Tool | Number of Sites | Pricing in USD | Pricing in INR |
-|---|---|---|---|
-| [Listing Bott](https://listingbott.com/) | 100 | $500 | ₹45,000 |
-`
 
 let harness: ReturnType<typeof makeTestDb>
 
@@ -136,27 +117,6 @@ beforeEach(() => {
 })
 afterEach(() => harness.cleanup())
 
-describe('parseRushoutReadme', () => {
-  const rows = parseRushoutReadme(README)
-
-  it('keeps only the directory table, not the table of paid services', () => {
-    expect(rows.map((r) => r.domain)).toEqual(['saashub.com', 'producthunt.com', 'dang.ai'])
-  })
-
-  it('reads Paid pricing into requiresPayment', () => {
-    expect(rows.find((r) => r.domain === 'dang.ai')?.requiresPayment).toBe(true)
-    expect(rows.find((r) => r.domain === 'saashub.com')?.requiresPayment).toBe(false)
-  })
-
-  it('only calls a URL a submitUrl when it has a path', () => {
-    expect(rows.find((r) => r.domain === 'saashub.com')?.submitUrl).toBe('http://saashub.com/submit')
-    expect(rows.find((r) => r.domain === 'producthunt.com')?.submitUrl).toBeNull()
-  })
-
-  it('never lies about having probed a domain', () => {
-    expect(rows.every((r) => r.lastCheckedAt === '')).toBe(true)
-  })
-})
 
 describe('parsing a crawl file', () => {
   /**
@@ -254,65 +214,6 @@ describe('seeding a crawled source', () => {
   })
 })
 
-describe('dedupe across the two sources', () => {
-  const supapinRows = CRAWLED
-
-  it('merges the origin instead of creating a second row', () => {
-    upsertDirectories(harness.db, SOURCE_SUPAPIN, supapinRows, { crawled: true })
-    const before = harness.db.select().from(directories).all().length
-
-    const overlap = supapinRows.find((r) => r.status === 'alive')!.domain
-    const rushout = parseRushoutReadme(
-      `| Website | Score | URL | Pricing |\n| Overlap | 50 | https://${overlap}/submit | Paid |\n` +
-        `| Brand New | 50 | https://brand-new-directory.dev/add | Free |\n`,
-    )
-
-    const stats = upsertDirectories(harness.db, SOURCE_RUSHOUT, rushout, { crawled: false })
-
-    expect(stats.inserted).toBe(1)
-    expect(harness.db.select().from(directories).all()).toHaveLength(before + 1)
-
-    const [merged] = harness.db.select().from(directories).where(eq(directories.domain, overlap)).all()
-    expect(merged.source).toBe(`${SOURCE_SUPAPIN},${SOURCE_RUSHOUT}`)
-  })
-
-  it('keeps the crawled data on an overlapping domain', () => {
-    upsertDirectories(harness.db, SOURCE_SUPAPIN, supapinRows, { crawled: true })
-
-    const crawled = supapinRows.find((r) => r.submitUrl && !r.requiresPayment)!
-    const rushout = parseRushoutReadme(
-      `| Website | Score | URL | Pricing |\n| Overlap | 50 | https://${crawled.domain}/wrong-path | Paid |\n`,
-    )
-    upsertDirectories(harness.db, SOURCE_RUSHOUT, rushout, { crawled: false })
-
-    const [after] = harness.db
-      .select()
-      .from(directories)
-      .where(eq(directories.domain, crawled.domain))
-      .all()
-
-    // The list said Paid and pointed somewhere else; the real crawl wins.
-    expect(after.submitUrl).toBe(crawled.submitUrl)
-    expect(after.requiresPayment).toBe(false)
-    expect(after.status).toBe(crawled.status)
-  })
-
-  it('a full two source seed run twice is stable', () => {
-    const rushout = parseRushoutReadme(README)
-
-    const run = () => {
-      upsertDirectories(harness.db, SOURCE_SUPAPIN, supapinRows, { crawled: true })
-      upsertDirectories(harness.db, SOURCE_RUSHOUT, rushout, { crawled: false })
-      return harness.db.select().from(directories).all()
-    }
-
-    const first = run()
-    const second = run()
-
-    expect(second).toHaveLength(first.length)
-    expect(second).toEqual(first)
-  })
-})
 
 describe('normalizeDomain', () => {
   it('strips protocol, www, path, port and case', () => {

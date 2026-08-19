@@ -14,8 +14,8 @@ export function passPrompt({ productName, take }: { productName: string; take: n
 
   return `Read AGENTS.md, then run a submission pass for ${productName}.
 
-Take ${many} from the catalog's "Ready to send" view, highest Domain Rating
-first. For each one: open it in Chrome, fill the form from the Product Kit,
+Take ${many} from the catalog's "Ready to send" view, highest Authority
+Score first. For each one: open it in Chrome, fill the form from the Product Kit,
 submit it, and record the result.
 
 Time every attempt, and screenshot where you ended up whether it worked or

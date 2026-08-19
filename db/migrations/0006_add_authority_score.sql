@@ -1,0 +1,1 @@
+ALTER TABLE `directories` ADD `authority_score` integer;

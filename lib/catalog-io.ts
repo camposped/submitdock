@@ -15,7 +15,7 @@ export type CatalogRecord = {
   name: string | null
   submitUrl: string | null
   tier: string | null
-  dr: number | null
+  authorityScore: number | null
   linkRel: string | null
   categories: string[]
   requiresAccount: boolean
@@ -38,7 +38,7 @@ export function toCatalogRecord(row: Directory): CatalogRecord {
     name: row.name,
     submitUrl: row.submitUrl,
     tier: row.tier,
-    dr: row.dr,
+    authorityScore: row.authorityScore,
     linkRel: row.linkRel,
     categories: parseJsonArray(row.categories),
     requiresAccount: row.requiresAccount,
@@ -97,7 +97,7 @@ export function importCatalog(db: Db, records: unknown): ImportStats {
         name: raw.name ?? null,
         submitUrl: raw.submitUrl ?? null,
         tier: (raw.tier ?? null) as Directory['tier'],
-        dr: typeof raw.dr === 'number' ? raw.dr : null,
+        authorityScore: typeof raw.authorityScore === 'number' ? raw.authorityScore : null,
         linkRel: (raw.linkRel ?? null) as Directory['linkRel'],
         categories: JSON.stringify(Array.isArray(raw.categories) ? raw.categories : []),
         requiresAccount: Boolean(raw.requiresAccount),

@@ -107,15 +107,15 @@ export function CatalogFilters({
 
         <Select
           className="h-9 w-36"
-          aria-label="Domain Rating"
-          value={params.get('dr') ?? ''}
-          onValueChange={set('dr')}
+          aria-label="Authority Score"
+          value={params.get('as') ?? ''}
+          onValueChange={set('as')}
           options={[
-            { value: '', label: 'Any DR' },
-            { value: '80', label: 'DR 80+' },
-            { value: '60', label: 'DR 60+' },
-            { value: '40', label: 'DR 40+' },
-            { value: '20', label: 'DR 20+' },
+            { value: '', label: 'Any AS' },
+            { value: '50', label: 'AS 50+' },
+            { value: '40', label: 'AS 40+' },
+            { value: '30', label: 'AS 30+' },
+            { value: '20', label: 'AS 20+' },
             { value: 'none', label: 'Not rated' },
           ]}
         />

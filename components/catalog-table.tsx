@@ -59,7 +59,7 @@ export function CatalogTable({
               <TableHead className="w-16 text-center">
                 <Explain label="Tier">
                   Your own grade of how much a link from here is worth, A to C. There is no
-                  formula: it is an override on top of DR, set by hand in the row.
+                  formula: it is an override on top of AS, set by hand in the row.
                 </Explain>
               </TableHead>
               <TableHead className="w-32 text-center">
@@ -125,7 +125,7 @@ export function CatalogTable({
                 </TableCell>
 
                 <TableCell className="text-center">
-                  <DrCell dr={row.dr} />
+                  <AuthorityCell score={row.authorityScore} />
                 </TableCell>
 
                 <TableCell className="text-center">
@@ -177,14 +177,14 @@ export function CatalogTable({
 
 
 /**
- * Domain Rating, banded by colour.
+ * Semrush Authority Score, banded by colour.
  *
  * The number is what matters, so the bands are quiet: only the top one gets
  * ink, because "this is worth the effort" is the only judgement the column has
  * to make at a glance. Null is not zero and does not pretend to be.
  */
-function DrCell({ dr }: { dr: number | null }) {
-  if (dr === null) {
+function AuthorityCell({ score }: { score: number | null }) {
+  if (score === null) {
     return (
       <span className="text-[13px] text-muted-foreground/40" title="Nobody has rated this domain">
         not rated
@@ -195,11 +195,11 @@ function DrCell({ dr }: { dr: number | null }) {
     <span
       className={cn(
         'text-[13px] tabular-nums',
-        dr >= 70 ? 'font-medium text-good' : dr >= 40 ? 'text-foreground' : 'text-muted-foreground',
+        score >= 50 ? 'font-medium text-good' : score >= 30 ? 'text-foreground' : 'text-muted-foreground',
       )}
-      title={`Domain Rating ${dr}`}
+      title={`Semrush Authority Score ${score}`}
     >
-      {dr}
+      {score}
     </span>
   )
 }
@@ -232,7 +232,7 @@ function LinkTypeCell({ rel }: { rel: string | null }) {
   )
 }
 
-/** DR ranks by default; alphabetical is for hunting a specific domain. */
+/** AS ranks by default; alphabetical is for hunting a specific domain. */
 function DrSortHeader() {
   const pathname = usePathname()
   const params = useSearchParams()
@@ -254,12 +254,12 @@ function DrSortHeader() {
             byDr && 'text-foreground',
           )}
         >
-          DR
+          AS
           <ArrowDown className={cn('size-3', byDr ? 'opacity-100' : 'opacity-30')} />
         </Link>
       </TooltipTrigger>
       <TooltipContent side="top" className="max-w-64 text-xs leading-relaxed">
-        Domain Rating, 0 to 100: third party authority, the objective version of Tier. Click to
+        Semrush Authority Score, 0 to 100: third party authority, the objective version of Tier. Click to
         {byDr ? ' sort alphabetically instead' : ' rank by it'}. Not every domain has been rated.
       </TooltipContent>
     </Tooltip>
@@ -269,7 +269,7 @@ function DrSortHeader() {
 /**
  * A column heading that says what its column means.
  *
- * Half the columns here are jargon the interface invented: Tier, Blocker, DR,
+ * Half the columns here are jargon the interface invented: Tier, Blocker, AS,
  * Link. A person should not have to ask someone what a header means, so the
  * answer travels with it under a dotted underline.
  */

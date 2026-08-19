@@ -32,7 +32,7 @@ agent is doing live, and hands you the forms it cannot finish alone.
 ```bash
 npm install
 npm run db:migrate     # create data/submitdock.db
-npm run import         # load the 353 directory catalog that ships with this repo
+npm run import         # load the directory catalog that ships with this repo
 npm run dev            # http://localhost:3007
 ```
 
@@ -46,15 +46,17 @@ does badly anyway.
 
 ## What comes in the box
 
-`data/catalog.export.json` holds 353 directories, deduplicated across two sources:
+`data/catalog.export.json` holds 200+ directories from a crawl: reachability, submit
+URLs, and flags for captcha, account and fee.
 
-| source | rows | what it carries |
-|---|---|---|
-| `supapin-2025` | 237 | a crawl: reachability, submit URLs, captcha and account flags |
-| `rushout09-gh` | 161 (116 new) | [rushout09/directory-submission-sites](https://github.com/rushout09/directory-submission-sites), plus a Domain Rating |
+Authority is **Semrush Authority Score**, 0 to 100, written by `npm run authority` from
+`data/authority.semrush.json`. It replaced Ahrefs Domain Rating, and the two are not
+interchangeable: the same domain reads 89 as DR and 54 as AS, and the gap is not a
+constant. One column, one source, so a sort compares like with like. Null means Semrush
+has no data for that domain, which is not the same as scoring it zero.
 
-160 of them carry a DR. Where a `submitUrl` is null it means "not found yet", not "has
-no form": the crawler reads static HTML and plenty of these sites are SPAs.
+Where a `submitUrl` is null it means "not found yet", not "has no form": the crawler
+reads static HTML and plenty of these sites are SPAs.
 
 ## The model
 
@@ -79,7 +81,8 @@ second product without being rebuilt.
 | `npm run export` | write the catalog back to `data/catalog.export.json` |
 | `npm run verify [slug]` | check every listing page for a real backlink |
 | `npm run agent -- start "..."` | how the agent reports what it is doing |
-| `npm run seed` | rebuild the catalog from its sources, needs `SUPAPIN_SEED` |
+| `npm run seed` | rebuild the catalog from the crawl, needs `SUPAPIN_SEED` |
+| `npm run authority` | write Semrush Authority Score onto the catalog |
 | `npm test` | the seed and verify suites |
 
 `probe.ts` and `triage.ts` are named in the scripts but not written yet.

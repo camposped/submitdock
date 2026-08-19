@@ -14,7 +14,6 @@ import {
 import { mergeSources, normalizeDomain } from '@/lib/domain'
 
 export const SOURCE_SUPAPIN = 'supapin-2025'
-export const SOURCE_RUSHOUT = 'rushout09-gh'
 
 /** A domain that has never been probed carries an empty date, not a fake one. */
 export const NEVER_CHECKED = ''
@@ -38,7 +37,6 @@ export type CatalogRow = {
   captchaVendor?: CaptchaVendor | null
   thirdPartyForm?: boolean
   /** Third party authority, 0 to 100. */
-  dr?: number | null
   price?: number | null
   status?: DirectoryStatus
   httpStatus?: number
@@ -120,68 +118,7 @@ export function parseSeedFile(raw: unknown): CatalogRow[] {
   return rows
 }
 
-// -- Source 2: the rushout09 README ----------------------------------------
-
-/**
- * The README is one markdown table of directories followed by a second table
- * of paid submission *services*. Requiring the URL cell to be an http link is
- * what keeps that second table out: its third column holds "150", not a link.
- */
-function hasPath(url: string) {
-  try {
-    const { pathname } = new URL(url)
-    return pathname.replace(/\/+$/, '').length > 0
-  } catch {
-    return false
-  }
-}
-
-export function parseRushoutReadme(markdown: string): CatalogRow[] {
-  const byDomain = new Map<string, CatalogRow>()
-
-  for (const line of markdown.split('\n')) {
-    const trimmed = line.trim()
-    if (!trimmed.startsWith('|')) continue
-
-    const cells = trimmed
-      .replace(/^\|/, '')
-      .replace(/\|$/, '')
-      .split('|')
-      .map((cell) => cell.trim())
-    if (cells.length < 3) continue
-
-    const [rawName, rawScore, rawUrl, rawPricing] = cells
-    if (!/^https?:\/\//i.test(rawUrl)) continue
-
-    const domain = normalizeDomain(rawUrl)
-    if (!domain) continue
-
-    const name = rawName.replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').trim() || null
-
-    // Keep the first row for a domain: the list is roughly authority ordered,
-    // so the earlier entry is the better one when a site appears twice.
-    if (byDomain.has(domain)) continue
-
-    byDomain.set(domain, {
-      domain,
-      name,
-      // Only a URL with a path is worth calling a submitUrl. A bare homepage
-      // says nothing about where the form is, and triage.ts can do better.
-      submitUrl: hasPath(rawUrl) ? rawUrl : null,
-      requiresPayment: /paid/i.test(rawPricing ?? ''),
-      // The Score column is a domain authority rating, the objective version of
-      // the tier I grade by hand. Ignoring it was leaving real signal on the floor.
-      dr: /^\d+$/.test(rawScore ?? '') ? Number(rawScore) : null,
-      status: 'alive',
-      httpStatus: 0,
-      lastCheckedAt: NEVER_CHECKED,
-    })
-  }
-
-  return [...byDomain.values()]
-}
-
-// -- The upsert ------------------------------------------------------------
+// -- Merging a source into the catalog -------------------------------------
 
 export type UpsertOptions = {
   /**
@@ -191,17 +128,12 @@ export type UpsertOptions = {
    */
   crawled: boolean
 }
-
 function isNewer(incoming: string | undefined, existing: string) {
   if (!incoming) return false
   if (!existing) return true
   return incoming >= existing
 }
 
-/**
- * Upserts by domain. Curated columns are written once, at insert, and never
- * again, so running the seed twice cannot erase manual work.
- */
 export function upsertDirectories(
   db: Db,
   source: string,
@@ -240,7 +172,6 @@ export function upsertDirectories(
             requiresBacklink: row.requiresBacklink ?? false,
             captchaVendor: row.captchaVendor ?? null,
             thirdPartyForm: row.thirdPartyForm ?? false,
-            dr: row.dr ?? null,
             price: row.price ?? null,
             status: row.status ?? 'alive',
             httpStatus: row.httpStatus ?? 0,
@@ -258,11 +189,10 @@ export function upsertDirectories(
         source: mergeSources(existing.source, source),
       }
 
-      // Filling a null is not overwriting: source 1 shipped no names at all,
-      // and the README has good ones. Same for the authority score, which only
-      // the README carries.
+      // Filling a null is not overwriting. Authority is deliberately absent
+      // from this merge: it comes from Semrush through scripts/authority.ts,
+      // on its own clock, and a re-seed must never blank it.
       if (!existing.name && row.name) next.name = row.name
-      if (existing.dr === null && typeof row.dr === 'number') next.dr = row.dr
 
       if (options.crawled && isNewer(row.lastCheckedAt, existing.lastCheckedAt)) {
         // A fresher crawl wins on the columns a crawler owns. submitUrl is the

@@ -21,7 +21,8 @@
     "typecheck": "tsc --noEmit",
     "agent": "tsx scripts/run.ts",
     "demo": "tsx scripts/demo.ts",
-    "submit": "tsx scripts/submit.ts"
+    "submit": "tsx scripts/submit.ts",
+    "authority": "tsx scripts/authority.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

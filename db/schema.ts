@@ -49,11 +49,16 @@ export const directories = sqliteTable(
     submitUrl: text('submit_url'),
     tier: text('tier').$type<Tier>(),
     /**
-     * Domain Rating: third party authority, 0 to 100. Objective, unlike `tier`,
-     * which is my own opinion of the same thing. Null means nobody has scored
-     * this domain yet, which is different from scoring it zero.
+     * Semrush Authority Score, 0 to 100. Third party authority, objective,
+     * unlike `tier`, which is my own opinion of the same thing.
+     *
+     * It replaced Ahrefs Domain Rating, and the two are not interchangeable:
+     * the same domain reads 89 as DR and 54 as AS, and the gap is not a
+     * constant. One column, one source, so a sort compares like with like.
+     * Null means Semrush has no data for the domain, which is not the same as
+     * scoring it zero.
      */
-    dr: integer('dr'),
+    authorityScore: integer('authority_score'),
     /**
      * What kind of link this directory hands out, learned from verify.ts across
      * every product. This is catalog knowledge and the reason it lives here

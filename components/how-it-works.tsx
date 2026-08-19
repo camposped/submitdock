@@ -73,7 +73,7 @@ export function HowItWorks({ open }: { open: boolean }) {
           <ol className="flex flex-col gap-1.5 border-t pt-4 text-xs leading-relaxed text-muted-foreground">
             <li>
               <span className="font-medium text-foreground">1.</span> Ask the agent for a pass. It
-              works down Ready to send, ranked by Domain Rating.
+              works down Ready to send, ranked by Authority Score.
             </li>
             <li>
               <span className="font-medium text-foreground">2.</span> It writes each result back as

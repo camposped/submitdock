@@ -34,11 +34,11 @@ export type CatalogFilters = {
   submitUrl?: 'yes' | 'no'
   state?: string
   requires?: string[]
-  /** Minimum Domain Rating, or 'none' for the ones nobody has scored. */
-  dr?: string
+  /** Minimum Authority Score, or 'none' for the ones Semrush has no data on. */
+  as?: string
   /** What the directory hands out, learned from verify: dofollow, nofollow, unknown. */
   linkRel?: string
-  /** 'domain' goes alphabetical; anything else keeps the DR ranking default. */
+  /** 'domain' goes alphabetical; anything else keeps the AS ranking default. */
   sort?: string
 }
 
@@ -106,7 +106,9 @@ export function listCatalog(productSlug: string | null, filters: CatalogFilters 
   // the unrated sink to the bottom rather than sorting as zero. Alphabetical is
   // still one click away for when you are hunting a specific domain.
   if (filters.sort === 'domain') return kept
-  return [...kept].sort((a, b) => (b.dr ?? -1) - (a.dr ?? -1) || a.domain.localeCompare(b.domain))
+  return [...kept].sort(
+    (a, b) => (b.authorityScore ?? -1) - (a.authorityScore ?? -1) || a.domain.localeCompare(b.domain),
+  )
 }
 
 function matches(row: CatalogRow, f: CatalogFilters) {
@@ -121,10 +123,10 @@ function matches(row: CatalogRow, f: CatalogFilters) {
   if (f.submitUrl === 'no' && row.submitUrl) return false
   if (f.state && (row.submission?.state ?? 'todo') !== f.state) return false
 
-  if (f.dr === 'none' && row.dr !== null) return false
-  if (f.dr && f.dr !== 'none') {
-    const floor = Number(f.dr)
-    if (!Number.isFinite(floor) || row.dr === null || row.dr < floor) return false
+  if (f.as === 'none' && row.authorityScore !== null) return false
+  if (f.as && f.as !== 'none') {
+    const floor = Number(f.as)
+    if (!Number.isFinite(floor) || row.authorityScore === null || row.authorityScore < floor) return false
   }
 
   if (f.linkRel === 'unknown' && row.linkRel !== null) return false
@@ -357,6 +359,8 @@ export function listSubmissions(productSlug: string | null): SubmissionRow[] {
     }))
     // Ranked by authority like the catalog, so the two lists agree on which
     // rows matter most. Recency is still readable in the Sent column.
-    .sort((a, b) => (b.dr ?? -1) - (a.dr ?? -1) || a.domain.localeCompare(b.domain))
+    .sort(
+      (a, b) => (b.authorityScore ?? -1) - (a.authorityScore ?? -1) || a.domain.localeCompare(b.domain),
+    )
 }
 
