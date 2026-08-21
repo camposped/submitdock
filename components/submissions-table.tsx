@@ -14,6 +14,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
+import { blockerLabels } from '@/lib/blockers'
 import { eventLabel } from '@/lib/event-labels'
 import type { SubmissionRow } from '@/lib/queries'
 import { cn } from '@/lib/utils'
@@ -147,6 +148,24 @@ export function SubmissionsTable({
                         <ExternalLink className="size-3.5" />
                       </a>
                     </div>
+                    {/*
+                      Why the row is parked, in the space the tier badge used to
+                      take. It matters most on "Your turn": creating three
+                      accounts is one sitting and solving a captcha is another,
+                      and you cannot batch them if every row just says "To do".
+                    */}
+                    {row.submission.state === 'todo' && blockerLabels(row).length > 0 && (
+                      <span className="mt-0.5 flex flex-wrap gap-1">
+                        {blockerLabels(row).map((label) => (
+                          <span
+                            key={label}
+                            className="rounded-full border px-1.5 py-px text-[11px] text-muted-foreground"
+                          >
+                            {label}
+                          </span>
+                        ))}
+                      </span>
+                    )}
                   </TableCell>
 
                   <TableCell>

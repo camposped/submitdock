@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { assetSrc } from '@/lib/asset-src'
+import { blockerLabels } from '@/lib/blockers'
 import { formatDuration } from '@/lib/timing'
 import { Select } from '@/components/ui/select'
 import {
@@ -75,13 +76,9 @@ export function DirectoryDialog({
   const submission = row.submission
   const target = row.submitUrl ?? `https://${row.domain}`
 
-  const blocks = [
-    row.requiresAccount && 'account',
-    row.requiresCaptcha && `captcha${row.captchaVendor ? ` (${row.captchaVendor})` : ''}`,
-    row.requiresPayment && 'payment',
-    row.requiresBacklink && 'reciprocal link',
-    row.thirdPartyForm && 'third party form',
-  ].filter(Boolean) as string[]
+  // Shared with the submissions table, which used to build its own and say it
+  // differently. See lib/blockers.ts.
+  const blocks = blockerLabels(row)
 
   return (
     <Dialog open onOpenChange={(open) => !open && onClose()}>

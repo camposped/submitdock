@@ -6,6 +6,7 @@ import { ScreenEmptyState } from '@/components/screen-empty-state'
 import { SubmissionsTable } from '@/components/submissions-table'
 import { Button } from '@/components/ui/button'
 import { Reveal } from '@/components/ui/reveal'
+import { blockersOf } from '@/lib/blockers'
 import { activeProduct } from '@/lib/product-selection'
 import { listSubmissions, type SubmissionRow } from '@/lib/queries'
 
@@ -22,6 +23,16 @@ const VIEWS: Record<string, (row: SubmissionRow) => boolean> = {
    * do it. Every one of these rows carries a note saying exactly what is left.
    */
   yourTurn: (row) => row.submission.state === 'todo',
+  /*
+   * The same queue split by what it costs you, because the work does not mix.
+   * Creating three accounts is one sitting with a password manager open;
+   * solving a captcha is a different one. A single "Your turn" pile makes you
+   * re-read every note to sort them yourself.
+   */
+  needsAccount: (row) =>
+    row.submission.state === 'todo' && blockersOf(row).includes('account'),
+  needsCaptcha: (row) =>
+    row.submission.state === 'todo' && blockersOf(row).includes('captcha'),
   waiting: (row) => row.submission.state === 'submitted' || row.submission.state === 'verified',
   live: (row) => row.submission.state === 'live',
   confirmed: (row) => Boolean(row.submission.backlinkLive),
@@ -55,6 +66,12 @@ export default async function SubmissionsPage(props: PageProps<'/submissions'>) 
   const tabs: FilterTab[] = [
     { value: '', label: 'All', count: all.length },
     { value: 'yourTurn', label: 'Your turn', count: count('yourTurn'), tone: 'info' },
+    ...(count('needsAccount') > 0
+      ? [{ value: 'needsAccount', label: 'Needs an account', count: count('needsAccount') }]
+      : []),
+    ...(count('needsCaptcha') > 0
+      ? [{ value: 'needsCaptcha', label: 'Needs a captcha', count: count('needsCaptcha') }]
+      : []),
     { value: 'waiting', label: 'Waiting', count: count('waiting'), tone: 'info' },
     { value: 'live', label: 'Live', count: count('live'), tone: 'good' },
     { value: 'confirmed', label: 'Link confirmed', count: count('confirmed'), tone: 'good' },
