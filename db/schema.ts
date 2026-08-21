@@ -145,6 +145,25 @@ export const directories = sqliteTable(
     /** ISO date. */
     lastCheckedAt: text('last_checked_at').notNull(),
     notes: text('notes'),
+    /**
+     * What the agent learned about submitting here, written by the agent and
+     * meant for the next agent.
+     *
+     * It sits beside `notes` rather than inside it because the two have
+     * different owners and different lifetimes: `notes` is Pedro's opinion of
+     * a directory and nothing may overwrite it, while this is a field report
+     * that improves every time someone submits. Same split as `linkRel` and
+     * `submissions.backlinkRel`, and for the same reason: "saashub's /submit
+     * is a decoy, the form is /services/submit, and it asks for competitors"
+     * is worth carrying to the next product, while "this product got in" is
+     * not.
+     *
+     * It ships in `data/catalog.export.json`, so a stranger cloning the repo
+     * inherits the whole crawl's hard won knowledge rather than rediscovering
+     * it one 403 at a time. Keep it about the DIRECTORY: no product names, no
+     * personal data, no credentials. It is published.
+     */
+    playbook: text('playbook'),
   },
   (t) => [
     index('directories_status_idx').on(t.status),

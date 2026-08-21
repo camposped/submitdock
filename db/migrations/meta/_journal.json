@@ -71,6 +71,13 @@
       "when": 1787334128292,
       "tag": "0009_product_socials",
       "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "6",
+      "when": 1787341234059,
+      "tag": "0010_directory_playbook",
+      "breakpoints": true
     }
   ]
 }

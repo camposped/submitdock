@@ -188,8 +188,30 @@ export function DirectorySheet({
               <div className="space-y-1.5">
                 <Label htmlFor="notes">Notes</Label>
                 <Textarea id="notes" name="notes" rows={3} defaultValue={row.notes ?? ''} />
+                <p className="text-xs text-muted-foreground">Yours. Nothing overwrites this.</p>
               </div>
             </section>
+
+            {/*
+              Read only, and deliberately so. This is the agent's field report
+              on the directory, and the way to change it is to submit again and
+              learn something new, not to type over it here. It ships in the
+              committed catalog, so it is also the one thing on this sheet a
+              stranger cloning the repo inherits.
+            */}
+            {row.playbook && (
+              <section className="flex flex-col gap-2 border-t pt-4">
+                <div>
+                  <h3 className="text-sm font-semibold">What the agent learned here</h3>
+                  <p className="text-xs text-muted-foreground">
+                    Written by the agent, carried to your next product, and shipped in the catalog.
+                  </p>
+                </div>
+                <p className="rounded-lg border bg-muted/30 p-3 text-[13px] leading-relaxed whitespace-pre-wrap">
+                  {row.playbook}
+                </p>
+              </section>
+            )}
 
             {productSlug && (
               <section className="flex flex-col gap-3 border-t pt-4">

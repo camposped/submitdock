@@ -93,6 +93,7 @@ second product without being rebuilt.
 | `npm run db:migrate` | apply migrations to `data/submitdock.db` |
 | `npm run import [file]` | load a snapshot; `--catalog slug` files it as a named list |
 | `npm run export` | write the catalog back to `data/catalog.export.json` |
+| `npm run submit -- begin\|done` | record one attempt: the clock, the screenshot, the playbook |
 | `npm run verify [slug]` | check every listing page for a real backlink |
 | `npm run agent -- start "..."` | how the agent reports what it is doing |
 | `npm run seed` | rebuild the catalog from the crawl, needs `SUPAPIN_SEED` |
@@ -113,6 +114,17 @@ checks whether a real link to your product is on it. It knows that:
 
 It also writes back what a directory hands out, so "this one gives dofollow" becomes
 catalog knowledge your next product inherits.
+
+### The catalog gets smarter every campaign
+
+Each directory carries a `playbook`: what the agent learned about submitting
+there, written for whoever submits next. Which URL is the real form, which
+field has an unmarked length limit, whether a captcha passes on its own,
+whether `verify.ts` can even reach the domain.
+
+It is about the site and never about your product, and it ships in the
+committed snapshot. So a clone does not start from zero, and every campaign
+anyone runs makes the list worth more.
 
 ## The catalog is portable, the database is not
 

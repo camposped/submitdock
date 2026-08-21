@@ -23,6 +23,11 @@ import { formatDuration } from '../lib/timing'
  *   npm run submit -- done techinasia.com --product northwind --state todo \
  *     --note "Editorial picks only, not an open directory" --shot /tmp/tia.png
  *
+ * `--note` is about THIS product's attempt and lands on the submission.
+ * `--playbook` is about the DIRECTORY and lands on the catalog, where it gets
+ * exported, committed and read by whoever submits the next product. Two
+ * fields because they have different audiences and different lifetimes.
+ *
  * `begin` and `done` exist as two commands so the clock belongs to the tool.
  * A single command taking --seconds would be asking the agent how long it
  * took, and AGENTS.md is explicit that a result the agent invents is worse
@@ -158,6 +163,7 @@ const durationMs = row.attemptStartedAt
 const shot = flag('shot') ? keepShot(flag('shot')!) : row.screenshotPath
 const listingUrl = flag('listing-url')
 const note = flag('note')
+const playbook = flag('playbook')
 
 db.update(submissions)
   .set({
@@ -175,6 +181,24 @@ db.update(submissions)
   .where(eq(submissions.id, row.id))
   .run()
 
+/*
+ * The playbook is catalog knowledge, so it goes on the directory rather than
+ * the submission, and it is the one column here the agent owns. `notes` on
+ * directories stays Pedro's: an agent overwriting a human's judgement of a
+ * list is exactly the drift the curated columns exist to prevent.
+ */
+if (playbook !== undefined) {
+  db.update(directories)
+    .set({ playbook: playbook || null })
+    .where(eq(directories.domain, domain))
+    .run()
+  logEvent(db, {
+    action: 'directory.playbook',
+    domain,
+    detail: { chars: (playbook || '').length },
+  })
+}
+
 logEvent(db, {
   action: 'submission.done',
   productSlug,
@@ -184,4 +208,8 @@ logEvent(db, {
 })
 
 const timing = durationMs === null ? 'untimed, no begin' : formatDuration(durationMs)
-console.log(`${domain}: ${state}, ${timing}${shot ? ', screenshot kept' : ''}`)
+console.log(
+  `${domain}: ${state}, ${timing}${shot ? ', screenshot kept' : ''}${
+    playbook ? ', playbook saved to the catalog' : ''
+  }`,
+)

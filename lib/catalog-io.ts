@@ -32,6 +32,8 @@ export type CatalogRecord = {
   catalogs?: string[]
   lastCheckedAt: string
   notes: string | null
+  /** What the agent learned about submitting here. See db/schema.ts. */
+  playbook?: string | null
 }
 
 export function toCatalogRecord(row: Directory): CatalogRecord {
@@ -55,6 +57,7 @@ export function toCatalogRecord(row: Directory): CatalogRecord {
     source: row.source,
     lastCheckedAt: row.lastCheckedAt,
     notes: row.notes,
+    playbook: row.playbook,
   }
 }
 
@@ -189,6 +192,7 @@ export function importCatalog(db: Db, records: unknown, into?: ImportInto): Impo
         source: existing ? mergeSources(existing.source, raw.source ?? '') : (raw.source ?? 'import'),
         lastCheckedAt: raw.lastCheckedAt ?? '',
         notes: raw.notes ?? null,
+        playbook: raw.playbook ?? null,
       }
 
       /*

@@ -61,6 +61,36 @@ On macOS, `screencapture -x /tmp/shot.png` writes the current screen to disk.
 An attempt recorded without `begin` is stored as untimed rather than guessed
 at, which is correct: the dashboard names those instead of averaging them in.
 
+## Leave the directory better than you found it
+
+An attempt teaches you things about the DIRECTORY that outlive the product you
+were submitting. Write them down with `--playbook` and the next agent, on the
+next product, starts where you finished.
+
+```bash
+npm run --silent submit -- done saashub.com --product northwind --state live \
+  --shot /tmp/s.png \
+  --note "Claimed an existing listing rather than creating one" \
+  --playbook "/submit is a marketing list of other directories, not the form. The form is /services/submit. Cloudflare blocks verify.ts with a 403, so read the link rel in the browser."
+```
+
+`--note` and `--playbook` are not the same field and the difference matters:
+
+| | goes to | about | audience |
+|---|---|---|---|
+| `--note` | the submission | this product's attempt | Pedro, on this campaign |
+| `--playbook` | the directory | the site itself | the next agent, on the next product |
+
+Worth writing: a submit URL that lies, a field with a hidden length limit, a
+form that clears its file input on error, a captcha that passes on its own, a
+listing that already existed, a required consent with a catch, whether
+`verify.ts` can even reach the domain. Not worth writing: that your submission
+was accepted.
+
+It ships in `data/catalog.export.json` and is **published**, so keep it about
+the site: no product names, no personal data, no credentials. Overwrite freely,
+it is one field per domain and the newest reading wins.
+
 ## A pass
 
 0. Work the catalog Pedro has selected. The prompt names it, and the app is scoped to
@@ -89,7 +119,8 @@ at, which is correct: the dashboard names those instead of averaging them in.
 - **Log an event for anything of consequence** (`db/events.ts`). The Agent Log screen
   and the "What happened" column both read it, and a write with no event is invisible.
 - **Do not touch the curated columns** on `directories`: `tier`, `categories`, `price`
-  and `notes` are Pedro's, not yours.
+  and `notes` are Pedro's, not yours. `playbook` is the one column on that table you
+  do own, and `linkRel` is written by `verify.ts`.
 - **No em dash in anything that reaches the screen**, including notes you write into
   the database. Comma, colon or full stop.
 - A captcha, a social login or a fee is not yours to solve. Leave the row and let it

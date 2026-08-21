@@ -189,6 +189,26 @@ Three columns, and they are not the same thing:
   `submissions.backlinkRel` is one product's result. That split is also why the catalog
   shows `linkRel` and Submissions shows `backlinkRel`.
 
+## What the agent learns about a directory
+
+`directories.playbook` is a field report written by the agent, for the next
+agent, about the SITE rather than about any product.
+
+It exists because `notes` could not hold it. `notes` is Pedro's judgement of a
+list and `AGENTS.md` forbids the agent from touching it, so a lesson like
+"saashub's /submit is a marketing page, the form is /services/submit" had
+nowhere to go and got rediscovered every campaign. Same split as `linkRel`
+against `submissions.backlinkRel`, and the same test: would this still be true
+for a different product? If yes it belongs here, if no it belongs in
+`submissions.notes`.
+
+`npm run submit -- done <domain> --playbook "..."` writes it, the directory
+sheet renders it read only, and it ships in `data/catalog.export.json`. That
+last part is the point and also the constraint: **it is published**, so it
+carries no product names, no personal data and no credentials.
+`tests/playbook.test.ts` guards the round trip, because an import that silently
+dropped the column would cost a clone every lesson the crawl ever learned.
+
 ## The agent, and how the app knows about it
 
 SubmitDock is the copilot seat, not the driver. A coding agent working in this
