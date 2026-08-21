@@ -379,7 +379,7 @@
     "authorityScore": 33,
     "linkRel": null,
     "categories": [],
-    "requiresAccount": false,
+    "requiresAccount": true,
     "requiresCaptcha": false,
     "requiresPayment": false,
     "requiresBacklink": false,
@@ -390,7 +390,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "Not an open form despite what /submit-agent looks like. A newsletter modal covers the page on load, and behind it the form is replaced by a 'Sign In to Continue' gate that redirects to Auth0 universal login, so an account is required. Worth a look at the URL when you get there: the tenant is a dev-prefixed Auth0 tenant serving production traffic. Also note the page sells 'Ecosystem Partner' slots in the sidebar with a spots-left counter, so parts of this directory are paid placement.",
     "catalogs": [
       "catalog-1"
     ]
@@ -1447,7 +1447,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": "Account required, and the signup is a plain three field form: display name, email, password. No verification email arrives at the address you sign up with, and the account sits as 'Alternative.me Pending User' with an 'Unverified Email-Address' badge that 'Resend Verification Email' does not clear. Submission is a modal from the account dashboard, not a public form. Two things will waste your time. The autosaved draft only keeps the name and the icon, so anything typed before the first explicit Save Draft is lost when the modal reopens: press Save Draft early and often. And the Submit button appears enabled, is not disabled, has pointer events, throws no validation error, and still leaves the record sitting in Saved Drafts forever. Their Settings page renders a raw {{ error }} template placeholder, which suggests the silent failure is a bug on their side. Fill it, save the draft, and move on rather than retrying.",
+    "playbook": "Account required. Signup is display name, email, password, and no verification email ever arrives, so the account sits as 'Alternative.me Pending User' with an Unverified Email-Address badge that Resend does not clear. That badge does NOT block submitting. Submission is a modal from the account dashboard, never a public form. The autosaved draft keeps only the name and the icon, so press Save Draft before the modal can close or everything typed is gone. The important one: the Submit button does not respond to a synthetic click. It is not disabled, has pointer events, throws no validation error and logs nothing, it simply leaves the record in Saved Drafts. A human clicking the same button on the same draft submits it instantly, so fill the form, save the draft, and hand the last click to a person rather than burning attempts on it.",
     "catalogs": [
       "catalog-1"
     ]
@@ -3301,16 +3301,16 @@
     ],
     "requiresAccount": false,
     "requiresCaptcha": false,
-    "requiresPayment": false,
+    "requiresPayment": true,
     "requiresBacklink": false,
     "captchaVendor": null,
     "thirdPartyForm": false,
-    "price": null,
+    "price": 497,
     "status": "alive",
     "httpStatus": 0,
     "source": "catalog-2",
     "lastCheckedAt": "",
-    "playbook": "Futurepedia is an AI directory with dofollow backlink It's one of the most popular AI directories and I hear from indiehackers that they get lots of traffic from it futurepedia.io/tool/drlambda.",
+    "playbook": "Paid only, and the price is steep. /submit-tool is a pricing page, not a form: Basic is $247 and shows Sold Out, Verified is $497 one time, Enterprise is custom. The disclosure under the cards says 'By submitting this form and completing your payment', so there is no free path at all. The site is HubSpot Media now, which is likely when the free tier went away, so treat any older note calling this a free dofollow directory as stale.",
     "catalogs": [
       "catalog-2"
     ]
@@ -6067,7 +6067,7 @@
     "httpStatus": 403,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "The friendliest form in this catalog so far. /submit is open, four fields, no account, no captcha, no cookie banner: name, email, Twitter handle, website URL. Worth knowing what it actually is before you spend the slot: Saaspo indexes SaaS website DESIGN, not products, and it files pages by landing, pricing, product and about. So the thing being judged is how your site looks, not what it does, and a plain site will not be featured however good the product. They review by hand and announce picks on X rather than emailing you, so watch there instead of the inbox.",
     "catalogs": [
       "catalog-1"
     ]
@@ -6075,14 +6075,14 @@
   {
     "domain": "saasworthy.com",
     "name": "SaaSworthy",
-    "submitUrl": "http://saasworthy.com/offerings",
+    "submitUrl": "https://www.saasworthy.com/vendorsportal/index.php?r=site/login",
     "tier": "a",
     "authorityScore": 44,
     "linkRel": null,
     "categories": [
       "directories"
     ],
-    "requiresAccount": false,
+    "requiresAccount": true,
     "requiresCaptcha": false,
     "requiresPayment": false,
     "requiresBacklink": false,
@@ -6093,7 +6093,7 @@
     "httpStatus": 403,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
+    "playbook": "The old /offerings and /submit-product paths are wrong. Listing goes through a Vendor Portal at /vendorsportal/index.php?r=site/login, reachable from the 'List Your Product' block on the homepage. Sign in is passwordless: you enter an email and press Get OTP, so an agent that can read the product mailbox can authenticate itself once the account exists. Registration is a separate 'Register Now!' button and needs a human. The site is bot blocked to curl with a 403 but fine in a real browser, and it drops a cookie consent banner with a Decline option.",
     "catalogs": [
       "catalog-1",
       "catalog-2"
@@ -6412,7 +6412,7 @@
     "httpStatus": 403,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
+    "playbook": "Owned by G2. /vendors/ is a sales page, and 'Get Your Product Listed' hands you off to app.g2digitalmarkets.com/get-listed/start, so a listing here is a listing in the G2 Digital Markets network rather than on this site alone. Worth knowing before you spend time: the same handoff catches Capterra and GetApp, which are the other properties in that network.",
     "catalogs": [
       "catalog-1"
     ]
