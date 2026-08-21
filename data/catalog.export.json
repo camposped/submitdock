@@ -1447,7 +1447,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": "Two different how-to pages that are easy to confuse: /how-to/suggest-alternatives/ is for adding alternatives to somebody else's listing, and /how-to/submit-software/ is the one for listing your own. Both dead end without a login: their own text says a user account is required to create new entries, and submission happens from the account dashboard. Nothing can be filled anonymously, so a human has to make the account first.",
+    "playbook": "Account required, and the signup is a plain three field form: display name, email, password. No verification email arrives at the address you sign up with, and the account sits as 'Alternative.me Pending User' with an 'Unverified Email-Address' badge that 'Resend Verification Email' does not clear. Submission is a modal from the account dashboard, not a public form. Two things will waste your time. The autosaved draft only keeps the name and the icon, so anything typed before the first explicit Save Draft is lost when the modal reopens: press Save Draft early and often. And the Submit button appears enabled, is not disabled, has pointer events, throws no validation error, and still leaves the record sitting in Saved Drafts forever. Their Settings page renders a raw {{ error }} template placeholder, which suggests the silent failure is a bug on their side. Fill it, save the draft, and move on rather than retrying.",
     "catalogs": [
       "catalog-1"
     ]
