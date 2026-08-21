@@ -40,7 +40,6 @@ export default async function SocialPage() {
                 name={network.field}
                 label={network.label}
                 defaultValue={product[network.field]}
-                placeholder={network.placeholder}
                 hint={network.hint}
               />
             ))}

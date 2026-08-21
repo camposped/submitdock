@@ -25,7 +25,6 @@ export function KitField({
   label,
   defaultValue,
   hint,
-  placeholder,
   limit,
   multiline,
   rows = 3,
@@ -34,7 +33,6 @@ export function KitField({
   label: string
   defaultValue: string
   hint?: string
-  placeholder?: string
   limit?: number
   multiline?: boolean
   rows?: number
@@ -95,7 +93,6 @@ export function KitField({
           id={name}
           name={name}
           value={value}
-          placeholder={placeholder}
           onChange={(event) => setValue(event.target.value)}
           className={shared}
         />

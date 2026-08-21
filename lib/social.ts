@@ -18,31 +18,28 @@ export type SocialNetwork = {
   label: string
   /** What goes before the handle, including any path segment the network needs. */
   base: string
-  placeholder: string
   hint?: string
 }
 
 export type SocialField = 'x' | 'youtube' | 'instagram' | 'facebook' | 'linkedin' | 'github'
 
 export const SOCIAL_NETWORKS: SocialNetwork[] = [
-  { field: 'x', label: 'X', base: 'https://x.com/', placeholder: 'kometrics' },
+  { field: 'x', label: 'X', base: 'https://x.com/' },
   {
     field: 'youtube',
     label: 'YouTube',
     base: 'https://youtube.com/@',
-    placeholder: 'kometrics',
     hint: 'the @handle, not the channel id',
   },
-  { field: 'instagram', label: 'Instagram', base: 'https://instagram.com/', placeholder: 'kometrics' },
-  { field: 'facebook', label: 'Facebook', base: 'https://facebook.com/', placeholder: 'kometrics' },
+  { field: 'instagram', label: 'Instagram', base: 'https://instagram.com/' },
+  { field: 'facebook', label: 'Facebook', base: 'https://facebook.com/' },
   {
     field: 'linkedin',
     label: 'LinkedIn',
     base: 'https://linkedin.com/company/',
-    placeholder: 'kometrics',
     hint: 'company page, not a person',
   },
-  { field: 'github', label: 'GitHub', base: 'https://github.com/', placeholder: 'camposped' },
+  { field: 'github', label: 'GitHub', base: 'https://github.com/' },
 ]
 
 /**
