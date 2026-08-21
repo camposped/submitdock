@@ -201,7 +201,7 @@ export async function setBacklink(
  * edits two tables at once: the shared catalog row and this product's
  * submission. A missing productSlug just skips the second half.
  */
-export async function saveDirectorySheet(
+export async function saveDirectoryDialog(
   domain: string,
   productSlug: string | null,
   formData: FormData,
@@ -211,12 +211,13 @@ export async function saveDirectorySheet(
     return typeof raw === 'string' ? raw.trim() : ''
   }
 
-  const tier = text('tier')
   const price = Number.parseFloat(text('price').replace(/[^0-9.]/g, ''))
 
   db.update(directories)
     .set({
-      tier: (TIERS as readonly string[]).includes(tier) ? (tier as Tier) : null,
+      // Tier is deliberately absent. The sheet stopped editing it, and a form
+      // that does not send a field would have this write null over Pedro's
+      // grading on every save, one directory at a time.
       categories: JSON.stringify(
         text('categories')
           .split(',')
@@ -233,7 +234,7 @@ export async function saveDirectorySheet(
     action: 'directory.edited',
     actor: 'human',
     domain,
-    detail: { tier: tier || null, price: Number.isFinite(price) ? price : null },
+    detail: { price: Number.isFinite(price) ? price : null },
   })
 
   if (productSlug) {

@@ -2472,8 +2472,8 @@
     "httpStatus": 200,
     "source": "supapin-2025",
     "lastCheckedAt": "2026-08-17",
-    "notes": "/submit redirects to login and then to pricing, so a listing is paid.",
-    "playbook": null,
+    "notes": null,
+    "playbook": "The /submit path redirects to login and then to pricing, so a listing here is paid. Flagged requiresAccount and requiresPayment for that reason, which keeps it out of the ready queue.",
     "catalogs": [
       "supapin-2025"
     ]
@@ -6235,7 +6235,7 @@
     "httpStatus": 403,
     "source": "supapin-2025",
     "lastCheckedAt": "2026-08-17",
-    "notes": "Their /submit is a marketing list of 107 other directories, not the form. The form is /services/submit, and it asks for categories and competitors.",
+    "notes": null,
     "playbook": "The /submit page is their own marketing list of 107 other directories, not a form. The real form is /services/submit. It asks for the site URL first, then either shows a fresh form or, if they already auto created a listing for the domain, offers to verify ownership instead. Verification by email on the product domain logs you straight in and unlocks a Manage panel. From there tagline, description, pricing, logo, screenshots, competitors and categories all save instantly, but the product NAME is moderator gated and only moves through 'suggest changes'. Categories have their own Edit tab that applies at once, and order is weight, so put the narrowest true category first. Competitors matter: whoever you list shows your product as an alternative on their page. Cloudflare fronts the site, so curl and verify.ts both get 403 and the link rel has to be read in a real browser. The main 'Visit website' button carries no rel, so it is dofollow.",
     "catalogs": [
       "notion-backlinks",

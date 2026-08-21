@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Camera, ChevronRight, ExternalLink } from 'lucide-react'
 
-import { DirectorySheet } from '@/components/directory-sheet'
+import { DirectoryDialog } from '@/components/directory-dialog'
 import { BacklinkTag, StateTag } from '@/components/submission-status'
 import { formatDuration } from '@/lib/timing'
 import {
@@ -85,8 +85,16 @@ export function SubmissionsTable({
 
   return (
     <>
+      {/*
+        `table-fixed` is load bearing, not tidiness. With auto layout the
+        browser sizes columns to their content, so one long note in "What
+        happened" widened the table past the card and pushed Took and Sent off
+        the right edge, where they read as missing features rather than as
+        clipped ones. Fixed layout honours the declared widths and makes the
+        flexible column absorb the remainder instead of dictating it.
+      */}
       <div className="overflow-hidden rounded-xl border bg-card">
-        <Table>
+        <Table className="table-fixed">
           <TableHeader>
             <TableRow className="hover:bg-transparent">
               <TableHead className="w-[26%]">Directory</TableHead>
@@ -130,9 +138,6 @@ export function SubmissionsTable({
                         <ExternalLink className="size-3.5" />
                       </a>
                     </div>
-                    {row.tier && (
-                      <span className="text-xs text-muted-foreground">Tier {row.tier.toUpperCase()}</span>
-                    )}
                   </TableCell>
 
                   <TableCell>
@@ -147,7 +152,10 @@ export function SubmissionsTable({
                     />
                   </TableCell>
 
-                  <TableCell>
+                  {/* The clamp only earns its ellipsis if the cell refuses to
+                      grow, otherwise the text runs past the column and gets
+                      cut mid word by the card's edge. */}
+                  <TableCell className="overflow-hidden">
                     <span
                       className={cn(
                         'line-clamp-2 text-[13px]',
@@ -197,7 +205,7 @@ export function SubmissionsTable({
         </Table>
       </div>
 
-      <DirectorySheet
+      <DirectoryDialog
         row={open}
         productSlug={productSlug}
         productName={productName}

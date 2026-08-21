@@ -7,7 +7,7 @@ import { ArrowDown, ChevronRight, ExternalLink, Link2, Link2Off, SearchX } from 
 
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
-import { DirectorySheet } from '@/components/directory-sheet'
+import { DirectoryDialog } from '@/components/directory-dialog'
 import { ScreenEmptyState } from '@/components/screen-empty-state'
 import { BlockSummary, ReachabilityTag } from '@/components/state-badge'
 import { StateTag } from '@/components/submission-status'
@@ -165,7 +165,7 @@ export function CatalogTable({
         </Table>
       </div>
 
-      <DirectorySheet
+      <DirectoryDialog
         row={open}
         productSlug={productSlug}
         productName={productName}

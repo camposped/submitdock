@@ -10,26 +10,19 @@ import { assetSrc } from '@/lib/asset-src'
 import { formatDuration } from '@/lib/timing'
 import { Select } from '@/components/ui/select'
 import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-} from '@/components/ui/sheet'
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog'
 import { Textarea } from '@/components/ui/textarea'
 import { SUBMISSION_STATES } from '@/db/schema'
-import { saveDirectorySheet } from '@/lib/actions'
+import { saveDirectoryDialog } from '@/lib/actions'
 import { parseJsonArray } from '@/lib/domain'
 import type { CatalogRow } from '@/lib/queries'
 import { cn } from '@/lib/utils'
-
-const TIER_OPTIONS = [
-  { value: '', label: 'Ungraded' },
-  { value: 'a', label: 'Tier A' },
-  { value: 'b', label: 'Tier B' },
-  { value: 'c', label: 'Tier C' },
-]
 
 const STATE_OPTIONS = SUBMISSION_STATES.map((state) => ({ value: state, label: state }))
 
@@ -56,11 +49,17 @@ function Fact({ label, children }: { label: string; children: React.ReactNode })
  * One directory, opened from its row.
  *
  * Everything editable about a domain lives here rather than in the table: the
- * catalog is 353 rows and eleven columns of inline inputs was unreadable. The
+ * catalog is 200+ rows and eleven columns of inline inputs was unreadable. The
  * split inside matters, because the two halves have different owners: the top
  * is the shared catalog, the bottom belongs to the selected product only.
+ *
+ * `tier` is deliberately not editable here. It is one person's ungraded
+ * opinion carried by a minority of rows, and putting it beside the crawler's
+ * facts made it read like one. `authorityScore` is the number that sorts the
+ * catalog. Note that `lib/actions.ts` must therefore not write tier either: a
+ * form that stops sending a field would otherwise null it on every save.
  */
-export function DirectorySheet({
+export function DirectoryDialog({
   row,
   productSlug,
   productName,
@@ -85,10 +84,22 @@ export function DirectorySheet({
   ].filter(Boolean) as string[]
 
   return (
-    <Sheet open onOpenChange={(open) => !open && onClose()}>
-      <SheetContent className="flex w-full flex-col gap-0 p-0 sm:max-w-lg">
-        <SheetHeader className="gap-1 border-b">
-          <SheetTitle className="flex items-center gap-2 text-base">
+    <Dialog open onOpenChange={(open) => !open && onClose()}>
+      {/*
+        A modal rather than the side sheet this used to be. The sheet was the
+        wrong shape for what ended up in here: a screenshot of the page the
+        agent finished on, a paragraph of playbook and a paragraph of note. A
+        rail 384px wide turned the picture into a stamp and wrapped every
+        sentence every six words, and it could not be widened, because the
+        primitive pins it with `data-[side=right]:sm:max-w-sm`, a variant class
+        that tailwind-merge does not treat as a conflict.
+
+        Height is capped and the body scrolls, so a long playbook cannot push
+        the save buttons off the bottom of the screen.
+      */}
+      <DialogContent className="flex max-h-[85vh] w-full flex-col gap-0 overflow-hidden p-0 sm:max-w-3xl">
+        <DialogHeader className="gap-1 border-b p-4 text-left">
+          <DialogTitle className="flex items-center gap-2 text-base">
             <span className="min-w-0 truncate">{row.domain}</span>
             <a
               href={target}
@@ -99,16 +110,16 @@ export function DirectorySheet({
             >
               <ExternalLink className="size-4" />
             </a>
-          </SheetTitle>
-          <SheetDescription>
+          </DialogTitle>
+          <DialogDescription>
             {row.name ? `${row.name}. ` : ''}
             {row.submitUrl ? 'Submit form found.' : 'No submit form found yet.'}
-          </SheetDescription>
-        </SheetHeader>
+          </DialogDescription>
+        </DialogHeader>
 
         <form
           action={async (formData) => {
-            await saveDirectorySheet(row.domain, productSlug, formData)
+            await saveDirectoryDialog(row.domain, productSlug, formData)
             onClose()
           }}
           className="flex min-h-0 flex-1 flex-col"
@@ -152,16 +163,6 @@ export function DirectorySheet({
               </div>
 
               <div className="grid gap-3 sm:grid-cols-2">
-                <div className="space-y-1.5">
-                  <Label htmlFor="tier">Tier</Label>
-                  <Select
-                    id="tier"
-                    name="tier"
-                    defaultValue={row.tier ?? ''}
-                    options={TIER_OPTIONS}
-                    aria-label="Tier"
-                  />
-                </div>
                 <div className="space-y-1.5">
                   <Label htmlFor="price">Price (USD)</Label>
                   <Input
@@ -309,14 +310,14 @@ export function DirectorySheet({
             )}
           </div>
 
-          <SheetFooter className="flex-row justify-end gap-2 border-t">
+          <DialogFooter className="flex-row justify-end gap-2 border-t p-4">
             <Button type="button" variant="outline" onClick={onClose}>
               Cancel
             </Button>
             <SaveButton />
-          </SheetFooter>
+          </DialogFooter>
         </form>
-      </SheetContent>
-    </Sheet>
+      </DialogContent>
+    </Dialog>
   )
 }
