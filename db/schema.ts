@@ -182,8 +182,21 @@ export const products = sqliteTable('products', {
   /** JSON array of strings. */
   screenshots: text('screenshots').notNull().default('[]'),
   pricing: text('pricing').notNull().default(''),
+  /*
+   * Social profiles, stored as the handle rather than the URL.
+   *
+   * Directory forms are split roughly down the middle on which one they want,
+   * and a handle is the half you cannot derive the other way: "kometrics" gives
+   * you every URL, while a URL has to be parsed back and each network spells
+   * its path differently. So the field normalises whatever gets pasted into a
+   * handle, and `lib/social.ts` builds the URL when a form wants one.
+   */
   x: text('x').notNull().default(''),
   github: text('github').notNull().default(''),
+  youtube: text('youtube').notNull().default(''),
+  instagram: text('instagram').notNull().default(''),
+  facebook: text('facebook').notNull().default(''),
+  linkedin: text('linkedin').notNull().default(''),
 })
 
 /**

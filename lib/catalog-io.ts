@@ -231,6 +231,22 @@ export function importCatalog(db: Db, records: unknown, into?: ImportInto): Impo
         for (const key of Object.keys(values) as (keyof typeof values)[]) {
           if (key === 'domain' || key === 'source') continue
           const incoming = values[key]
+
+          /*
+           * A blocker flag may switch on, never off.
+           *
+           * These columns are `notNull().default(false)`, so a false means
+           * "nobody said otherwise", not "we checked and it is open". A
+           * curator saying a site needs an account is real information and
+           * has to be able to beat that default, or Facebook and LinkedIn sit
+           * in the ready queue looking like free wins. The reverse is not
+           * true: nothing gets to clear a blocker somebody recorded.
+           */
+          if (incoming === true && existing[key] === false) {
+            fills[key] = true
+            continue
+          }
+
           const isEmpty =
             existing[key] === null || existing[key] === '' || existing[key] === '[]'
           const brings =

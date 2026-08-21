@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { IdCard, Images, Palette } from 'lucide-react'
+import { AtSign, IdCard, Images, Palette } from 'lucide-react'
 
 import { MobileRailPicker } from '@/components/mobile-rail-picker'
 import { cn } from '@/lib/utils'
@@ -13,6 +13,7 @@ export const PRODUCT_SECTIONS = [
   { slug: 'branding', title: 'Branding', icon: Palette },
   { slug: 'screenshots', title: 'Screenshots', icon: Images },
   { slug: 'identity', title: 'Identity', icon: IdCard },
+  { slug: 'social', title: 'Social', icon: AtSign },
 ] as const
 
 /** The kit's secondary rail, mirroring the boilerplate's settings one. */

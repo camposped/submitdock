@@ -26,6 +26,7 @@ import {
 } from '@/db/schema'
 import { CATALOG_COOKIE } from '@/lib/catalog-selection'
 import { PRODUCT_COOKIE } from '@/lib/product-selection'
+import { toHandle } from '@/lib/social'
 
 export async function selectCatalog(slug: string) {
   const store = await cookies()
@@ -292,15 +293,26 @@ const PRODUCT_TEXT_FIELDS = [
   'descriptionMedium',
   'descriptionLong',
   'pricing',
-  'x',
-  'github',
 ] as const
+
+/**
+ * Saved as handles, not as whatever was pasted.
+ *
+ * People paste the URL as often as the handle, and both have to end up the
+ * same, or half the kit reads "https://x.com/kometrics" and the other half
+ * "kometrics" and every form gets the wrong one.
+ */
+const PRODUCT_SOCIAL_FIELDS = ['x', 'github', 'youtube', 'instagram', 'facebook', 'linkedin'] as const
 
 export async function updateProduct(slug: string, formData: FormData) {
   const values: Record<string, string> = {}
   for (const field of PRODUCT_TEXT_FIELDS) {
     const raw = formData.get(field)
     if (typeof raw === 'string') values[field] = raw.trim()
+  }
+  for (const field of PRODUCT_SOCIAL_FIELDS) {
+    const raw = formData.get(field)
+    if (typeof raw === 'string') values[field] = toHandle(raw)
   }
 
   const listToJson = (raw: FormDataEntryValue | null) =>

@@ -69,13 +69,14 @@
  {
   "domain": "facebook.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://www.facebook.com/pages/creation",
   "categories": [
    "foundational"
   ],
   "linkRel": null,
   "notes": "A facebook company page is called \"facebook page\" and is different from a \"facebook profile\". It's visible for everyone (even when not logged in) Example URL: https://www.facebook.com/magicspace.agency Submit URL\u2795: https://www.facebook.com/pages/creation",
-  "source": "notion-backlinks"
+  "source": "notion-backlinks",
+  "requiresAccount": true
  },
  {
   "domain": "list.ly",
@@ -135,7 +136,7 @@
  {
   "domain": "saasworthy.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://mailchi.mp/caea48b0c7ac/saasworthy-product-listing",
   "categories": [
    "directories"
   ],
@@ -157,7 +158,7 @@
  {
   "domain": "gust.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://gust.com/founder_onboarding",
   "categories": [
    "directories"
   ],
@@ -201,13 +202,14 @@
  {
   "domain": "pinterest.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://www.pinterest.ch/business/create/",
   "categories": [
    "foundational"
   ],
   "linkRel": null,
   "notes": "Pinterest is more a DYI / lifestyle platform. Not the typical place for SaaS products. But SEO experts recommend to include it into your \"foundational links\" Example URL: https://www.pinterest.com/backlio/ Submit URL\u2795: https://www.pinterest.ch/business/create/",
-  "source": "notion-backlinks"
+  "source": "notion-backlinks",
+  "requiresAccount": true
  },
  {
   "domain": "devpost.com",
@@ -235,7 +237,7 @@
  {
   "domain": "theresanaiforthat.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://theresanaiforthat.com/get-featured/",
   "categories": [
    "directories",
    "AI focussed products"
@@ -258,7 +260,7 @@
  {
   "domain": "libhunt.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://www.libhunt.com/repo/submit",
   "categories": [
    "directories",
    "open source"
@@ -281,7 +283,7 @@
  {
   "domain": "sideprojectors.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://www.sideprojectors.com",
   "categories": [
    "directories"
   ],
@@ -326,7 +328,7 @@
  {
   "domain": "landingfolio.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://www.landingfolio.com/submit",
   "categories": [
    "directories"
   ],
@@ -370,7 +372,7 @@
  {
   "domain": "airtable.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://airtable.com/developers/extensions/guides/getting-started",
   "categories": [
    "app stores"
   ],
@@ -449,7 +451,7 @@
  {
   "domain": "pitchwall.co",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://pitchwall.co/product/submit",
   "categories": [
    "directories"
   ],
@@ -460,7 +462,7 @@
  {
   "domain": "tinyalternatives.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://www.tinyalternatives.com/submit",
   "categories": [
    "directories"
   ],
@@ -482,7 +484,7 @@
  {
   "domain": "futurepedia.io",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://www.futurepedia.io/submit-tool",
   "categories": [
    "directories",
    "AI focussed products"
@@ -619,13 +621,14 @@
  {
   "domain": "instagram.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://business.instagram.com/getting-started",
   "categories": [
    "foundational"
   ],
   "linkRel": null,
   "notes": "Start with a fresh account: https://www.instagram.com/accounts/emailsignup/ Turn it into a business account: https://www.instagram.com/accounts/account_type_and_tools/ The website link can only be set on mobile Submit URL\u2795: https://business.instagram.com/getting-started",
-  "source": "notion-backlinks"
+  "source": "notion-backlinks",
+  "requiresAccount": true
  },
  {
   "domain": "webcatalog.io",
@@ -641,7 +644,7 @@
  {
   "domain": "read.cv",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://read.cv/explore",
   "categories": [
    "directories"
   ],
@@ -652,18 +655,19 @@
  {
   "domain": "linkedin.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://www.linkedin.com/company/setup/new/",
   "categories": [
    "foundational"
   ],
   "linkRel": null,
   "notes": "Setting up a linkedin company page takes 2-3 minutes. It doesn't give backlinks but it's taken up by many aggregators (e.g. getlatka.com) For side builders who don't want their employer to know about their side project: Don't worry, it won't show up in your profile. LinkedIn, of course is it's own marketing channel Example URL: https://www.linkedin.com/company/senjaio/ Submit URL\u2795: https://www.lin",
-  "source": "notion-backlinks"
+  "source": "notion-backlinks",
+  "requiresAccount": true
  },
  {
   "domain": "freestuff.dev",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://github.com/hilmanski/freeStuffDev?tab=readme-ov-file#contribute",
   "categories": [
    "directories",
    "developer oriented builders"
@@ -697,7 +701,7 @@
  {
   "domain": "magnitt.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://magnitt.com/startups/add",
   "categories": [
    "directories",
    "builders who seek investors"
@@ -731,13 +735,14 @@
  {
   "domain": "crunchbase.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://www.crunchbase.com/add-new",
   "categories": [
    "foundational"
   ],
   "linkRel": null,
   "notes": "Crunchbase somehow became the \"official\" directory for startups. I've seen many aggregators take this info and display it on their site. I found that basically every successful indiehacker is listed here. Example URL: https://www.crunchbase.com/organization/appliku Submit URL\u2795: https://www.crunchbase.com/add-new Notion link strength 25.",
-  "source": "notion-backlinks"
+  "source": "notion-backlinks",
+  "requiresAccount": true
  },
  {
   "domain": "advanced-innovation.io",
@@ -787,7 +792,7 @@
  {
   "domain": "unita.co",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://unita.co/add-community/",
   "categories": [
    "directories",
    "community builders"
@@ -821,13 +826,14 @@
  {
   "domain": "business.google.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://business.google.com/create",
   "categories": [
    "foundational"
   ],
   "linkRel": null,
   "notes": "Your profile appears when people search for your domain name. And if you wish you will be shown on Google Maps. In the process you can also claim 400$ ads credits. Indoubtly a foundational link. Submit URL\u2795: https://business.google.com/create",
-  "source": "notion-backlinks"
+  "source": "notion-backlinks",
+  "requiresAccount": true
  },
  {
   "domain": "medium.com",
@@ -912,7 +918,7 @@
  {
   "domain": "starterstory.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://www.starterstory.com/share",
   "categories": [
    "directories"
   ],
@@ -923,7 +929,7 @@
  {
   "domain": "linktr.ee",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://linktr.ee/register/select-plan",
   "categories": [
    "directories"
   ],
@@ -957,7 +963,7 @@
  {
   "domain": "bento.me",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "http://bento.me/signup",
   "categories": [
    "directories"
   ],
@@ -968,13 +974,14 @@
  {
   "domain": "twitter.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://x.com/signup",
   "categories": [
    "foundational"
   ],
   "linkRel": null,
   "notes": "Opening a separate twitter account for your startup makes sense already for mentioning your startup in your posts (I believe links in posts still hurt visibility). Takes 2 minutes to set up and you can link it in many directories. Example URL: https://twitter.com/ScreenshotOneHQ Submit URL\u2795: https://x.com/signup",
-  "source": "notion-backlinks"
+  "source": "notion-backlinks",
+  "requiresAccount": true
  },
  {
   "domain": "startuptile.com",
@@ -1024,7 +1031,7 @@
  {
   "domain": "thehiveindex.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://thehiveindex.com/submit/",
   "categories": [
    "directories",
    "community builders"
@@ -1070,7 +1077,7 @@
  {
   "domain": "yourstory.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://form.jotform.com/232627613591458",
   "categories": [
    "directories"
   ],
@@ -1081,7 +1088,7 @@
  {
   "domain": "softwareworld.co",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://www.softwareworld.co/get-listed/",
   "categories": [
    "nofollow but recommended"
   ],
@@ -1125,7 +1132,7 @@
  {
   "domain": "producthunt.com",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://www.producthunt.com/posts/new",
   "categories": [
    "community"
   ],
@@ -1169,7 +1176,7 @@
  {
   "domain": "bio.site",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://biosites.com/editor",
   "categories": [
    "directories"
   ],
@@ -1204,7 +1211,7 @@
  {
   "domain": "opentools.ai",
   "name": null,
-  "submitUrl": null,
+  "submitUrl": "https://opentoolsai.gumroad.com/l/opentools",
   "categories": [
    "directories",
    "ai focussed products"

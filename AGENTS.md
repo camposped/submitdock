@@ -69,8 +69,9 @@ at, which is correct: the dashboard names those instead of averaging them in.
 1. Read the catalog for what to take next. Filter to alive, has a form, nothing
    blocking, untouched. It is ranked by Authority Score, so work down from the top.
 2. Read the Product Kit for the answers: descriptions in three lengths, four brand
-   files, screenshots. The asset columns hold absolute paths, which is what a file
-   upload dialog needs.
+   files, screenshots, and the social profiles. The asset columns hold absolute paths,
+   which is what a file upload dialog needs. Socials are stored as handles; the Social
+   tab shows the URL beside each one, so paste whichever the form asks for.
 3. Open the directory in Chrome, fill the form, submit.
 4. Write the result with `submit done`: the state, the listing URL if the directory
    gave you one, and the screenshot of where you ended up.

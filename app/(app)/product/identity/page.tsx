@@ -56,10 +56,6 @@ export default async function IdentityPage() {
               hint="comma separated"
             />
             <KitField name="pricing" label="Pricing" defaultValue={product.pricing} />
-            <div className="grid gap-4 sm:grid-cols-2">
-              <KitField name="x" label="X" defaultValue={product.x} />
-              <KitField name="github" label="GitHub" defaultValue={product.github} />
-            </div>
           </CardContent>
         </Card>
 

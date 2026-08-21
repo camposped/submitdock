@@ -264,6 +264,20 @@ Colour is `components/submission-status.tsx` and nothing else defines it. Only t
 outcomes get a tone: confirmed (good), failed (bad), in flight (info). Everything else
 is neutral, so a screen of forty rows shows the handful worth reading.
 
+## Social profiles
+
+Their own tab in the kit, and stored as **handles, never URLs**.
+
+Directory forms are split roughly down the middle on which one they want, and the
+handle is the half you cannot work backwards to: every network spells its path
+differently, and LinkedIn's company page and a person's profile live at different ones,
+so a URL pasted into the wrong field points at nothing. `lib/social.ts` normalises
+whatever gets pasted, a bare handle, an `@handle`, a full URL with a share parameter,
+down to the handle, and derives the URL for the forms that want one.
+
+X and GitHub moved here out of Identity. They are the same kind of field as the other
+four, and a form asking for two of them would otherwise send you to two tabs.
+
 ## Product assets
 
 `products` carries four brand slots plus a screenshot gallery, all holding **absolute
