@@ -167,7 +167,7 @@ export function ProductSwitcher({
                 name="name"
                 autoFocus
                 required
-                placeholder="Templated"
+                placeholder="Acme App"
                 autoComplete="off"
               />
             </div>
@@ -177,7 +177,7 @@ export function ProductSwitcher({
                 id="new-product-slug"
                 name="slug"
                 required
-                placeholder="templated"
+                placeholder="acme-app"
                 autoComplete="off"
               />
               <p className="text-xs text-muted-foreground">

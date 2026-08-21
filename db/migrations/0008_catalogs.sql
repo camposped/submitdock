@@ -20,11 +20,11 @@ CREATE TABLE `catalogs` (
 -- and a list is a thing you can add, name and point at a URL.
 INSERT INTO `catalogs` (`slug`, `name`, `description`, `source_url`)
 VALUES (
-  'supapin-2025',
-  'Supapin 2025 crawl',
+  'catalog-1',
+  'Catalog 1',
   'A crawl of the directories a paid submission service used, with reachability, submit URLs and blocker flags.',
   NULL
 );
 --> statement-breakpoint
 INSERT INTO `catalog_domains` (`catalog_slug`, `domain`)
-SELECT 'supapin-2025', `domain` FROM `directories`;
+SELECT 'catalog-1', `domain` FROM `directories`;

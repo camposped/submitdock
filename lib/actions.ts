@@ -216,7 +216,7 @@ export async function saveDirectoryDialog(
   db.update(directories)
     .set({
       // Tier is deliberately absent. The sheet stopped editing it, and a form
-      // that does not send a field would have this write null over Pedro's
+      // that does not send a field would have this write null over the operator's
       // grading on every save, one directory at a time.
       categories: JSON.stringify(
         text('categories')
@@ -300,8 +300,8 @@ const PRODUCT_TEXT_FIELDS = [
  * Saved as handles, not as whatever was pasted.
  *
  * People paste the URL as often as the handle, and both have to end up the
- * same, or half the kit reads "https://x.com/kometrics" and the other half
- * "kometrics" and every form gets the wrong one.
+ * same, or half the kit reads "https://x.com/acmeapp" and the other half
+ * "acmeapp" and every form gets the wrong one.
  */
 const PRODUCT_SOCIAL_FIELDS = ['x', 'github', 'youtube', 'instagram', 'facebook', 'linkedin'] as const
 

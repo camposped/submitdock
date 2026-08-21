@@ -31,8 +31,17 @@ export type CatalogRecord = {
   /** Slugs of every list that names this domain. */
   catalogs?: string[]
   lastCheckedAt: string
-  notes: string | null
-  /** What the agent learned about submitting here. See db/schema.ts. */
+  /**
+   * What the agent learned about submitting here. See db/schema.ts.
+   *
+   * `notes` is deliberately NOT in this shape. It is the curator's private
+   * field, the one the dialog labels "Yours", and a private field that ships
+   * in a public snapshot is a contradiction that leaks sooner or later. It
+   * leaked here: an imported list carried its author's own scoring vocabulary
+   * and the URLs of listings they had already won. Anything about a directory
+   * that is worth publishing belongs in `playbook`, which is written to be
+   * read by strangers.
+   */
   playbook?: string | null
 }
 
@@ -56,7 +65,6 @@ export function toCatalogRecord(row: Directory): CatalogRecord {
     httpStatus: row.httpStatus,
     source: row.source,
     lastCheckedAt: row.lastCheckedAt,
-    notes: row.notes,
     playbook: row.playbook,
   }
 }
@@ -129,9 +137,21 @@ export type ImportInto = {
  * catalog rather than being dropped: a name is recoverable, a membership is
  * not.
  */
+/**
+ * A slug is not a name. The snapshot carries membership but no catalog
+ * metadata, so a fresh clone would otherwise show "catalog-1" in the switcher
+ * where a person expects "Catalog 1".
+ */
+function titleize(slug: string): string {
+  return slug
+    .split('-')
+    .map((part) => (/^\d+$/.test(part) ? part : part.charAt(0).toUpperCase() + part.slice(1)))
+    .join(' ')
+}
+
 function fileDeclared(raw: CatalogRecord, domain: string, tx: Parameters<Parameters<Db['transaction']>[0]>[0]) {
   for (const slug of raw.catalogs ?? []) {
-    tx.insert(catalogs).values({ slug, name: slug }).onConflictDoNothing().run()
+    tx.insert(catalogs).values({ slug, name: titleize(slug) }).onConflictDoNothing().run()
     tx.insert(catalogDomains).values({ catalogSlug: slug, domain }).onConflictDoNothing().run()
   }
 }
@@ -191,7 +211,6 @@ export function importCatalog(db: Db, records: unknown, into?: ImportInto): Impo
         httpStatus: typeof raw.httpStatus === 'number' ? raw.httpStatus : 0,
         source: existing ? mergeSources(existing.source, raw.source ?? '') : (raw.source ?? 'import'),
         lastCheckedAt: raw.lastCheckedAt ?? '',
-        notes: raw.notes ?? null,
         playbook: raw.playbook ?? null,
       }
 

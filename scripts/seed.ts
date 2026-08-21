@@ -6,7 +6,7 @@ import { openDb } from '../db/connect'
 import { logEvent } from '../db/events'
 import { directories } from '../db/schema'
 import {
-  SOURCE_SUPAPIN,
+  SOURCE_CRAWL,
   parseSeedFile,
   upsertDirectories,
   type UpsertStats,
@@ -18,9 +18,9 @@ import {
  * the same 353 domains from the committed snapshot. This script exists for
  * rebuilding the catalog from its sources.
  */
-const SUPAPIN_JSON = process.env.SUPAPIN_SEED ?? ''
+const CRAWL_JSON = process.env.CRAWL_SEED ?? ''
 
-const SUPAPIN_SEED_AVAILABLE = Boolean(SUPAPIN_JSON) && existsSync(SUPAPIN_JSON)
+const CRAWL_SEED_AVAILABLE = Boolean(CRAWL_JSON) && existsSync(CRAWL_JSON)
 
 function report(label: string, stats: UpsertStats) {
   console.log(
@@ -36,16 +36,16 @@ async function main() {
 
   console.log('seeding catalog')
 
-  // Source 1: a crawl of the domains a paid service submitted Supapin to.
+  // Source 1: a crawl of the domains a paid service a paid service submitted products to.
   // Skipped when the file is not around, which is the normal case for a clone.
-  let supapin: UpsertStats | null = null
-  if (SUPAPIN_SEED_AVAILABLE) {
-    const supapinRows = parseSeedFile(JSON.parse(readFileSync(SUPAPIN_JSON, 'utf8')))
-    supapin = upsertDirectories(db, SOURCE_SUPAPIN, supapinRows, { crawled: true })
-    report(SOURCE_SUPAPIN, supapin)
-    logEvent(db, { action: 'seed.source', detail: { ...supapin, insertedDomains: undefined } })
+  let crawlStats: UpsertStats | null = null
+  if (CRAWL_SEED_AVAILABLE) {
+    const crawlRows = parseSeedFile(JSON.parse(readFileSync(CRAWL_JSON, 'utf8')))
+    crawlStats = upsertDirectories(db, SOURCE_CRAWL, crawlRows, { crawled: true })
+    report(SOURCE_CRAWL, crawlStats)
+    logEvent(db, { action: 'seed.source', detail: { ...crawlStats, insertedDomains: undefined } })
   } else {
-    console.log(`  ${SOURCE_SUPAPIN.padEnd(14)} skipped, set SUPAPIN_SEED to a crawl file`)
+    console.log(`  ${SOURCE_CRAWL.padEnd(14)} skipped, set CRAWL_SEED to a crawl file`)
     console.log('  (npm run import loads the same domains from data/catalog.export.json)')
   }
 
@@ -65,7 +65,7 @@ async function main() {
     action: 'seed.done',
     detail: {
       total,
-      supapin: supapin ? { inserted: supapin.inserted, updated: supapin.updated } : 'skipped',
+      crawlStats: crawlStats ? { inserted: crawlStats.inserted, updated: crawlStats.updated } : 'skipped',
     },
   })
 }

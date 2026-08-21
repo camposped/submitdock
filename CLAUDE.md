@@ -9,10 +9,19 @@ Nothing machine-specific may be committed. Two rules keep it that way:
 - The database is gitignored; only `data/catalog.export.json` is tracked.
 - Anything personal lives in a gitignored `*.local.json` twin with a committed
   `*.example.json` showing the shape. `scripts/seed-products.ts` is the pattern.
+- **`directories.notes` never leaves the machine.** It is the operator's private
+  field, the one the dialog labels "Yours", and `lib/catalog-io.ts` deliberately
+  omits it from `CatalogRecord`. It leaked once: an imported list carried its
+  author's own scoring vocabulary and the URLs of listings they had already won,
+  straight into the public snapshot. Anything about a directory worth publishing
+  goes in `playbook`, which is written to be read by strangers.
+- Catalogs are named `catalog-1`, `catalog-2`. A list's provenance is the
+  curator's business, not the repo's, and a slug naming a company is a leak
+  waiting to be committed.
 
 The test suite must pass on a fresh clone. `tests/seed.test.ts` proves the merge rules
 against an in-repo fixture for exactly that reason; only the suite asserting the real
-crawl's exact counts is gated behind `SUPAPIN_SEED`, because that file is not here.
+crawl's exact counts is gated behind `CRAWL_SEED`, because that file is not here.
 
 The marketing site lives in a separate private repo and is not part of this one.
 
@@ -172,8 +181,10 @@ reachable in one click.
 Three columns, and they are not the same thing:
 
 - **`tier`** is my own opinion, a/b/c, with no rubric behind it. It came from the
-  original brief and only 33 rows carry one, all from the supapin crawl. Treat it as an
-  override, not as data.
+  original brief and only 33 rows carry one, all from the crawl. Treat it as an
+  override, not as data. It is no longer editable in the UI, and `lib/actions.ts`
+  deliberately does not write it: a form that stopped sending the field would
+  otherwise null the grading on every save.
 - **`authorityScore`** is Semrush Authority Score, 0 to 100, third party authority.
   Objective, and the reason tier can stay an override. It replaced Ahrefs Domain
   Rating, and the two are **not interchangeable**: producthunt.com reads 89 as DR and
@@ -194,7 +205,7 @@ Three columns, and they are not the same thing:
 `directories.playbook` is a field report written by the agent, for the next
 agent, about the SITE rather than about any product.
 
-It exists because `notes` could not hold it. `notes` is Pedro's judgement of a
+It exists because `notes` could not hold it. `notes` is the operator's own judgement of a
 list and `AGENTS.md` forbids the agent from touching it, so a lesson like
 "saashub's /submit is a marketing page, the form is /services/submit" had
 nowhere to go and got rediscovered every campaign. Same split as `linkRel`

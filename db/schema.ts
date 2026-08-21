@@ -150,7 +150,7 @@ export const directories = sqliteTable(
      * meant for the next agent.
      *
      * It sits beside `notes` rather than inside it because the two have
-     * different owners and different lifetimes: `notes` is Pedro's opinion of
+     * different owners and different lifetimes: `notes` is the operator's own opinion of
      * a directory and nothing may overwrite it, while this is a field report
      * that improves every time someone submits. Same split as `linkRel` and
      * `submissions.backlinkRel`, and for the same reason: "saashub's /submit
@@ -205,7 +205,7 @@ export const products = sqliteTable('products', {
    * Social profiles, stored as the handle rather than the URL.
    *
    * Directory forms are split roughly down the middle on which one they want,
-   * and a handle is the half you cannot derive the other way: "kometrics" gives
+   * and a handle is the half you cannot derive the other way: "acmeapp" gives
    * you every URL, while a URL has to be parsed back and each network spells
    * its path differently. So the field normalises whatever gets pasted into a
    * handle, and `lib/social.ts` builds the URL when a form wants one.

@@ -6,7 +6,7 @@ import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { directories } from '@/db/schema'
 import { normalizeDomain } from '@/lib/domain'
 import {
-  SOURCE_SUPAPIN,
+  SOURCE_CRAWL,
   parseSeedFile,
   upsertDirectories,
   type CatalogRow,
@@ -20,14 +20,14 @@ import { makeTestDb } from './helpers'
  * below, on a fresh clone, because those are the rules worth protecting: a
  * clone that cannot test idempotence is a clone that can lose your curation.
  *
- * Point SUPAPIN_SEED at a crawl file to run the counts too.
+ * Point CRAWL_SEED at a crawl file to run the counts too.
  */
-const SUPAPIN_JSON = process.env.SUPAPIN_SEED ?? ''
-const hasSupapin = Boolean(SUPAPIN_JSON) && existsSync(SUPAPIN_JSON)
-const describeSupapin = hasSupapin ? describe : describe.skip
+const CRAWL_JSON = process.env.CRAWL_SEED ?? ''
+const hasCrawl = Boolean(CRAWL_JSON) && existsSync(CRAWL_JSON)
+const describeCrawl = hasCrawl ? describe : describe.skip
 
 /** Loaded lazily: describe.skip still runs its callback during collection. */
-const supapinFile = () => parseSeedFile(JSON.parse(readFileSync(SUPAPIN_JSON, 'utf8')))
+const crawlFile = () => parseSeedFile(JSON.parse(readFileSync(CRAWL_JSON, 'utf8')))
 
 /**
  * A crawl in miniature, in the shape the real file has. One of everything the
@@ -141,9 +141,9 @@ describe('parsing a crawl file', () => {
   })
 })
 
-describeSupapin('the real crawl file', () => {
+describeCrawl('the real crawl file', () => {
   it('keeps the 237 reachable domains and flattens the requires object', () => {
-    const rows = supapinFile()
+    const rows = crawlFile()
     // 251 in the file, minus the 14 it reports as dead.
     expect(rows).toHaveLength(237)
     expect(rows.filter((r) => r.status === 'alive')).toHaveLength(217)
@@ -162,10 +162,10 @@ describe('seeding a crawled source', () => {
   const rows = CRAWLED
 
   it('is idempotent: a second run inserts nothing and changes nothing', () => {
-    const first = upsertDirectories(harness.db, SOURCE_SUPAPIN, rows, { crawled: true })
+    const first = upsertDirectories(harness.db, SOURCE_CRAWL, rows, { crawled: true })
     expect(first.inserted).toBe(rows.length)
 
-    const second = upsertDirectories(harness.db, SOURCE_SUPAPIN, rows, { crawled: true })
+    const second = upsertDirectories(harness.db, SOURCE_CRAWL, rows, { crawled: true })
     expect(second.inserted).toBe(0)
     expect(second.updated).toBe(0)
     expect(second.unchanged).toBe(rows.length)
@@ -174,7 +174,7 @@ describe('seeding a crawled source', () => {
   })
 
   it('never overwrites my curation on a re-run', () => {
-    upsertDirectories(harness.db, SOURCE_SUPAPIN, rows, { crawled: true })
+    upsertDirectories(harness.db, SOURCE_CRAWL, rows, { crawled: true })
 
     const curated = rows.find((r) => r.tier === 'a')!.domain
     harness.db
@@ -188,7 +188,7 @@ describe('seeding a crawled source', () => {
       .where(eq(directories.domain, curated))
       .run()
 
-    upsertDirectories(harness.db, SOURCE_SUPAPIN, rows, { crawled: true })
+    upsertDirectories(harness.db, SOURCE_CRAWL, rows, { crawled: true })
 
     const [after] = harness.db.select().from(directories).where(eq(directories.domain, curated)).all()
     expect(after.tier).toBe('c')
@@ -198,7 +198,7 @@ describe('seeding a crawled source', () => {
   })
 
   it('does not delete a submitUrl found later when the crawl found none', () => {
-    upsertDirectories(harness.db, SOURCE_SUPAPIN, rows, { crawled: true })
+    upsertDirectories(harness.db, SOURCE_CRAWL, rows, { crawled: true })
 
     const blind = rows.find((r) => !r.submitUrl)!.domain
     harness.db
@@ -207,7 +207,7 @@ describe('seeding a crawled source', () => {
       .where(eq(directories.domain, blind))
       .run()
 
-    upsertDirectories(harness.db, SOURCE_SUPAPIN, rows, { crawled: true })
+    upsertDirectories(harness.db, SOURCE_CRAWL, rows, { crawled: true })
 
     const [after] = harness.db.select().from(directories).where(eq(directories.domain, blind)).all()
     expect(after.submitUrl).toBe('https://example.com/submit')

@@ -71,6 +71,13 @@ A catalog is membership, not a copy. A domain two lists share keeps one row of f
 so an overlapping import costs almost nothing and the authority score you already have
 is never blanked by a list that only carried domains.
 
+The two that ship are `catalog-1` and `catalog-2`. Deliberately plain: whose list a
+catalog came from is that curator's business, not something to bake into a public slug.
+
+Your own notes on a directory stay on your machine. `directories.notes` is never
+exported, so an imported list's private annotations cannot ride along into a snapshot
+you commit. What is worth publishing about a directory goes in its `playbook`.
+
 ## The model
 
 | | |
@@ -96,7 +103,7 @@ second product without being rebuilt.
 | `npm run submit -- begin\|done` | record one attempt: the clock, the screenshot, the playbook |
 | `npm run verify [slug]` | check every listing page for a real backlink |
 | `npm run agent -- start "..."` | how the agent reports what it is doing |
-| `npm run seed` | rebuild the catalog from the crawl, needs `SUPAPIN_SEED` |
+| `npm run seed` | rebuild the catalog from the crawl, needs `CRAWL_SEED` |
 | `npm run authority` | write Semrush Authority Score onto the catalog |
 | `npm test` | the seed and verify suites |
 

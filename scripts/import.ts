@@ -47,12 +47,26 @@ if (!existsSync(IN)) {
  * than an empty switcher and a screen scoped to nothing.
  */
 const SHIPPED = {
-  slug: 'supapin-2025',
-  name: 'Supapin 2025 crawl',
+  slug: 'catalog-1',
+  name: 'Catalog 1',
   description:
     'A crawl of the directories a paid submission service used, with reachability, submit URLs and blocker flags.',
   sourceUrl: null,
 }
+
+const parsed = JSON.parse(readFileSync(IN, 'utf8'))
+
+/**
+ * A snapshot that already says which lists each domain belongs to is telling
+ * the truth, and `into` would overrule it: every record would be filed into
+ * one catalog and the real membership lost. That is not hypothetical, it
+ * happened, and only the committed snapshot made it recoverable.
+ *
+ * So the shipped default is a fallback for a file that declares nothing, not
+ * a default that overwrites a file that does.
+ */
+const declaresMembership =
+  Array.isArray(parsed) && parsed.some((r) => Array.isArray(r?.catalogs) && r.catalogs.length > 0)
 
 const slug = flag('catalog')?.trim()
 const into = slug
@@ -62,12 +76,12 @@ const into = slug
       description: flag('description')?.trim() || '',
       sourceUrl: flag('url')?.trim() || null,
     }
-  : positional
+  : positional || declaresMembership
     ? undefined
     : SHIPPED
 
 const db = openDb()
-const stats = importCatalog(db, JSON.parse(readFileSync(IN, 'utf8')), into)
+const stats = importCatalog(db, parsed, into)
 
 logEvent(db, {
   action: 'catalog.import',

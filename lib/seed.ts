@@ -13,7 +13,7 @@ import {
 } from '@/db/schema'
 import { mergeSources, normalizeDomain } from '@/lib/domain'
 
-export const SOURCE_SUPAPIN = 'supapin-2025'
+export const SOURCE_CRAWL = 'catalog-1'
 
 /** A domain that has never been probed carries an empty date, not a fake one. */
 export const NEVER_CHECKED = ''
@@ -53,7 +53,7 @@ export type UpsertStats = {
   insertedDomains: string[]
 }
 
-// -- Source 1: the Supapin crawl -------------------------------------------
+// -- Source 1: the crawl -------------------------------------------
 
 type SeedFileRecord = {
   domain: string

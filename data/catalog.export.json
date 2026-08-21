@@ -18,12 +18,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "1000.tools is a directory by fellow indiehacker David Gutiérrez and rather recent (launched October 2023) Since it's fresh it doesn't have much link strength yet, maybe an investment for the future? Example URL: https://1000.tools/blogstatic Notion link strength 0.",
-    "playbook": null,
+    "playbook": "1000.tools is a directory by fellow indiehacker David Gutiérrez and rather recent (launched October 2023) Since it's fresh it doesn't have much link strength yet, maybe an investment for the future?.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -43,12 +42,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -68,12 +66,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -93,12 +90,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -118,12 +114,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -143,12 +138,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -168,12 +162,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -193,12 +186,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -218,12 +210,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -246,13 +237,12 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "notion-backlinks",
-      "supapin-2025"
+      "catalog-1",
+      "catalog-2"
     ]
   },
   {
@@ -275,12 +265,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Lets you submit to multiple ai directories at once Segment🔖: AI focussed products Notion link strength 0.",
-    "playbook": null,
+    "playbook": "Lets you submit to multiple ai directories at once.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -300,12 +289,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -328,12 +316,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 3.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -353,12 +340,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -378,12 +364,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -403,12 +388,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -431,12 +415,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 0.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -458,12 +441,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 2.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -483,12 +465,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -508,12 +489,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -533,12 +513,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -558,12 +537,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -583,12 +561,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -608,12 +585,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -633,12 +609,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -658,12 +633,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -683,12 +657,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -708,12 +681,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -733,12 +705,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -758,12 +729,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -783,12 +753,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -811,12 +780,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 2.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -839,12 +807,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 2.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -864,12 +831,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -891,12 +857,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If there's any way to package your SaaS as a airtable app (e.g. export data from airtable into your app) then you can create a airtable app and publish it on the app store - and get an additional 36 strength backlink as byproduct! Example URL: https://airtable.com/marketplace/blkZrRSlxzhBlv6T9/data-fetcher Submit URL➕: https://airtable.com/developers/extensions/guides/getting-started Airtable App ",
-    "playbook": null,
+    "playbook": "If there's any way to package your SaaS as a airtable app (e.g. export data from airtable into your app) then you can create a airtable app and publish it on the app store - and get an additional 36 strength backlink as byproduct! Airtable App.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -919,12 +884,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 8.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -944,12 +908,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -969,12 +932,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -994,12 +956,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1019,12 +980,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1044,12 +1004,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1069,12 +1028,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1094,12 +1052,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1122,13 +1079,12 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "Notion link strength 4.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks",
-      "supapin-2025"
+      "catalog-1",
+      "catalog-2"
     ]
   },
   {
@@ -1148,12 +1104,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1173,12 +1128,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1200,12 +1154,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If you figure out how to make it to the front page (they claim it's popular tools but I also see tools with 0❤️ on there), then you will get a 87 DR backlink - it's nofollow though but still might be worth it! Example URL: https://www.aitoolnet.com/adln Notion link strength 0.",
-    "playbook": null,
+    "playbook": "If you figure out how to make it to the front page (they claim it's popular tools but I also see tools with 0❤️ on there), then you will get a 87 DR backlink - it's nofollow though but still might be worth it!.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -1225,12 +1178,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1250,12 +1202,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1275,12 +1226,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1300,12 +1250,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1325,12 +1274,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1350,12 +1298,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1375,12 +1322,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1400,12 +1346,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1428,12 +1373,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 9.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -1453,12 +1397,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1478,12 +1421,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1503,12 +1445,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": "Two different how-to pages that are easy to confuse: /how-to/suggest-alternatives/ is for adding alternatives to somebody else's listing, and /how-to/submit-software/ is the one for listing your own. Both dead end without a login: their own text says a user account is required to create new entries, and submission happens from the account dashboard. Nothing can be filled anonymously, so a human has to make the account first.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1530,12 +1471,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "All links have nofollow, but with a link strength >20 it might make still sense to list here (google will take it as positive signal, but not as strong as a follow link) Example URL: https://alternativeto.net/software/ilo-so/about/ Notion link strength 21.",
-    "playbook": null,
+    "playbook": "All links have nofollow, but with a link strength >20 it might make still sense to list here (google will take it as positive signal, but not as strong as a follow link).",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -1555,12 +1495,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1580,12 +1519,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1607,12 +1545,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "This probably only makes sense if your product is primarily a mobile app. Cause the overhead of building, submitting and figuring out how to adapt your payment model is probably not worth the trouble. I couldn't figure out how Semrush computes the backlink strength. I've seen link strengths between 30 and 60. Median was 50 so I settled for 50. Notion link strength 50.",
-    "playbook": null,
+    "playbook": "This probably only makes sense if your product is primarily a mobile app. Cause the overhead of building, submitting and figuring out how to adapt your payment model is probably not worth the trouble. I couldn't figure out how Semrush computes the backlink strength. I've seen link strengths between 30 and 60. Median was 50 so I settled for 50.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -1634,12 +1571,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Only makes sense if your startup can function as a shopify extension. Start here: https://shopify.dev/docs/apps Some indiehackers listed here: txtcartapp, wisernotify, t.ly, upvoty Example URL: https://apps.shopify.com/txtcart-plus Notion link strength 35.",
-    "playbook": null,
+    "playbook": "Only makes sense if your startup can function as a shopify extension. Start here: https://shopify.dev/docs/apps Some indiehackers listed here: txtcartapp, wisernotify, t.ly, upvoty.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -1659,12 +1595,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1687,12 +1622,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If you feel like offering a good deal and willing to give away 75% share to AppSumo and run the special for 30d 😅 then go ahead - as a byproduct you get a 19-40 AS link. There are some builders who were able to validate their idea in a good way (e.g. https://twitter.com/Stefcodes) Segment🔖: products which offer discounts Notion link strength 18.",
-    "playbook": null,
+    "playbook": "If you feel like offering a good deal and willing to give away 75% share to AppSumo and run the special for 30d 😅 then go ahead - as a byproduct you get a 19-40 AS link. There are some builders who were able to validate their idea in a good way (e.g. https://twitter.com/Stefcodes).",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -1714,12 +1648,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Metafilter is this page from the past which is still around 😅 It looks like the link you can post in the comments all have follow links - but I suspect that Google will guess it's from comments and will not give much SEO juice. It might still be worth a try - if you don't overdo it Example URL: https://www.metafilter.com/117927/Note-object-sizes-are-not-to-scale Notion link strength 18.",
-    "playbook": null,
+    "playbook": "Metafilter is this page from the past which is still around 😅 It looks like the link you can post in the comments all have follow links - but I suspect that Google will guess it's from comments and will not give much SEO juice. It might still be worth a try - if you don't overdo it.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -1741,12 +1674,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If you power your newsletter on aweber.com then you get a nice archive - if you include links to your startup then you get 17 AS backlinks as a byproduct Example URL: https://archive.aweber.com/newsletter/idlehands/OTU2OTkxNw==/heide-and-iain-s-newsletter-watch-out-the-ai-are-coming.htm Notion link strength 17.",
-    "playbook": null,
+    "playbook": "If you power your newsletter on aweber.com then you get a nice archive - if you include links to your startup then you get 17 AS backlinks as a byproduct.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -1766,12 +1698,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1791,12 +1722,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1816,12 +1746,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1844,12 +1773,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "I couldn't find out how to post a link, maybe it's an aggregator? Segment🔖: AI focussed products Notion link strength 3.",
-    "playbook": null,
+    "playbook": "I couldn't find out how to post a link, maybe it's an aggregator?.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -1871,12 +1799,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Was acquired by linktr.ee - still works as separate site at the moment Submit URL➕: http://bento.me/signup Notion link strength 11.",
-    "playbook": null,
+    "playbook": "Was acquired by linktr.ee - still works as separate site at the moment.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -1896,12 +1823,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1921,12 +1847,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -1948,12 +1873,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 6.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -1975,12 +1899,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "This one was my biggest surprise. It's in about every backlink directory. But the link strength is weak (both ahrefs and semrush) and the links are all nofollow. No recommendation from me. Example URL: https://betalist.com/startups/plausible Notion link strength 6.",
-    "playbook": null,
+    "playbook": "This one was my biggest surprise. It's in about every backlink directory. But the link strength is weak (both ahrefs and semrush) and the links are all nofollow. No recommendation from me.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -2002,12 +1925,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Semrush gives AS from 0 to 47 (most ASs I found lean more towards 47) Ahrefs doesn't give more than 6. 🤷 So I settled with 15. Not sure the effect, but registration takes 2m. Submit URL➕: https://biosites.com/editor Submitted: https://bio.site/templated Notion link strength 15.",
-    "playbook": null,
+    "playbook": "Semrush gives AS from 0 to 47 (most ASs I found lean more towards 47) Ahrefs doesn't give more than 6. 🤷 So I settled with 15. Not sure the effect, but registration takes 2m.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -2027,12 +1949,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2052,12 +1973,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": "Open lead form at /add-your-product/, no account despite what the flags used to say. Required: name, email, company, product name, and an image CAPTCHA code. Phone, job title and message are optional. The CAPTCHA is a classic distorted image with a refresh button, so a human has to finish it. Two things worth knowing before you spend the minute. It is a lead form, not a listing: their own copy says they contact you within 2 business days to complete the submission, so nothing goes live at submit time. And the disclaimer under the button consents to them using your information in their marketing materials and press releases, and to posting your logo and trademark on their affiliate sites, opt out only by writing to them afterwards. Beware of clicking by coordinate here: the page is dense with blog links and a stray click navigates away and loses the form.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2079,12 +1999,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Your profile appears when people search for your domain name. And if you wish you will be shown on Google Maps. In the process you can also claim 400$ ads credits. Indoubtly a foundational link. Submit URL➕: https://business.google.com/create",
-    "playbook": null,
+    "playbook": "Your profile appears when peopledomain name. And if you wish you will be shown on Google Maps. In the process you can also claim 400$ ads credits. Indoubtly a foundational link.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -2104,12 +2023,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2131,12 +2049,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "BuyMeACoffee is a platform that enables creators to receive support and financial contributions from their audience. You get a profile and a dofollow backlink. Example URL: https://www.buymeacoffee.com/ghostfolio Notion link strength 15.",
-    "playbook": null,
+    "playbook": "BuyMeACoffee is a platform that enables creators to receive support and financial contributions from their audience. You get a profile and a dofollow backlink.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -2156,12 +2073,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2183,12 +2099,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Find a way (and IMO there's always a way) to pack some functionality into a chrome extension and profit from a 31 AS backlink I've seen many indiehackers building a chrome extension for their product. And if it's only for \"keeping your customers engaged\" (make it part of the onboarding process) Notion link strength 31.",
-    "playbook": null,
+    "playbook": "Find a way (and IMO there's always a way) to pack some functionality into a chrome extension and profit from a 31 AS backlink I've seen many indiehackers building a chrome extension for their product. And if it's only for \"keeping your customers engaged\" (make it part of the onboarding process).",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -2211,12 +2126,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If you're using Stripe and you're willing to contribute some revenue to CO2 removal, then you become a stripe climate member and get a 24 AS backlink. In Stripe go to Climate, choose the percentage (0.5%, 1% or custom), then head over to \"Share your impact\" and publish the Custom webpage. Segment🔖: builders who use stripe for payment Example URL: https://climate.stripe.com/A5gpNP Notion link stren",
-    "playbook": null,
+    "playbook": "If you're using Stripe and you're willing to contribute some revenue to CO2 removal, then you become a stripe climate member and get a 24 AS backlink. In Stripe go to Climate, choose the percentage (0.5%, 1% or custom), then head over to \"Share your impact\" and publish the Custom webpage. your own share link.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -2236,12 +2150,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2261,12 +2174,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2288,12 +2200,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Registration process is straight forward but then you get a profile without backlink. To get a backlink you need to agree to a 3$ per link click pricing 🤔 Notion link strength 10.",
-    "playbook": null,
+    "playbook": "Registration process is straight forward but then you get a profile without backlink. To get a backlink you need to agree to a 3$ per link click pricing 🤔.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -2315,12 +2226,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Crunchbase somehow became the \"official\" directory for startups. I've seen many aggregators take this info and display it on their site. I found that basically every successful indiehacker is listed here. Example URL: https://www.crunchbase.com/organization/appliku Submit URL➕: https://www.crunchbase.com/add-new Notion link strength 25.",
-    "playbook": null,
+    "playbook": "Crunchbase somehow became the \"official\" directory for startups. I've seen many aggregators take this info and display it on their site. I found that basically every successful indiehacker is listed here.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -2342,12 +2252,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Made by the wonderful Daniela @nerddoingsocial It only has 6 AS but it's a follow linke and the directories design is wonderful! Example URL: https://ctrlalt.cc/product/makerbox Notion link strength 6.",
-    "playbook": null,
+    "playbook": "Made by the wonderful Daniela one maker It only has 6 AS but it's a follow linke and the directories design is wonderful!.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -2367,12 +2276,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2392,12 +2300,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2419,13 +2326,12 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "notion-backlinks",
-      "supapin-2025"
+      "catalog-1",
+      "catalog-2"
     ]
   },
   {
@@ -2445,12 +2351,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2470,12 +2375,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": "The /submit path redirects to login and then to pricing, so a listing here is paid. Flagged requiresAccount and requiresPayment for that reason, which keeps it out of the ready queue.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2495,12 +2399,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2520,12 +2423,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2545,12 +2447,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2572,13 +2473,12 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "notion-backlinks",
-      "supapin-2025"
+      "catalog-1",
+      "catalog-2"
     ]
   },
   {
@@ -2598,12 +2498,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2625,13 +2524,12 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "notion-backlinks",
-      "supapin-2025"
+      "catalog-1",
+      "catalog-2"
     ]
   },
   {
@@ -2651,12 +2549,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2678,12 +2575,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "A directory of hackathons. If you participate in one then you can list your project here. All links are nofollow though. Notion link strength 15.",
-    "playbook": null,
+    "playbook": "A directory of hackathons. If you participate in one then you can list your project here. All links are nofollow though.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -2706,12 +2602,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "A directory of developer oriented resources. Only 8 AS though. Segment🔖: developer oriented Notion link strength 8.",
-    "playbook": null,
+    "playbook": "A directory of developer oriented resources. Only 8 AS though.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -2731,12 +2626,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2756,12 +2650,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2781,12 +2674,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2806,12 +2698,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2831,12 +2722,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2858,12 +2748,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If you have open UX positions - post them here for 25$/week and add a link to your site in the post. Page stays online after the position is filled. Example URL: https://dribbble.com/jobs/129897-Senior-Product-Designer Notion link strength 23.",
-    "playbook": null,
+    "playbook": "If you have open UX positions - post them here for 25$/week and add a link to your site in the post. Page stays online after the position is filled.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -2883,12 +2772,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2908,12 +2796,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2933,12 +2820,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2958,12 +2844,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -2985,12 +2870,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "A facebook company page is called \"facebook page\" and is different from a \"facebook profile\". It's visible for everyone (even when not logged in) Example URL: https://www.facebook.com/magicspace.agency Submit URL➕: https://www.facebook.com/pages/creation",
-    "playbook": null,
+    "playbook": "A facebook company page is called \"facebook page\" and is different from a \"facebook profile\". It's visible for everyone (even when not logged in).",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -3010,12 +2894,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3035,12 +2918,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3060,12 +2942,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3085,12 +2966,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3110,12 +2990,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3135,12 +3014,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3160,12 +3038,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3185,12 +3062,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3210,12 +3086,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3235,12 +3110,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3260,12 +3134,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3285,12 +3158,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3310,12 +3182,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3335,12 +3206,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3360,12 +3230,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3388,12 +3257,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If you offer a free tier for developers, list it on freestuff.dev and get a 48 AS backlink (sic! that's because you keep being listed on the frontepage). Please consider adding a free tier or free side product as sidekick: I've seen several indiehackers using this technique. You can launch those on ProductHunt also as separate product. Segment🔖: developer oriented builders Submit URL➕: https://git",
-    "playbook": null,
+    "playbook": "If you offer a free tier for developers, list it on freestuff.dev and get a 48 AS backlink (sic! that's because you keep being listed on the frontepage). Please consider adding a free tier or free side product as sidekick: I've seen several indiehackers using this technique. You can launch those on ProductHunt also as separate product.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -3413,12 +3281,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3441,12 +3308,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Futurepedia is an AI directory with dofollow backlink It's one of the most popular AI directories and I hear from indiehackers that they get lots of traffic from it Segment🔖: AI focussed products Example URL: https://www.futurepedia.io/tool/drlambda Submit URL➕: https://www.futurepedia.io/submit-tool Notion link strength 15.",
-    "playbook": null,
+    "playbook": "Futurepedia is an AI directory with dofollow backlink It's one of the most popular AI directories and I hear from indiehackers that they get lots of traffic from it futurepedia.io/tool/drlambda.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -3466,12 +3332,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": "Open form at /submit-a-tool, no account. A newsletter modal covers it on load, dismiss with 'No thanks, I'm good'. Fields are name, tool name, URL, short description, category, pricing radio, email, plus an optional newsletter opt in. Nineteen fixed categories, all AI shaped, with Finance and Other as the fallbacks for anything that is not a chat or image tool. Cloudflare Turnstile sits above the button and passes by itself, no interaction. Success screen says 'Tool Submitted!' and that Matt reviews by hand, so there is no listing URL at submit time and the row stays submitted until it appears.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3494,12 +3359,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "I couldn't find out how to post a link, maybe it's an aggregator? Segment🔖: AI focussed products Notion link strength 2.",
-    "playbook": null,
+    "playbook": "I couldn't find out how to post a link, maybe it's an aggregator?.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -3521,12 +3385,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Every single link on github is nofollow. But the link strengths are exceptional, so it still makes sense to invest. I've seen different ways to backlink: Sponsor repos, so they add you to their README pages (see example_url) Add yourself to \"awesome xyz\" lists (via PR) Add a backlink into your profile. Link strengths in profiles is between 40-70. In repos I've seen from 30 (5 stars) to 50 (500 sta",
-    "playbook": null,
+    "playbook": "Every single link on github is nofollow. But the link strengths are exceptional, so it still makes sense to invest. I've seen different ways to backlink: Sponsor repos, so they add you to their README pages (see example_url) Add yourself to \"awesome xyz\" lists (via PR) Add a backlink into your profile. Link strengths in profiles is between 40-70. In repos I've seen from 30 (5 stars) to 50 (500 sta.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -3546,12 +3409,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3571,12 +3433,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3596,12 +3457,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3623,12 +3483,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Gust is a website to connect with investors and assess your company. Even if you don't seek investors - you might still want to see the potential, right? To set up a profile: 1. complete https://gust.com/founder_onboarding until registration 2. head over to Company Profile and finish your profile For the backlink you don't need to do the evaluation - although it's interesting to see how you're eva",
-    "playbook": null,
+    "playbook": "Gust is a website to connect with investors and assess your company. Even if you don't seek investors - you might still want to see the potential, right? To set up a profile: 1. complete https://gust.com/founder_onboarding until registration 2. head over to Company Profile and finish your profile For the backlink you don't need to do the evaluation - although it's interesting to see how you're eva.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -3648,12 +3507,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3675,12 +3533,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Host your blog on hashnode, write developer oriented blog posts linking to your product and get a 19 AS backlink Example URL: https://blog.makerbox.club/15-out-of-the-box-marketing-ideas/ Notion link strength 19.",
-    "playbook": null,
+    "playbook": "Host your blog on hashnode, write developer oriented blog posts linking to your product and get a 19 AS backlink.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -3703,12 +3560,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Submit via feedback@hayo.com Segment🔖: AI focussed products Notion link strength 9.",
-    "playbook": null,
+    "playbook": "Submit via feedback@hayo.com.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -3728,12 +3584,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3753,12 +3608,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3778,12 +3632,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3803,12 +3656,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3828,12 +3680,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3853,12 +3704,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3878,12 +3728,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3903,12 +3752,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3928,12 +3776,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3953,12 +3800,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 503,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -3978,12 +3824,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4003,12 +3848,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4030,12 +3874,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Regardless of the backlink, indiehackers is (apart from producthunt) the place to list your product. Lots of crawlers have indiehackers in their database and will pick up your product from there. So: go ahead and register your product there. The backlink is nofollow, but it's still worth it. As for the articles/stories you can post, their links also are nofollow unless if the user posting has 500+",
-    "playbook": null,
+    "playbook": "Regardless of the backlink, indiehackers is (apart from producthunt) the place to list your product. Lots of crawlers have indiehackers in their database and will pick up your product from there. So: go ahead and register your product there. The backlink is nofollow, but it's still worth it. As for the articles/stories you can post, their links also are nofollow unless if the user posting has 500+.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -4055,12 +3898,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4080,12 +3922,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4107,13 +3948,12 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "Links are nofollow unless you pay 25$ per year (or 45$ lifetime). But the link strength is only 5 AS, so not recommended - unless you want to support Marc Louvion which of course IS recommended :D Example URL: https://indiepa.ge/illyism Notion link strength 5.",
-    "playbook": null,
+    "playbook": "Links are nofollow unless you pay 25$ per year (or 45$ lifetime). But the link strength is only 5 AS, so not recommended - unless you want to support Marc Louvion which of course IS recommended :D.",
     "catalogs": [
-      "notion-backlinks",
-      "supapin-2025"
+      "catalog-1",
+      "catalog-2"
     ]
   },
   {
@@ -4133,12 +3973,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4161,12 +4000,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 3.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -4186,12 +4024,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4213,12 +4050,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Start with a fresh account: https://www.instagram.com/accounts/emailsignup/ Turn it into a business account: https://www.instagram.com/accounts/account_type_and_tools/ The website link can only be set on mobile Submit URL➕: https://business.instagram.com/getting-started",
-    "playbook": null,
+    "playbook": "Start with a fresh account: https://www.instagram.com/accounts/emailsignup/ Turn it into a business account: https://www.instagram.com/accounts/account_type_and_tools/ The website link can only be set on mobile.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -4238,12 +4074,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4263,12 +4098,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4290,12 +4124,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "The backlink is nofollow, the waiting time is 4-6w, then it's not clear if you're picked (they write a lengthy article about you so they'd be quite picky) - to expedite it you can pay 170$-400$. Since they also tweet about it, it's more a \"marketing campaign\" than a backlink. I didn't see any indiehackers using this service so far. Notion link strength 12.",
-    "playbook": null,
+    "playbook": "The backlink is nofollow, the waiting time is 4-6w, then it's not clear if you're picked (they write a lengthy article about you so they'd be quite picky) - to expedite it you can pay 170$-400$. Since they also tweet about it, it's more a \"marketing campaign\" than a backlink. I didn't see any indiehackers using this service so far.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -4315,12 +4148,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4340,12 +4172,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4365,12 +4196,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4392,12 +4222,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Showcases the best landing page sites. If you believe the design of your landing page is great you can submit and if you're chosen you'll get a 10 AS backlink. Example URL: https://www.landingfolio.com/inspiration/post/ilo Submit URL➕: https://www.landingfolio.com/submit Notion link strength 10.",
-    "playbook": null,
+    "playbook": "Showcases the best landing page sites. If you believe the design of your landing page is great you can submit and if you're chosen you'll get a 10 AS backlink.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -4419,12 +4248,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "A directory of landing page builders. The backlink is follow but only 3 AS. Notion link strength 3.",
-    "playbook": null,
+    "playbook": "A directory of landing page builders. The backlink is follow but only 3 AS.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -4444,12 +4272,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4471,12 +4298,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 8.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -4496,12 +4322,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4521,12 +4346,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4546,12 +4370,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4571,12 +4394,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4596,12 +4418,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4621,12 +4442,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4646,12 +4466,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4674,12 +4493,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If your source code is open source and hosted on github you can list here Libhunt is a \"compare solutions\" directory Segment🔖: open source Example URL: https://www.libhunt.com/compare-ctop-vs-analytics Submit URL➕: https://www.libhunt.com/repo/submit Notion link strength 15.",
-    "playbook": null,
+    "playbook": "If your source code is open source and hosted on github you can list here Libhunt is a \"compare solutions\" directory libhunt.com/compare-ctop-vs-analytics.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -4699,12 +4517,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4726,12 +4543,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Setting up a linkedin company page takes 2-3 minutes. It doesn't give backlinks but it's taken up by many aggregators (e.g. getlatka.com) For side builders who don't want their employer to know about their side project: Don't worry, it won't show up in your profile. LinkedIn, of course is it's own marketing channel Example URL: https://www.linkedin.com/company/senjaio/ Submit URL➕: https://www.lin",
-    "playbook": null,
+    "playbook": "Setting up a linkedin company page takes 2-3 minutes. It doesn't give backlinks but it's taken up by many aggregators (e.g. getlatka.com) For side builders who don't want their employer to know about their side project: Don't worry, it won't show up in your profile. LinkedIn, of course is it's own marketing channel.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -4753,12 +4569,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Semrush gives linktree an AS 25 backlink which is stronger than producthunt 🫢 But Ahrefs only gives it a 9. 🤷‍♂️ So I settled for 15. Anyway: there seems to be a difference in link strength, maybe on the incoming links or the account type? Submit URL➕: https://linktr.ee/register/select-plan Submitted: https://linktr.ee/templated Notion link strength 15.",
-    "playbook": null,
+    "playbook": "Semrush gives linktree an AS 25 backlink which is stronger than producthunt 🫢 But Ahrefs only gives it a 9. 🤷‍♂️ So I settled for 15. Anyway: there seems to be a difference in link strength, maybe on the incoming links or the account type?.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -4780,12 +4595,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "A site where people can build lists of services / tools they use. All links are nofollow. Notion link strength 15.",
-    "playbook": null,
+    "playbook": "A site where people can build lists of services / tools they use. All links are nofollow.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -4805,12 +4619,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4830,12 +4643,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4857,12 +4669,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "All links are nofollow - and it's invite only. Hackernews clone with fewer participants. Notion link strength 12.",
-    "playbook": null,
+    "playbook": "All links are nofollow - and it's invite only. Hackernews clone with fewer participants.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -4882,12 +4693,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4907,12 +4717,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4932,12 +4741,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -4960,12 +4768,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Same as gust.com, magnitt is a website to connect with investors and assess your company. The submission process is a bit lengthy, but there are some good question which gets you thinking (who are your competitors, what's your market potential, …) Segment🔖: builders who seek investors Example URL: https://magnitt.com/startups/backl-io-backlink-builder-78355 Submit URL➕: https://magnitt.com/startup",
-    "playbook": null,
+    "playbook": "Same as gust.com, magnitt is a website to connect with investors and assess your company. The submission process is a bit lengthy, but there are some good question which gets you thinking (who are your competitors, what's your market potential, …) com/startups/backl-io-backlink-builder-78355.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -4985,12 +4792,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5010,12 +4816,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5037,12 +4842,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Mastodons links are all nofollow, plus semrush doesn't see much strength in the links. There are some aggregators which pick them up, e.g. hachyderm: https://hachyderm.io/@mariyadelano/111296956512995292 But also these are nofollow. Maybe this will improve somewhen, for now I wouldn't recommend Mastodon for SEO juice. Example URL: https://mastodon.social/@aaronmilloro Notion link strength 2.",
-    "playbook": null,
+    "playbook": "Mastodons links are all nofollow, plus semrush doesn't see much strength in the links. There are some aggregators which pick them up, e.g. hachyderm: https://hachyderm.io/@mariyadelano/111296956512995292 But also these are nofollow. Maybe this will improve somewhen, for now I wouldn't recommend Mastodon for SEO juice.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5064,12 +4868,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Cross post your blog articles on medium. The links are all nofollow but you can set the canonical tag (which you should anyway if you cross post, otherwise you create duplicate content which Google doesn't like). The effect is questionable though. Semrush doesn't see any strength in the link, Ahrefs gives it a mild 10-15. Example URL: https://medium.com/employbl/how-to-install-mysql-on-mac-osx-5b2",
-    "playbook": null,
+    "playbook": "Cross post your blog articles on medium. The links are all nofollow but you can set the canonical tag (which you should anyway if you cross post, otherwise you create duplicate content which Google doesn't like). The effect is questionable though. Semrush doesn't see any strength in the link, Ahrefs gives it a mild 10-15.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5089,12 +4892,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5116,12 +4918,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Semrush gives it a strength of 26 but the domain itself has only Authority=2. The website looks outdated, some of the products are no longer online -> not recommended. It gets this strong backlink because all products are listed on the frontpage. Notion link strength 26.",
-    "playbook": null,
+    "playbook": "Semrush gives it a strength of 26 but the domain itself has only Authority=2. The website looks outdated, some of the products are no longer online -> not recommended. It gets this strong backlink because all products are listed on the frontpage.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5143,12 +4944,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If your startup is about web3, and if you're willing to pay some of your crypto money to pay for a blog you can write for mirror.xyz and get 17 AS backlinks in return Notion link strength 17.",
-    "playbook": null,
+    "playbook": "If your startup is about web3, and if you're willing to pay some of your crypto money to pay for a blog you can write for mirror.xyz and get 17 AS backlinks in return.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5168,12 +4968,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5193,12 +4992,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5220,12 +5018,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Links in comments are nofollow, but posts itself are follow, but rarely indexed (mostly found in users' favourites lists). But as HN is a very high AS site IMO even the nofollow links are conveying SEO juice. If you're making it to the front page, then some aggregators pick it up and post it as do-follow. Additionally: I'm hearing again and again that the traffic from HN >> traffic from producthun",
-    "playbook": null,
+    "playbook": "Links in comments are nofollow, but posts itself are follow, but rarely indexed (mostly found in users' favourites lists). But as HN is a very high AS site IMO even the nofollow links are conveying SEO juice. If you're making it to the front page, then some aggregators pick it up and post it as do-follow. Additionally: I'm hearing again and again that the traffic from HN >> traffic from producthun.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5245,12 +5042,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5270,12 +5066,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5295,12 +5090,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5322,12 +5116,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Create yourdomain.notion.site for documentation for your users - those links are dofollow! Go sure to enable \"Google indexing\" in the settings. Example URL: https://app.notion.com/p/a59e2135060a456d9567965812f5ba41?pvs=21 Notion link strength 15.",
-    "playbook": null,
+    "playbook": "Create yourdomain.notion.site for documentation for your users - those links are dofollow! Go sure to enable \"Google indexing\" in the settings.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5349,12 +5142,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If you have a public npm package then you can add a link to your startup in the readme. This will produce a backlink on npmjs.com. All the links are nofollow but with a link strength is 30 Google will likely take it as a positive signal. Example URL: https://www.npmjs.com/package/@clobbr/api Notion link strength 30.",
-    "playbook": null,
+    "playbook": "If you have a public npm package then you can add a link to your startup in the readme. This will produce a backlink on npmjs.com. All the links are nofollow but with a link strength is 30 Google will likely take it as a positive signal.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5377,12 +5169,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 2.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5402,12 +5193,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5427,12 +5217,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5452,12 +5241,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5477,12 +5265,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5502,12 +5289,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5527,12 +5313,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5554,12 +5339,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Openmakers is a community by makers. A friendly place similar to wip.co, but not so popular Notion link strength 0.",
-    "playbook": null,
+    "playbook": "Openmakers is a community by makers. A friendly place similar to wip.co, but not so popular.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5581,12 +5365,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Only eligible if you are an open startup and share your revenue, traffic and uptime numbers, see https://openstartuplist.com/#guide for a complete list of requirements. Also: there are only 25 startups listed currently - the review process might be very rigid and/or the founder not very active Notion link strength 22.",
-    "playbook": null,
+    "playbook": "Only eligible if you are an open startup and share your revenue, traffic and uptime numbers, see https://openstartuplist.com/#guide for a complete list of requirements. Also: there are only 25 startups listed currently - the review process might be very rigid and/or the founder not very active.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5609,12 +5392,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "One of the few AI directories with follow links with AS of 10 or higher. But same as theresanaiforthat, it's costs money. This one is cheaper though: 150$ minimum. But then, the link strength is also lower, so… 🤷 Segment🔖: ai focussed products Submit URL➕: https://opentoolsai.gumroad.com/l/opentools Notion link strength 10.",
-    "playbook": null,
+    "playbook": "One of the few AI directories with follow links with AS of 10 or higher. But same as theresanaiforthat, it's costs money. This one is cheaper though: 150$ minimum. But then, the link strength is also lower, so… 🤷 gumroad.com/l/opentools.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5634,12 +5416,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5659,12 +5440,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5684,12 +5464,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5711,12 +5490,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Pinterest is more a DYI / lifestyle platform. Not the typical place for SaaS products. But SEO experts recommend to include it into your \"foundational links\" Example URL: https://www.pinterest.com/backlio/ Submit URL➕: https://www.pinterest.ch/business/create/",
-    "playbook": null,
+    "playbook": "Pinterest is more a DYI / lifestyle platform. Not the typical place for SaaS products. But SEO experts recommend to include it into your \"foundational links\".",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5738,12 +5516,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Pipedream is a competitor of Zapier. If you have a public API you can create a pipedream integration and get a 15 AS backlink as byproduct Some indiehackers listed here: screenshotone, tally.so, emailoctopus, savvycal Notion link strength 15.",
-    "playbook": null,
+    "playbook": "Pipedream is a competitor of Zapier. If you have a public API you can create a pipedream integration and get a 15 AS backlink as byproduct Some indiehackers listed here: screenshotone, tally.so, emailoctopus, savvycal.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5765,13 +5542,12 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "Classic directory. Pay 99$ to get featured faster. With some patience you get featured anyway 😀 Example URL: https://pitchwall.co/product/klu-1 Submit URL➕: https://pitchwall.co/product/submit Notion link strength 10.",
-    "playbook": null,
+    "playbook": "Classic directory. Pay 99$ to get featured faster. With some patience you get featured anyway 😀.",
     "catalogs": [
-      "notion-backlinks",
-      "supapin-2025"
+      "catalog-1",
+      "catalog-2"
     ]
   },
   {
@@ -5793,12 +5569,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "This probably only makes sense if your product is primarily a mobile app. Cause the overhead of building, submitting and figuring out how to adapt your payment model is probably not worth the trouble. Anyways: The backlink strength depends on downloads / ratings. So if you're just submitting the app and don't get much downloads/reviews the backlink strength will still be 0. But I've also seen 50 A",
-    "playbook": null,
+    "playbook": "This probably only makes sense if your product is primarily a mobile app. Cause the overhead of building, submitting and figuring out how to adapt your payment model is probably not worth the trouble. Anyways: The backlink strength depends on downloads / ratings. So if you're just submitting the app and don't get much downloads/reviews the backlink strength will still be 0. But I've also seen 50 A.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5821,12 +5596,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If you are a guest and get featured in a podcast, ask the host to link to your startup in the show notes. This link usually is dofollow (although I've seen a few exceptions where it was nofollow) and the link strength is huge with 32! If you have a podcast, list it in this google directory. The link is nofollow though. Segment🔖: podcast Example URL: https://podcasts.google.com/feed/aHR0cHM6Ly9hdWR",
-    "playbook": null,
+    "playbook": "If you are a guest and get featured in a podcast, ask the host to link to your startup in the show notes. This link usually is dofollow (although I've seen a few exceptions where it was nofollow) and the link strength is huge with 32! If you have a podcast, list it in this google directory. The link is nofollow though. google.com/feed/aHR0cHM6Ly9hdWR.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5846,12 +5620,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5871,12 +5644,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5898,12 +5670,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Everyone knows producthunt and that the backlink from it is great. What not everyone knows: You can launch multiple times. So you can launch in \"easy mode\" very early in your product lifecycle to get the 22 AS backlink. You can relaunch without problems every 6 months. If you do it more often then you need to state what major feature justified the new launch. Example URL: https://www.producthunt.c",
-    "playbook": null,
+    "playbook": "Everyone knows producthunt and that the backlink from it is great. What not everyone knows: You can launch multiple times. So you can launch in \"easy mode\" very early in your product lifecycle to get the 22 AS backlink. You can relaunch without problems every 6 months. If you do it more often then you need to state what major feature justified the new launch.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -5923,12 +5694,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5948,12 +5718,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -5973,12 +5742,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6000,12 +5768,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Only if you have a free, public api Notion link strength 7.",
-    "playbook": null,
+    "playbook": "Only if you have a free, public api.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -6025,12 +5792,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 429,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6050,12 +5816,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6077,12 +5842,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Another \"bio site\" similar to linktree. In addition to just listing your links this one also lets you jot down your career path. Example URL: https://read.cv/dr Submit URL➕: https://read.cv/explore Notion link strength 10.",
-    "playbook": null,
+    "playbook": "Another \"bio site\" similar to linktree. In addition to just listing your links this one also lets you jot down your career path.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -6104,12 +5868,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "All reddit links are nofollow - except the one in the profile, but this one is not found by any SEO tool -> link strength is uncertain, probably weak. But: being active on reddit is always recommended, for getting blunt feedback and eventually going viral and getting loads of traffic (usually 10x to what you get from producthunt). Reddit is in the top 500 best ranked sites in the world. Builders r",
-    "playbook": null,
+    "playbook": "All reddit links are nofollow - except the one in the profile, but this one is not found by any SEO tool -> link strength is uncertain, probably weak. But: being active on reddit is always recommended, for getting blunt feedback and eventually going viral and getting loads of traffic (usually 10x to what you get from producthunt). Reddit is in the top 500 best ranked sites in the world. Builders r.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -6129,12 +5892,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6154,12 +5916,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6179,12 +5940,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6206,12 +5966,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 0.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -6233,13 +5992,12 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": "The /submit page is their own marketing list of 107 other directories, not a form. The real form is /services/submit. It asks for the site URL first, then either shows a fresh form or, if they already auto created a listing for the domain, offers to verify ownership instead. Verification by email on the product domain logs you straight in and unlocks a Manage panel. From there tagline, description, pricing, logo, screenshots, competitors and categories all save instantly, but the product NAME is moderator gated and only moves through 'suggest changes'. Categories have their own Edit tab that applies at once, and order is weight, so put the narrowest true category first. Competitors matter: whoever you list shows your product as an alternative on their page. Cloudflare fronts the site, so curl and verify.ts both get 403 and the link rel has to be read in a real browser. The main 'Visit website' button carries no rel, so it is dofollow.",
     "catalogs": [
-      "notion-backlinks",
-      "supapin-2025"
+      "catalog-1",
+      "catalog-2"
     ]
   },
   {
@@ -6259,12 +6017,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6284,12 +6041,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6309,12 +6065,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6336,13 +6091,12 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "notion-backlinks",
-      "supapin-2025"
+      "catalog-1",
+      "catalog-2"
     ]
   },
   {
@@ -6362,12 +6116,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6387,12 +6140,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6412,12 +6164,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6437,12 +6188,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6462,12 +6212,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6487,12 +6236,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6514,12 +6262,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Sideprojectors helps you to find a co-founder. But you can also just submit your project (there's a separate onboarding flow for this). They want you to add traffic / revenue numbers, but you can leave out these fields. Example URL: https://www.sideprojectors.com/project/29384/makerbox-roasting Submit URL➕: https://www.sideprojectors.com Notion link strength 10.",
-    "playbook": null,
+    "playbook": "Sideprojectors helps you to find a co-founder. But you can also just submit your project (there's a separate onboarding flow for this). They want you to add traffic / revenue numbers, but you can leave out these fields.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -6539,12 +6286,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6564,12 +6310,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6589,12 +6334,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6616,12 +6360,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If you can think of way to package your app as a slack plugin - go ahead and post it, AS 25 is a bit low for the effort though Start here: https://slack.com/help/articles/13345326945043-Build-apps-with-Slacks-developer-tools Some indiehackers listed here: tally.so, usefathom, reviewpilot, churnkey Notion link strength 25.",
-    "playbook": null,
+    "playbook": "If you can think of way to package your app as a slack plugin - go ahead and post it, AS 25 is a bit low for the effort though Start here: https://slack.com/help/articles/13345326945043-Build-apps-with-Slacks-developer-tools Some indiehackers listed here: tally.so, usefathom, reviewpilot, churnkey.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -6643,12 +6386,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If you have slides, share them on slides.com - add a link to your startup in the slides -> you get a 17 AS backlink as byproduct Example URL: https://slides.com/illyism/rcd Notion link strength 17.",
-    "playbook": null,
+    "playbook": "If you have slides, share them on slides.com - add a link to your startup in the slides -> you get a 17 AS backlink as byproduct.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -6668,12 +6410,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6695,12 +6436,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "The backlink is nofollow but with a 35 AS backlink it might still send a positive signal to Google Submit URL➕: https://www.softwareworld.co/get-listed/ Notion link strength 33.",
-    "playbook": null,
+    "playbook": "The backlink is nofollow but with a 35 AS backlink it might still send a positive signal to Google.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -6720,12 +6460,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6745,12 +6484,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-21",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
     "playbook": "Vendor listing form at /software/vendors/new, no account needed to submit, though they say you need one later to manage the page if approved. Bot blocked to curl with a 403, fine in a real browser. Required: name, email, company, title, website, software name, LOGO FILE, description, audience, category, consent. Phone, founding year and location are optional despite looking mandatory. Two traps. First, starting_price has maxlength 30 with no visible counter, and going over fails the whole post with 'Enter a value not more than 30 characters long'. Second, a failed post CLEARS the file input and unchecks consent, so re-upload the logo and re-tick before retrying. The category list is enormous and specific, worth searching rather than settling: Subscription Analytics, Revenue Intelligence and Financial Reporting all exist. The mandatory consent bundles agreeing to receive SourceForge communications, which cannot be declined. Success page reads 'Request Received / THANKS!'.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6770,12 +6508,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6797,12 +6534,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 8.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -6822,12 +6558,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6849,12 +6584,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "To get a follow link, you need a profile with >2000 reputation. Then, there is exactly one link with dofollow, it's next to your twitter logo, have a look at my profile (search for backl.io): https://stackoverflow.com/users/119861/hansaplast The link propagates to all domains of the stackexchange network (e.g. superuser.com, serverfault.com, askubuntu.com, etc.) but Google probably will only count",
-    "playbook": null,
+    "playbook": "To get a follow link, you need a profile with >2000 reputation. Then, there is exactly one link with dofollow, it's next to your twitter logo, it sits next to the profile owner's social icon The link propagates to all domains of the stackexchange network (e.g. superuser.com, serverfault.com, askubuntu.com, etc.) but Google probably will only count.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -6874,12 +6608,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 429,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -6901,12 +6634,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "You write your startup story for a newsletter (they claim it has thousands of subscribers but @TakoTreba claims the traffic from it is quite small): If they select you and once you write the guest post you're both sent to all the subscribers and as well get a 19 AS backlink. Only applies if you already see some traction in your business (most stories are from founders with 1K+ MRR or with some dec",
-    "playbook": null,
+    "playbook": "You write your startup story for a newsletter (they claim it has thousands of subscribers but one maker claims the traffic from it is quite small): If they select you and once you write the guest post you're both sent to all the subscribers and as well get a 19 AS backlink. Only applies if you already see some traction in your business (most stories are from founders with 1K+ MRR or with some dec.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -6928,12 +6660,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "On many lists, but the backlink is nofollow and with DA=6 rather weak Notion link strength 7.",
-    "playbook": null,
+    "playbook": "On many lists, but the backlink is nofollow and with DA=6 rather weak.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -6955,13 +6686,12 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "notion-backlinks",
-      "supapin-2025"
+      "catalog-1",
+      "catalog-2"
     ]
   },
   {
@@ -6983,13 +6713,12 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "Also on many lists, but nofollow and with DA=6 rather weak Example URL: https://startupcollections.com/resource/email-octopus/ Notion link strength 6.",
-    "playbook": null,
+    "playbook": "Also on many lists, but nofollow and with DA=6 rather weak.",
     "catalogs": [
-      "notion-backlinks",
-      "supapin-2025"
+      "catalog-1",
+      "catalog-2"
     ]
   },
   {
@@ -7009,12 +6738,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7034,12 +6762,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7061,12 +6788,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "On many lists as well. Not bad, but slightly under my DA=10 threshold. Notion link strength 9.",
-    "playbook": null,
+    "playbook": "On many lists as well. Not bad, but slightly under my DA=10 threshold.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -7086,12 +6812,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7111,12 +6836,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7138,12 +6862,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Also on many lists, but the links are nofollow. And DA=0 -> not recommended Example URL: https://startuproulette.com/startup/3766 Notion link strength 0.",
-    "playbook": null,
+    "playbook": "Also on many lists, but the links are nofollow. And DA=0 -> not recommended.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -7163,12 +6886,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7190,12 +6912,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 7.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -7217,13 +6938,12 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "Looks like a scam. You can list but then get a mail asking for a minimum of 199$/year for getting listed. After all the strengh of the backlink is only 16 which is lower than producthunt -> not worth it Notion link strength 16.",
-    "playbook": null,
+    "playbook": "Looks like a scam. You can list but then get a mail asking for a minimum of 199$/year for getting listed. After all the strengh of the backlink is only 16 which is lower than producthunt -> not worth it.",
     "catalogs": [
-      "notion-backlinks",
-      "supapin-2025"
+      "catalog-1",
+      "catalog-2"
     ]
   },
   {
@@ -7245,12 +6965,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 2.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -7272,12 +6991,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Also on many lists, but the links are nofollow. And DA=0 -> not recommended Example URL: https://startuptracker.co/startup/llama Notion link strength 0.",
-    "playbook": null,
+    "playbook": "Also on many lists, but the links are nofollow. And DA=0 -> not recommended.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -7299,12 +7017,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If you help your customers starting business themselves then you can become stripe partner and earn a commission with every signup. As a byproduct you are features in their partner directory: https://stripe.com/de/partners/become-a-partner#interest-form Some indiehackers listed here: mentorcruise.com, gigged.ai Notion link strength 24.",
-    "playbook": null,
+    "playbook": "If you help your customers starting business themselves then you can become stripe partner and earn a commission with every signup. As a byproduct you are features in their partner directory: https://stripe.com/de/partners/become-a-partner#interest-form Some indiehackers listed here: mentorcruise.com, gigged.ai.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -7324,12 +7041,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7349,12 +7065,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7374,12 +7089,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7399,12 +7113,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7424,12 +7137,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7449,12 +7161,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7474,12 +7185,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7499,12 +7209,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7524,12 +7233,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7549,12 +7257,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7574,12 +7281,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7599,12 +7305,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7627,12 +7332,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If your product offers a community (e.g. a forum running on your own domain), then list your site on thehiveindex - the link is follow Segment🔖: community builders Example URL: https://thehiveindex.com/platforms/podia/ Submit URL➕: https://thehiveindex.com/submit/ Notion link strength 8.",
-    "playbook": null,
+    "playbook": "If your product offers a community (e.g. a forum running on your own domain), then list your site on thehiveindex - the link is follow com/platforms/podia/.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -7655,12 +7359,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Theresanaiforthat is one of the few AI directories with do-follow backlink. According to similarweb they have more traffic than producthunt! But: It costs 300$ minimum to list there. But: I reached out to a few builders who are listed: Not all paid the 300$ - as this site is an aggregator it takes the entries from other sites. I couldn't figure out which ones these are. My advice: try the other fr",
-    "playbook": null,
+    "playbook": "Theresanaiforthat is one of the few AI directories with do-follow backlink. According to similarweb they have more traffic than producthunt! But: It costs 300$ minimum to list there. But: I reached out to a few builders who are listed: Not all paid the 300$ - as this site is an aggregator it takes the entries from other sites. I couldn't figure out which ones these are. My advice: try the other fr.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -7680,12 +7383,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7707,12 +7409,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Tiny Alternatives is a directory of alternatives to popular products. It's a good fit for indie hackers. Posting is free, if you want to get featured on the homepage it's 25$ per day. Featured on newsletter: 30$ Semrush estimates AS=0 but Ahrefs and MOZ lean more towards 10. So it has some value. The website is a big buggy (Facebook login doesn't work, Google login temporarily down) Example URL: h",
-    "playbook": null,
+    "playbook": "Tiny Alternatives is a directory of alternatives to popular products. It's a good fit for indie hackers. Posting is free, if you want to get featured on the homepage it's 25$ per day. Featured on newsletter: 30$ Semrush estimates AS=0 but Ahrefs and MOZ lean more towards 10. So it has some value. The website is a big buggy (Facebook login doesn't work, Google login temporarily down).",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -7732,12 +7433,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7757,12 +7457,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7782,12 +7481,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7807,12 +7505,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7835,12 +7532,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Lower link strength than theresanaiforthat, but builders say there's more traffic coming from it. Segment🔖: AI focussed products Notion link strength 9.",
-    "playbook": null,
+    "playbook": "Lower link strength than theresanaiforthat, but builders say there's more traffic coming from it.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -7860,12 +7556,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7885,12 +7580,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7910,12 +7604,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7935,12 +7628,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7960,12 +7652,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -7985,12 +7676,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8010,12 +7700,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8035,12 +7724,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8060,12 +7748,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8087,12 +7774,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Add a PR to a 'awesome list' github repo, see trackawesomelist.com for a list of repos Notion link strength 7.",
-    "playbook": null,
+    "playbook": "Add a PR to a 'awesome list' github repo, see trackawesomelist.com for a list of repos.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -8112,12 +7798,11 @@
     "price": null,
     "status": "blocked",
     "httpStatus": 403,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8139,12 +7824,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Rate this Software site. You need to have at least 100 customers to be listed. They claim that they don't offer backlinks, but they do. You only get indexed by Google with at least one review. See full requirements: https://www.trustradius.com/static/vendor-submission-requirements I only saw bigger indiehacker companies listed here, so I don't think for a new startup it's worth the effort. Example",
-    "playbook": null,
+    "playbook": "Rate this Software site. You need to have at least 100 customers to be listed. They claim that they don't offer backlinks, but they do. You only get indexed by Google with at least one review. See full requirements: https://www.trustradius.com/static/vendor-submission-requirements I only saw bigger indiehacker companies listed here, so I don't think for a new startup it's worth the effort. Example.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -8164,12 +7848,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8189,12 +7872,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8216,12 +7898,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Opening a separate twitter account for your startup makes sense already for mentioning your startup in your posts (I believe links in posts still hurt visibility). Takes 2 minutes to set up and you can link it in many directories. Example URL: https://twitter.com/ScreenshotOneHQ Submit URL➕: https://x.com/signup",
-    "playbook": null,
+    "playbook": "Opening a separate twitter account for your startup makes sense already for mentioning your startup in your posts (I believe links in posts still hurt visibility). Takes 2 minutes to set up and you can link it in many directories.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -8243,13 +7924,12 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "notion-backlinks",
-      "supapin-2025"
+      "catalog-1",
+      "catalog-2"
     ]
   },
   {
@@ -8272,12 +7952,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Unita is a community directory. If you run a community you can list yourself here. This applies also if your product is not a community but you offer a community around it. Example: copy.ai is listed with their Facebook group. Main link is nofollow but there are some links (In benefits or networking events) which are do-follow, see example url. Segment🔖: community builders Example URL: https://uni",
-    "playbook": null,
+    "playbook": "Unita is a community directory. If you run a community you can list yourself here. This applies also if your product is not a community but you offer a community around it. Example: copy.ai is listed with their Facebook group. Main link is nofollow but there are some links (In benefits or networking events) which are do-follow, see example url.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -8299,12 +7978,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "It is a nofollow link but with such a high AS and if you have a unsplash account anyway may be worth to set the link to your startup Notion link strength 55.",
-    "playbook": null,
+    "playbook": "It is a nofollow link but with such a high AS and if you have a unsplash account anyway may be worth to set the link to your startup.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -8324,12 +8002,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8349,12 +8026,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8376,13 +8052,12 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "15 AS backlink but sadly nofollow - probably doesn't bring much Notion link strength 15.",
-    "playbook": null,
+    "playbook": "15 AS backlink but sadly nofollow - probably doesn't bring much.",
     "catalogs": [
-      "notion-backlinks",
-      "supapin-2025"
+      "catalog-1",
+      "catalog-2"
     ]
   },
   {
@@ -8402,12 +8077,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8427,12 +8101,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8452,12 +8125,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8479,12 +8151,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Only on many lists, but link is only DA=6, only meh. Notion link strength 6.",
-    "playbook": null,
+    "playbook": "Only on many lists, but link is only DA=6, only meh.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -8504,12 +8175,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8531,12 +8201,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "I see it's popular amongst indiehackers - but it feels low quality and its links are all nofollow Notion link strength 13.",
-    "playbook": null,
+    "playbook": "I see it's popular amongst indiehackers - but it feels low quality and its links are all nofollow.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -8556,12 +8225,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8583,12 +8251,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If you have open job position for which you can work remotely - list it here for 299$. Example URL: https://weworkremotely.com/company/Paperbell Notion link strength 19.",
-    "playbook": null,
+    "playbook": "If you have open job position for which you can work remotely - list it here for 299$.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -8608,12 +8275,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8636,12 +8302,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Notion link strength 3.",
     "playbook": null,
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -8663,12 +8328,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Invite only, all links are nofollow. Still, it's a nice community, and helps me personally to track my progress and be accountable. If you want an invite, drop me a DM at https://twitter.com/philkellr Example URL: https://wip.co/projects/5436 Notion link strength 9.",
-    "playbook": null,
+    "playbook": "Invite only, all links are nofollow. Still, it's a nice community, and helps me personally to track my progress and be accountable. If you want an invite, drop me a DM at https://twitter.com/philkellr.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -8690,12 +8354,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If you offer a remote job, post here and get a 15 AS follow backlink. Cost: 199$ per job post. Example URL: https://www.workingnomads.com/jobs/technical-support-representative-astropad Notion link strength 15.",
-    "playbook": null,
+    "playbook": "If you offer a remote job, post here and get a 15 AS follow backlink. Cost: 199$ per job post.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -8715,12 +8378,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
-    "playbook": null,
+    "playbook": "No submit URL in the static HTML. The site may render its form with JavaScript, so look in a real browser before calling it formless.",
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8742,12 +8404,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "Yellow pages are from the ninetines Notion link strength 23.",
-    "playbook": null,
+    "playbook": "Yellow pages are from the ninetines.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -8767,12 +8428,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 200,
-    "source": "supapin-2025",
+    "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "notes": null,
     "playbook": null,
     "catalogs": [
-      "supapin-2025"
+      "catalog-1"
     ]
   },
   {
@@ -8794,12 +8454,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "You can pitch your startup - if it's convincing you get featured and get a 22 AS backlink (same strength as producthunt!). Some of the indiehackers which got featured: klu.so katlinks.io senja.io Form doesn't work with Arc (choosing \"Other\" in Industry/Category doesn't work) - use Chrome or Firefox\") Example URL: https://yourstory.com/companies/kluso Submit URL➕: https://form.jotform.com/232627613",
-    "playbook": null,
+    "playbook": "You can pitch your startup - if it's convincing you get featured and get a 22 AS backlink (same strength as producthunt!). Some of the indiehackers which got featured: klu.so katlinks.io senja.io Form doesn't work with Arc (choosing \"Other\" in Industry/Category doesn't work) - use Chrome or Firefox\").",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -8821,12 +8480,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "If you have a public API and there's a way to integrate your app with Zapier flows then you can create a Zapier integration and get a 26 AS backlink as byproduct: https://platform.zapier.com/publish/public-integration Some indiehackers listed here: growmagic, screenshotone, tally.so Example URL: https://zapier.com/apps/emailoctopus/integrations Notion link strength 26.",
-    "playbook": null,
+    "playbook": "If you have a public API and there's a way to integrate your app with Zapier flows then you can create a Zapier integration and get a 26 AS backlink as byproduct: https://platform.zapier.com/publish/public-integration Some indiehackers listed here: growmagic, screenshotone, tally.so.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   },
   {
@@ -8848,12 +8506,11 @@
     "price": null,
     "status": "alive",
     "httpStatus": 0,
-    "source": "notion-backlinks",
+    "source": "catalog-2",
     "lastCheckedAt": "",
-    "notes": "It's 6$ per month for a 11 AS backlink - not recommended Notion link strength 11.",
-    "playbook": null,
+    "playbook": "It's 6$ per month for a 11 AS backlink - not recommended.",
     "catalogs": [
-      "notion-backlinks"
+      "catalog-2"
     ]
   }
 ]

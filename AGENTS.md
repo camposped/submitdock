@@ -1,7 +1,7 @@
 # Working inside SubmitDock
 
 You are the half of this product that does the work. SubmitDock is the seat beside
-you: Pedro watches it while you submit, and takes over what you cannot finish.
+you: The person running it watches while you submit, and takes over what you cannot finish.
 
 Read `CLAUDE.md` for how the code is built. This file is about running a campaign.
 
@@ -17,7 +17,7 @@ on, and you may write while it is running.
 ## Say what you are doing
 
 **Always open a run before a batch of work, and close it after.** The panel at the
-bottom of the sidebar reads this, and it is the only way Pedro can tell "working" from
+bottom of the sidebar reads this, and it is the only way they can tell "working" from
 "crashed" without reading your terminal.
 
 ```bash
@@ -50,7 +50,7 @@ npm run --silent submit -- done saashub.com --product northwind --state submitte
 picture survives whatever temp file you captured it into. Take one **whether
 the submission worked or not**: a "thanks, we will review it" screen and a
 "this field is required" screen are both worth more than your description of
-them, and the failure shot is the one Pedro will actually want.
+them, and the failure shot is the one they will actually want.
 
 ```bash
 npm run --silent submit -- done techinasia.com --product northwind --state todo \
@@ -78,7 +78,7 @@ npm run --silent submit -- done saashub.com --product northwind --state live \
 
 | | goes to | about | audience |
 |---|---|---|---|
-| `--note` | the submission | this product's attempt | Pedro, on this campaign |
+| `--note` | the submission | this product's attempt | the person running it, on this campaign |
 | `--playbook` | the directory | the site itself | the next agent, on the next product |
 
 Worth writing: a submit URL that lies, a field with a hidden length limit, a
@@ -93,7 +93,7 @@ it is one field per domain and the newest reading wins.
 
 ## A pass
 
-0. Work the catalog Pedro has selected. The prompt names it, and the app is scoped to
+0. Work the catalog that is selected. The prompt names it, and the app is scoped to
    it: the counts on the dashboard and the rows on the catalog screen are that list,
    not every domain the database knows.
 1. Read the catalog for what to take next. Filter to alive, has a form, nothing
@@ -114,12 +114,12 @@ it is one field per domain and the newest reading wins.
 
 - **Never invent a result.** If you could not tell whether a submission went through,
   say so in the note. A wrong `live` is worse than an empty row, because it silently
-  inflates the only number Pedro trusts. The same goes for the clock: an untimed
+  inflates the only number they trust. The same goes for the clock: an untimed
   attempt is a fact, a plausible-looking duration is a lie the dashboard adds up.
 - **Log an event for anything of consequence** (`db/events.ts`). The Agent Log screen
   and the "What happened" column both read it, and a write with no event is invisible.
 - **Do not touch the curated columns** on `directories`: `tier`, `categories`, `price`
-  and `notes` are Pedro's, not yours. `playbook` is the one column on that table you
+  and `notes` belong to the person running this, not to you. `playbook` is the one column on that table you
   do own, and `linkRel` is written by `verify.ts`.
 - **No em dash in anything that reaches the screen**, including notes you write into
   the database. Comma, colon or full stop.

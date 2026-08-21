@@ -184,7 +184,7 @@ db.update(submissions)
 /*
  * The playbook is catalog knowledge, so it goes on the directory rather than
  * the submission, and it is the one column here the agent owns. `notes` on
- * directories stays Pedro's: an agent overwriting a human's judgement of a
+ * directories stays the operator's: an agent overwriting a human's judgement of a
  * list is exactly the drift the curated columns exist to prevent.
  */
 if (playbook !== undefined) {

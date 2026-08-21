@@ -4,7 +4,7 @@ import type { Product } from '@/db/schema'
  * The product's social profiles.
  *
  * Stored as handles, shown as both. Directory forms are split roughly down the
- * middle on whether they want `@kometrics` or the full URL, and the handle is
+ * middle on whether they want `@acmeapp` or the full URL, and the handle is
  * the half you cannot recover from the other: every network spells its path
  * differently, and some allow a path segment that is not the handle at all. So
  * the field keeps the handle and the URL is derived.

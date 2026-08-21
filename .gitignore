@@ -49,3 +49,9 @@ data/rushout09.README.md
 data/assets/
 data/products.local.json
 data/shots/
+
+# Curator lists you import are yours. They tend to carry the author's own
+# scoring vocabulary and the listings they already won, which is exactly the
+# kind of thing that should never reach a public snapshot. Anything about a
+# directory that is worth publishing goes in `playbook` instead.
+data/lists/

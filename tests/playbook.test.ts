@@ -60,8 +60,20 @@ describe('playbook survives the catalog round trip', () => {
     expect(exportCatalog(harness.db)[0].playbook).toBeNull()
   })
 
-  it('keeps the agent’s field report separate from the curator’s notes', () => {
-    importCatalog(harness.db, [{ ...base, notes: 'Pedro rates this one highly', playbook: LESSON }])
+  /**
+   * The rule this file exists to defend. `notes` is the field the dialog
+   * labels "Yours", and it must never reach the committed snapshot: an
+   * imported list once carried its author's private scoring vocabulary and
+   * the URLs of listings they had already won, straight into a public repo.
+   * Anything about a directory worth publishing goes in `playbook`.
+   */
+  it('never carries the private notes field into the snapshot', () => {
+    importCatalog(harness.db, [{ ...base, playbook: LESSON }])
+    harness.db
+      .update(directories)
+      .set({ notes: 'a private thought about this list' })
+      .where(eq(directories.domain, 'example.com'))
+      .run()
 
     const row = harness.db
       .select()
@@ -69,9 +81,14 @@ describe('playbook survives the catalog round trip', () => {
       .where(eq(directories.domain, 'example.com'))
       .get()
 
-    expect(row?.notes).toBe('Pedro rates this one highly')
-    expect(row?.playbook).toBe(LESSON)
-    expect(toCatalogRecord(row!).playbook).toBe(LESSON)
+    // Still on the machine, for whoever wrote it.
+    expect(row?.notes).toBe('a private thought about this list')
+
+    // And absent from everything that leaves it.
+    const record = toCatalogRecord(row!)
+    expect(record.playbook).toBe(LESSON)
+    expect('notes' in record).toBe(false)
+    expect(JSON.stringify(exportCatalog(harness.db))).not.toContain('a private thought')
   })
 
   /**
