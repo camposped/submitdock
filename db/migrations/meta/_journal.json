@@ -57,6 +57,13 @@
       "when": 1787169428141,
       "tag": "0007_drop_dr",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1787326551276,
+      "tag": "0008_catalogs",
+      "breakpoints": true
     }
   ]
 }

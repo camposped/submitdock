@@ -125,6 +125,48 @@ three**, do not hand tune. Dark is its own set of steps, not a flip of light.
 Identity is never colour alone: every slice carries an icon and a label in the legend,
 and the same holds for the status tags in `components/submission-status.tsx`.
 
+## Catalogs
+
+There is no consensus on where a product should be submitted. Every published list is
+one curator's opinion, they overlap heavily, and they disagree at the edges. So the app
+carries several, and you pick one to work.
+
+A catalog is **membership, not a copy**. `catalogs` names a list, `catalog_domains`
+says which domains it names, and everything else about a domain, its form, its
+blockers, its authority, the link type it hands out, lives once on `directories` and is
+shared by every list that names it. Two catalogs carrying producthunt.com must not each
+hold their own answer to "does this one give dofollow". Importing an overlapping list
+costs three rows, not three hundred.
+
+That has a sharp consequence for import. The repo's own snapshot is authoritative on
+every column, so `npm run import` with no arguments overwrites freely. A curator's list
+is the opposite: it usually carries a domain and nothing else, and running it through
+the same path **blanked the authority score and submit URL of every domain the two
+lists shared**. So `npm run import -- list.json --catalog slug` only ever fills a null,
+and never overwrites a fact something else learned.
+
+The selected catalog is ambient, like the selected product, and it scopes the whole
+app: the catalog screen, the sidebar count, the ready queue, the dashboard, and the
+prompt handed to the agent. There is no "all lists" option on purpose. A pass runs
+against one list, and a union would hand the agent whatever the loosest curator on the
+internet happened to include.
+
+`source` on `directories` is the vestige of this: it was a comma joined string of list
+names, which is a many-to-many badly. Membership is the real thing now and nothing
+writes `source` from a catalog import, precisely so the two cannot drift.
+
+## No tabs on the catalog
+
+All / Ready to send / Needs you / No form found / Tier A were five saved filters
+dressed as navigation, and the filter bar underneath already expressed four of them.
+Two ways to narrow the same list stacked on each other, and the tab silently won: a tab
+plus a filter gave you the intersection with nothing saying it had.
+
+"Ready to send" was the one that was not expressible, because "nothing blocking" is a
+negative across five columns and the flag toggles only filter *to* a blocker. That is
+why the `blocker` filter exists: it is the queue the agent works, so it had to stay
+reachable in one click.
+
 ## How a directory is judged
 
 Three columns, and they are not the same thing:

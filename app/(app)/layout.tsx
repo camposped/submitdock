@@ -3,6 +3,7 @@ import { AppSidebar } from '@/components/app-sidebar'
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar'
 import { Toaster } from '@/components/ui/sonner'
 import { TooltipProvider } from '@/components/ui/tooltip'
+import { activeCatalog } from '@/lib/catalog-selection'
 import { PRODUCT } from '@/lib/product.config'
 import { activeProduct } from '@/lib/product-selection'
 import { listCatalog, listProducts, listSubmissions } from '@/lib/queries'
@@ -14,10 +15,12 @@ import { listCatalog, listProducts, listSubmissions } from '@/lib/queries'
  */
 export default async function AppLayout({ children }: LayoutProps<'/'>) {
   const products = listProducts()
-  const active = await activeProduct()
+  const [active, catalog] = await Promise.all([activeProduct(), activeCatalog()])
 
   const counts = {
-    '/catalog': listCatalog(null).length,
+    // Scoped to the selected list, so the rail and the screen's own header
+    // never quote two different sizes for the same thing.
+    '/catalog': listCatalog(null, { catalog: catalog?.slug ?? null }).length,
     '/submissions': listSubmissions(active?.slug ?? null).length,
   }
 

@@ -2,6 +2,7 @@ import { sql } from 'drizzle-orm'
 import {
   index,
   integer,
+  primaryKey,
   real,
   sqliteTable,
   text,
@@ -41,6 +42,52 @@ export type Actor = (typeof ACTORS)[number]
  * `domain` is the primary key on purpose, so an upsert from any source
  * converges instead of duplicating.
  */
+/**
+ * A named list of directories somebody publishes or curates.
+ *
+ * There is no consensus on where a product should be submitted: every list is
+ * one person's opinion, they overlap heavily, and they disagree at the edges.
+ * So a catalog is a *membership*, not a copy. The facts about a domain, its
+ * form, its blockers, its authority, the link type it hands out, live once on
+ * `directories` and are shared by every list that names it. Two catalogs
+ * carrying producthunt.com must not each hold their own answer to "does this
+ * one give dofollow".
+ */
+export const catalogs = sqliteTable('catalogs', {
+  slug: text('slug').primaryKey(),
+  name: text('name').notNull(),
+  /** One line: whose list this is and what it is good for. */
+  description: text('description').notNull().default(''),
+  /** Where it came from, when there is a public URL to point at. */
+  sourceUrl: text('source_url'),
+  addedAt: text('added_at')
+    .notNull()
+    .default(sql`(datetime('now'))`),
+})
+
+/**
+ * Which domains a catalog names. The join is the catalog: everything else
+ * about the domain belongs to `directories`.
+ */
+export const catalogDomains = sqliteTable(
+  'catalog_domains',
+  {
+    catalogSlug: text('catalog_slug')
+      .notNull()
+      .references(() => catalogs.slug, { onDelete: 'cascade' }),
+    domain: text('domain')
+      .notNull()
+      .references(() => directories.domain, { onDelete: 'cascade' }),
+  },
+  (t) => [
+    primaryKey({ columns: [t.catalogSlug, t.domain] }),
+    index('catalog_domains_domain_idx').on(t.domain),
+  ],
+)
+
+export type Catalog = typeof catalogs.$inferSelect
+export type NewCatalog = typeof catalogs.$inferInsert
+
 export const directories = sqliteTable(
   'directories',
   {

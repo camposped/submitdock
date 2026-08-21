@@ -106,6 +106,18 @@ export function CatalogFilters({
         />
 
         <Select
+          className="h-9 w-44"
+          aria-label="Blocker"
+          value={params.get('blocker') ?? ''}
+          onValueChange={set('blocker')}
+          options={[
+            { value: '', label: 'Any blocker' },
+            { value: 'none', label: 'Nothing blocking' },
+            { value: 'any', label: 'Something blocking' },
+          ]}
+        />
+
+        <Select
           className="h-9 w-36"
           aria-label="Authority Score"
           value={params.get('as') ?? ''}

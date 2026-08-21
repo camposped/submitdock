@@ -73,7 +73,7 @@ export default async function SubmissionsPage(props: PageProps<'/submissions'>) 
             description="A directory lands here the moment you mark it submitted or paste a listing URL. The catalog is where you pick the next one."
           >
             <Button size="sm" asChild>
-              <Link href="/catalog?view=ready">Find one to send</Link>
+              <Link href="/catalog?status=alive&submitUrl=yes&blocker=none&state=todo">Find one to send</Link>
             </Button>
           </ScreenEmptyState>
         ) : (

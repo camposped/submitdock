@@ -5,6 +5,8 @@ import { and, desc, eq, sql } from 'drizzle-orm'
 import { timeSaved, type TimeSaved } from '@/lib/timing'
 import { db } from '@/db'
 import {
+  catalogDomains,
+  catalogs,
   directories,
   events,
   products,
@@ -28,18 +30,73 @@ export type CatalogRow = Directory & {
 }
 
 export type CatalogFilters = {
+  /**
+   * Which list to look at. Ambient rather than chosen in the filter bar: the
+   * whole app works against one catalog at a time, the way it works against
+   * one product. Undefined means every domain, whatever list named it.
+   */
+  catalog?: string | null
   q?: string
   status?: string
   tier?: string
   submitUrl?: 'yes' | 'no'
   state?: string
   requires?: string[]
+  /**
+   * 'none' for rows nothing stands in the way of, 'any' for the rest.
+   *
+   * The one thing the flag toggles cannot say. They filter TO a blocker, and
+   * "no blocker at all" is a negative across five columns, which is also the
+   * single most useful query on this screen: it is the queue the agent works.
+   */
+  blocker?: string
   /** Minimum Authority Score, or 'none' for the ones Semrush has no data on. */
   as?: string
   /** What the directory hands out, learned from verify: dofollow, nofollow, unknown. */
   linkRel?: string
   /** 'domain' goes alphabetical; anything else keeps the AS ranking default. */
   sort?: string
+}
+
+/**
+ * Every list, with how many domains each names and how many of those no other
+ * list carries. "Only here" is the number that says whether a catalog is worth
+ * keeping around or is just a subset of one you already have.
+ */
+export function listCatalogs() {
+  const rows = db.select().from(catalogs).orderBy(catalogs.name).all()
+  const counts = db
+    .select({ slug: catalogDomains.catalogSlug, domain: catalogDomains.domain })
+    .from(catalogDomains)
+    .all()
+
+  const perDomain = new Map<string, number>()
+  for (const row of counts) perDomain.set(row.domain, (perDomain.get(row.domain) ?? 0) + 1)
+
+  return rows.map((catalog) => {
+    const mine = counts.filter((c) => c.slug === catalog.slug)
+    return {
+      ...catalog,
+      domains: mine.length,
+      exclusive: mine.filter((c) => perDomain.get(c.domain) === 1).length,
+    }
+  })
+}
+
+export function getCatalog(slug: string) {
+  return db.select().from(catalogs).where(eq(catalogs.slug, slug)).get() ?? null
+}
+
+/** The domain set of one catalog, for scoping a listing to it. */
+export function domainsInCatalog(slug: string): Set<string> {
+  return new Set(
+    db
+      .select({ domain: catalogDomains.domain })
+      .from(catalogDomains)
+      .where(eq(catalogDomains.catalogSlug, slug))
+      .all()
+      .map((r) => r.domain),
+  )
 }
 
 export function listProducts() {
@@ -57,6 +114,8 @@ export function getProduct(slug: string) {
  * rows is nothing, and it keeps the flag filters readable.
  */
 export function listCatalog(productSlug: string | null, filters: CatalogFilters = {}): CatalogRow[] {
+  const inCatalog = filters.catalog ? domainsInCatalog(filters.catalog) : null
+
   const rows = productSlug
     ? db
         .select({
@@ -99,7 +158,8 @@ export function listCatalog(productSlug: string | null, filters: CatalogFilters 
         .all()
         .map<CatalogRow>((d) => ({ ...d, submission: null }))
 
-  const kept = rows.filter((row) => matches(row, filters))
+  const scoped = inCatalog ? rows.filter((row) => inCatalog.has(row.domain)) : rows
+  const kept = scoped.filter((row) => matches(row, filters))
 
   // Authority first by default: the question this list answers is "what is
   // worth my time next", and a domain nobody has rated is not the answer, so
@@ -127,6 +187,12 @@ function matches(row: CatalogRow, f: CatalogFilters) {
   if (f.as && f.as !== 'none') {
     const floor = Number(f.as)
     if (!Number.isFinite(floor) || row.authorityScore === null || row.authorityScore < floor) return false
+  }
+
+  if (f.blocker) {
+    const blocked = hasBlocker(row)
+    if (f.blocker === 'none' && blocked) return false
+    if (f.blocker === 'any' && !blocked) return false
   }
 
   if (f.linkRel === 'unknown' && row.linkRel !== null) return false
@@ -175,7 +241,11 @@ export type CampaignStats = {
  * The panel's numbers. `backlinksLive` over `submitted` is the rate the whole
  * tool exists to show: the paid service reported submissions, never links.
  */
-export function getCampaignStats(productSlug: string | null): CampaignStats {
+export function getCampaignStats(
+  productSlug: string | null,
+  catalogSlug?: string | null,
+): CampaignStats {
+  const scope = { catalog: catalogSlug ?? null }
   const [{ catalogTotal, alive }] = db
     .select({
       catalogTotal: sql<number>`count(*)`,
@@ -204,7 +274,7 @@ export function getCampaignStats(productSlug: string | null): CampaignStats {
     time: timeSaved([]),
   }
   if (!productSlug) {
-    return { ...empty, readyToSend: listCatalog(null).filter(isReadyToSend).length }
+    return { ...empty, readyToSend: listCatalog(null, scope).filter(isReadyToSend).length }
   }
 
   const rows = db
@@ -221,7 +291,7 @@ export function getCampaignStats(productSlug: string | null): CampaignStats {
 
   const stats = {
     ...empty,
-    readyToSend: listCatalog(productSlug).filter(isReadyToSend).length,
+    readyToSend: listCatalog(productSlug, scope).filter(isReadyToSend).length,
     time: timeSaved(rows.map((row) => row.durationMs)),
   }
   for (const row of rows) {
@@ -261,6 +331,13 @@ export function listEvents(limit = 40, productSlug?: string | null) {
  * is a property of the DIRECTORY (captcha, account, payment, reciprocal link),
  * which is why it lives as a catalog filter rather than a screen of its own.
  */
+/** Anything that stops the agent finishing a form by itself. */
+export function hasBlocker(row: CatalogRow) {
+  return (
+    row.requiresAccount || row.requiresCaptcha || row.requiresPayment || row.requiresBacklink
+  )
+}
+
 export function isReadyToSend(row: CatalogRow) {
   return (
     row.status === 'alive' &&
@@ -281,8 +358,8 @@ export function needsHuman(row: CatalogRow) {
   )
 }
 
-export function countNeedsHuman(productSlug: string | null): number {
-  return listCatalog(productSlug).filter(needsHuman).length
+export function countNeedsHuman(productSlug: string | null, catalogSlug?: string | null): number {
+  return listCatalog(productSlug, { catalog: catalogSlug ?? null }).filter(needsHuman).length
 }
 
 export type SubmissionRow = CatalogRow & {

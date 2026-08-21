@@ -11,17 +11,27 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Reveal } from '@/components/ui/reveal'
 import { cn } from '@/lib/utils'
 import { passPrompt, passSize } from '@/lib/agent-prompt'
+import { activeCatalog } from '@/lib/catalog-selection'
 import { activeProduct } from '@/lib/product-selection'
 import { countNeedsHuman, getCampaignStats } from '@/lib/queries'
+
+/*
+ * The two piles as filter URLs rather than tab names. The catalog lost its tab
+ * row, so these have to say what they mean in the filter bar's own vocabulary,
+ * which is also why `blocker` had to exist: "nothing in the way" is the one
+ * thing the flag toggles could not express.
+ */
+const READY_QUERY = '/catalog?status=alive&submitUrl=yes&blocker=none&state=todo'
+const NEEDS_YOU_QUERY = '/catalog?blocker=any'
 
 export const dynamic = 'force-dynamic'
 
 export const metadata = { title: 'Dashboard' }
 
 export default async function DashboardPage() {
-  const product = await activeProduct()
-  const stats = getCampaignStats(product?.slug ?? null)
-  const needsYou = product ? countNeedsHuman(product.slug) : 0
+  const [product, catalog] = await Promise.all([activeProduct(), activeCatalog()])
+  const stats = getCampaignStats(product?.slug ?? null, catalog?.slug ?? null)
+  const needsYou = product ? countNeedsHuman(product.slug, catalog?.slug ?? null) : 0
 
   const submitted = stats.submitted + stats.verified + stats.live
 
@@ -71,7 +81,7 @@ export default async function DashboardPage() {
             <p className="py-6 text-[13px] text-muted-foreground">
               Nothing submitted yet. Open the{' '}
               <Link
-                href="/catalog?view=ready"
+                href={READY_QUERY}
                 className="cursor-pointer font-medium text-primary hover:underline"
               >
                 {stats.readyToSend} directories that are ready to send
@@ -111,7 +121,7 @@ export default async function DashboardPage() {
         </CardHeader>
         <CardContent className="grid gap-3 sm:grid-cols-2">
           <NextPile
-            href="/catalog?view=ready"
+            href={READY_QUERY}
             icon={Rocket}
             label="Ready to send"
             value={stats.readyToSend}
@@ -119,7 +129,7 @@ export default async function DashboardPage() {
             tone="good"
           />
           <NextPile
-            href="/catalog?view=needs-you"
+            href={NEEDS_YOU_QUERY}
             icon={Hand}
             label="Needs you"
             value={needsYou}
@@ -150,6 +160,7 @@ export default async function DashboardPage() {
               <CopyPrompt
                 text={passPrompt({
                   productName: product.name,
+                  catalogName: catalog?.name ?? null,
                   take: passSize(stats.readyToSend),
                 })}
               />
@@ -157,7 +168,7 @@ export default async function DashboardPage() {
               <p className="text-[13px] text-muted-foreground">
                 Clear something from{' '}
                 <Link
-                  href="/catalog?view=needs-you"
+                  href={NEEDS_YOU_QUERY}
                   className="cursor-pointer font-medium text-primary hover:underline"
                 >
                   Needs you

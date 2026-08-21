@@ -24,7 +24,14 @@ import {
   type SubmissionState,
   type Tier,
 } from '@/db/schema'
+import { CATALOG_COOKIE } from '@/lib/catalog-selection'
 import { PRODUCT_COOKIE } from '@/lib/product-selection'
+
+export async function selectCatalog(slug: string) {
+  const store = await cookies()
+  store.set(CATALOG_COOKIE, slug, { path: '/', maxAge: 60 * 60 * 24 * 365 })
+  refresh()
+}
 
 export async function selectProduct(slug: string) {
   const store = await cookies()

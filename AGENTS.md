@@ -63,8 +63,11 @@ at, which is correct: the dashboard names those instead of averaging them in.
 
 ## A pass
 
-1. Read the catalog for what to take next. `view=ready` is alive, has a form, nothing
-   blocking, and untouched. It is ranked by Authority Score, so work down from the top.
+0. Work the catalog Pedro has selected. The prompt names it, and the app is scoped to
+   it: the counts on the dashboard and the rows on the catalog screen are that list,
+   not every domain the database knows.
+1. Read the catalog for what to take next. Filter to alive, has a form, nothing
+   blocking, untouched. It is ranked by Authority Score, so work down from the top.
 2. Read the Product Kit for the answers: descriptions in three lengths, four brand
    files, screenshots. The asset columns hold absolute paths, which is what a file
    upload dialog needs.

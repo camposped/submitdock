@@ -58,11 +58,25 @@ has no data for that domain, which is not the same as scoring it zero.
 Where a `submitUrl` is null it means "not found yet", not "has no form": the crawler
 reads static HTML and plenty of these sites are SPAs.
 
+### More than one list
+
+Nobody agrees on where to submit, so load several and pick which one to work:
+
+```bash
+npm run import -- lists/awesome-saas.json \
+  --catalog awesome-saas --name "Awesome SaaS" --url https://github.com/someone/list
+```
+
+A catalog is membership, not a copy. A domain two lists share keeps one row of facts,
+so an overlapping import costs almost nothing and the authority score you already have
+is never blanked by a list that only carried domains.
+
 ## The model
 
 | | |
 |---|---|
-| `directories` | the shared catalog, one row per domain, grows forever |
+| `catalogs` | the lists you have loaded, one row per curator's list |
+| `directories` | every domain any list names, one row each, facts shared |
 | `products` | the kit of answers for each of your products |
 | `submissions` | the crossing of the two, with the outcome of each send |
 | `events` | what already happened |
@@ -77,7 +91,7 @@ second product without being rebuilt.
 |---|---|
 | `npm run dev` | the app, on port 3007 |
 | `npm run db:migrate` | apply migrations to `data/submitdock.db` |
-| `npm run import [file]` | load a catalog snapshot, upsert by domain |
+| `npm run import [file]` | load a snapshot; `--catalog slug` files it as a named list |
 | `npm run export` | write the catalog back to `data/catalog.export.json` |
 | `npm run verify [slug]` | check every listing page for a real backlink |
 | `npm run agent -- start "..."` | how the agent reports what it is doing |

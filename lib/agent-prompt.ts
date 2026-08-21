@@ -9,13 +9,23 @@
  * No command appears in it. This is text for an agent to read, not an
  * instruction for a person to run, which is the line the UI does not cross.
  */
-export function passPrompt({ productName, take }: { productName: string; take: number }) {
+export function passPrompt({
+  productName,
+  catalogName,
+  take,
+}: {
+  productName: string
+  /** Which list to work. Named in the prompt so a pass is never ambiguous. */
+  catalogName: string | null
+  take: number
+}) {
   const many = take === 1 ? 'the top directory' : `the first ${take} directories`
+  const list = catalogName ? ` from the "${catalogName}" catalog` : ''
 
-  return `Read AGENTS.md, then run a submission pass for ${productName}.
+  return `Read AGENTS.md, then run a submission pass for ${productName}${list}.
 
-Take ${many} from the catalog's "Ready to send" view, highest Authority
-Score first. For each one: open it in Chrome, fill the form from the Product Kit,
+Take ${many} that are alive, have a form and nothing blocking, highest
+Authority Score first. For each one: open it in Chrome, fill the form from the Product Kit,
 submit it, and record the result.
 
 Time every attempt, and screenshot where you ended up whether it worked or
