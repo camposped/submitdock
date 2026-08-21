@@ -28,7 +28,7 @@
   {
     "domain": "10015.io",
     "name": null,
-    "submitUrl": "https://addons.mozilla.org/en-US/firefox/addon/online-tools-by-10015-io/",
+    "submitUrl": null,
     "tier": null,
     "authorityScore": 42,
     "linkRel": null,
@@ -44,7 +44,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "The submit URL the catalog carried pointed somewhere else entirely and was cleared. Find the real one in a browser before trusting any older note.",
     "catalogs": [
       "catalog-1"
     ]
@@ -1188,7 +1188,7 @@
   {
     "domain": "aitools.inc",
     "name": null,
-    "submitUrl": "https://aitools.inc/tasks/add-visual-effects",
+    "submitUrl": null,
     "tier": "a",
     "authorityScore": 37,
     "linkRel": null,
@@ -1204,7 +1204,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "The submit URL the catalog carried pointed somewhere else entirely and was cleared. Find the real one in a browser before trusting any older note.",
     "catalogs": [
       "catalog-1"
     ]
@@ -1212,7 +1212,7 @@
   {
     "domain": "aitools.neilpatel.com",
     "name": null,
-    "submitUrl": "https://app.neilpatel.com/en/ubersuggest/content_ideas",
+    "submitUrl": null,
     "tier": null,
     "authorityScore": 60,
     "linkRel": null,
@@ -1228,7 +1228,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "The submit URL the catalog carried pointed somewhere else entirely and was cleared. Find the real one in a browser before trusting any older note.",
     "catalogs": [
       "catalog-1"
     ]
@@ -1833,7 +1833,7 @@
   {
     "domain": "bestofai.com",
     "name": null,
-    "submitUrl": "https://bestofai.com/assets/Add-_t7argxO.js",
+    "submitUrl": null,
     "tier": null,
     "authorityScore": 37,
     "linkRel": null,
@@ -1849,7 +1849,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "The submit URL the catalog carried pointed somewhere else entirely and was cleared. Find the real one in a browser before trusting any older note.",
     "catalogs": [
       "catalog-1"
     ]
@@ -2484,7 +2484,7 @@
   {
     "domain": "devhub.best",
     "name": null,
-    "submitUrl": "https://dayslaunch.com/",
+    "submitUrl": null,
     "tier": null,
     "authorityScore": 21,
     "linkRel": null,
@@ -2500,7 +2500,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "The submit URL the catalog carried pointed somewhere else entirely and was cleared. Find the real one in a browser before trusting any older note.",
     "catalogs": [
       "catalog-1"
     ]
@@ -2976,7 +2976,7 @@
   {
     "domain": "feedough.com",
     "name": "Feedough",
-    "submitUrl": "https://www.feedough.com/ai-product-launch-plan-generator/",
+    "submitUrl": null,
     "tier": "a",
     "authorityScore": 42,
     "linkRel": null,
@@ -2992,7 +2992,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "The submit URL the catalog carried pointed somewhere else entirely and was cleared. Find the real one in a browser before trusting any older note.",
     "catalogs": [
       "catalog-1"
     ]
@@ -5251,7 +5251,7 @@
   {
     "domain": "opengraphexamples.com",
     "name": null,
-    "submitUrl": "https://opengraphexamples.com/examples/hunted.space-launch-analytics/",
+    "submitUrl": null,
     "tier": null,
     "authorityScore": 21,
     "linkRel": null,
@@ -5267,7 +5267,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "The submit URL the catalog carried pointed somewhere else entirely and was cleared. Find the real one in a browser before trusting any older note.",
     "catalogs": [
       "catalog-1"
     ]
@@ -5728,7 +5728,7 @@
   {
     "domain": "proofstories.io",
     "name": null,
-    "submitUrl": "https://proofstories.io/playbooks/launching-on-online-directories/",
+    "submitUrl": null,
     "tier": null,
     "authorityScore": 23,
     "linkRel": null,
@@ -5744,7 +5744,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "The submit URL the catalog carried pointed somewhere else entirely and was cleared. Find the real one in a browser before trusting any older note.",
     "catalogs": [
       "catalog-1"
     ]
@@ -6697,7 +6697,7 @@
   {
     "domain": "startupcollections.com",
     "name": "Startup Collections",
-    "submitUrl": "https://startupcollections.com/collection/add-live-chat-to-your-website/",
+    "submitUrl": null,
     "tier": null,
     "authorityScore": 16,
     "linkRel": "nofollow",
@@ -6715,7 +6715,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": "Also on many lists, but nofollow and with DA=6 rather weak.",
+    "playbook": "Also on many lists, but nofollow and with DA=6 rather weak. The submit URL the catalog carried pointed somewhere else entirely and was cleared. Find the real one in a browser before trusting any older note.",
     "catalogs": [
       "catalog-1",
       "catalog-2"
@@ -7590,7 +7590,7 @@
   {
     "domain": "tools.robingood.com",
     "name": "Robin Good's T5",
-    "submitUrl": "https://tools.robingood.com/build/assets/SubmitButton-CYWdY4fo.js",
+    "submitUrl": null,
     "tier": null,
     "authorityScore": 18,
     "linkRel": null,
@@ -7606,7 +7606,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "The submit URL the catalog carried pointed somewhere else entirely and was cleared. Find the real one in a browser before trusting any older note.",
     "catalogs": [
       "catalog-1"
     ]
