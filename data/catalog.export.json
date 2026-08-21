@@ -2043,11 +2043,11 @@
     "authorityScore": 36,
     "linkRel": null,
     "categories": [],
-    "requiresAccount": true,
-    "requiresCaptcha": false,
+    "requiresAccount": false,
+    "requiresCaptcha": true,
     "requiresPayment": false,
     "requiresBacklink": false,
-    "captchaVendor": null,
+    "captchaVendor": "image",
     "thirdPartyForm": false,
     "price": null,
     "status": "alive",
@@ -2055,7 +2055,7 @@
     "source": "supapin-2025",
     "lastCheckedAt": "2026-08-17",
     "notes": null,
-    "playbook": null,
+    "playbook": "Open lead form at /add-your-product/, no account despite what the flags used to say. Required: name, email, company, product name, and an image CAPTCHA code. Phone, job title and message are optional. The CAPTCHA is a classic distorted image with a refresh button, so a human has to finish it. Two things worth knowing before you spend the minute. It is a lead form, not a listing: their own copy says they contact you within 2 business days to complete the submission, so nothing goes live at submit time. And the disclaimer under the button consents to them using your information in their marketing materials and press releases, and to posting your logo and trademark on their affiliate sites, opt out only by writing to them afterwards. Beware of clicking by coordinate here: the page is dense with blog links and a stray click navigates away and loses the form.",
     "catalogs": [
       "supapin-2025"
     ]
