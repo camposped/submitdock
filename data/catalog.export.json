@@ -275,7 +275,7 @@
   {
     "domain": "ai-hunter.io",
     "name": null,
-    "submitUrl": "https://ai-hunter.io/publish7/",
+    "submitUrl": "https://ai-hunter.io/submit-ai-tool/",
     "tier": null,
     "authorityScore": 22,
     "linkRel": null,
@@ -291,7 +291,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "The catalog URL /publish7/ was a product listing page, not a form; the real one is /submit-ai-tool/, linked from the AI SUBMISSION menu. Free tier exists with a stated 10 day review, and paid options are $19 for 24h publication and $35 to be featured. The free form is name, email, tool name, website, category, pricing and a description that must be unique content. It currently fails: submitting returns 'An error occurred while processing the form. Please try again' every time with all required fields valid, so the free path appears broken while the paid links still work. Category list has no analytics entry, Finance is the closest.",
     "catalogs": [
       "catalog-1"
     ]
@@ -1300,7 +1300,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "Clean four field form at /submit, no account: tool name, website, a category and a free text 'why should it be listed'. The site is marked BETA and the submit gives no feedback of any kind: the fields clear themselves and no toast, alert or status element appears anywhere in the DOM, so you cannot tell a success from a silent failure. Treat the outcome as unknown unless you can check the listing later. The category list is small and has no analytics or finance entry: Writing, Design, Video, Productivity, Sales, Developer Tools.",
     "catalogs": [
       "catalog-1"
     ]
@@ -1708,12 +1708,12 @@
   {
     "domain": "awesomeindie.com",
     "name": "AwesomeIndie",
-    "submitUrl": "https://awesomeindie.com/submit",
+    "submitUrl": "https://awesomeindie.com/login",
     "tier": null,
     "authorityScore": 20,
     "linkRel": null,
     "categories": [],
-    "requiresAccount": false,
+    "requiresAccount": true,
     "requiresCaptcha": false,
     "requiresPayment": false,
     "requiresBacklink": false,
@@ -1724,7 +1724,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "/submit redirects straight to /login, no anonymous path at all. Sign in is social only, Google, GitHub or X, with no email and password option, and they state 'No passwords. We never post to your accounts.' Since Kometrics already has an X account, Continue with X is the shortest route for whoever does it. Cookie banner has Accept only, no reject.",
     "catalogs": [
       "catalog-1"
     ]
@@ -1737,7 +1737,7 @@
     "authorityScore": 28,
     "linkRel": null,
     "categories": [],
-    "requiresAccount": false,
+    "requiresAccount": true,
     "requiresCaptcha": false,
     "requiresPayment": false,
     "requiresBacklink": false,
@@ -1748,7 +1748,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "Looks like an open two field form and is not. /submit-ai-tools asks for a tool name and URL and then a plan, but pressing Submit redirects to /api/auth/signin with Google as the only option, so an account is required and it is a social login. Read the plan table before spending the time: the free tier is 'listing live in at least 1 month, up to 6 months' and is the ONLY tier that does not list 'Do-follow backlinks', so a free listing here is almost certainly nofollow and slow. Do-follow starts at $19.9.",
     "catalogs": [
       "catalog-1"
     ]
@@ -2551,7 +2551,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "The best behaved form worked so far, and free: /submit-a-tool states plainly that every submission is read by hand and listings are free. Fields are name, description, website, category, pricing, an optional GitHub URL, comma separated tags and an email, and the cookie banner offers Reject all. The category list is unusually good for a developer directory and includes Data & Analytics, Finance Tools, APIs and Observability, so a revenue or metrics product has a real home rather than being filed under Other. The category control is a listbox that does not filter as you type: typing only moves the highlight, so scroll it instead. Success shows a 'Submission received' page and they say they email you either way.",
     "catalogs": [
       "catalog-1"
     ]
@@ -3450,16 +3450,16 @@
     "categories": [],
     "requiresAccount": false,
     "requiresCaptcha": false,
-    "requiresPayment": false,
+    "requiresPayment": true,
     "requiresBacklink": false,
     "captchaVendor": null,
     "thirdPartyForm": false,
-    "price": null,
+    "price": 29,
     "status": "alive",
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "Paid only, $29, and nothing warns you until you reach the bottom. /submit-ai-tool looks like a normal open form: name, URL, email, description, a pricing radio and optional extras, no account. The tell is the button, which reads 'Proceed to Payment'. The single plan is 'Fast Track' at $29 and its own checkbox says the money buys an expedited editorial review, not publication, with a refund if rejected. Do-follow backlink is one of the listed perks, which means the free path, if one ever existed, would not have been.",
     "catalogs": [
       "catalog-1"
     ]
@@ -4026,7 +4026,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "Open three field form at /submit-tools/, no account: a description, the tool URL and a category. Two traps. A beehiiv newsletter modal opens a few seconds in and CLEARS whatever you have typed, so dismiss it before filling anything. And the email box with the Send button below the fields is NOT the submit control, it is a beehiiv newsletter embed in a cross origin iframe; the form's own submit button is an Elementor button rendered 0px wide, so no click can ever land on it and the form has to be submitted the way the button would. Success prints 'Your submission was successful.' inline. They ask for an affiliate signup link if you have one, which tells you how the site is monetised.",
     "catalogs": [
       "catalog-1"
     ]
@@ -4621,7 +4621,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "Open form at /submit, no account needed to fill it: name, website, 220 char description, company email, an optional 3000 char markdown description, Twitter, GitHub, LinkedIn, YouTube, and segment checkboxes for market, price and features. Rich enough to be worth doing properly. The catch is the Submit button, which does nothing to a synthetic click: no error, no redirect, no validation message, fields left populated. Same behaviour as alternative.me, so fill it, then hand the final click to a person. They also ask for an affiliate signup link, marked not shared publicly.",
     "catalogs": [
       "catalog-1"
     ]
@@ -6560,7 +6560,7 @@
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "Not a directory, an editorial review engagement, and /submit is a pitch page for it. Their own process says step one is 'a short call to gather context and access credentials', then analysts set up accounts and test the product hands on before publishing a Sprout Score. Niche is email marketing, MarTech and customer platform vendors, and they list qualifying signals including 50+ active users and sandbox access. They do invite off-profile submissions for roundups, so it is not a hard no, but it costs a call and product credentials rather than a form, so it does not belong in an automated pass.",
     "catalogs": [
       "catalog-1"
     ]
@@ -7645,16 +7645,16 @@
     "categories": [],
     "requiresAccount": false,
     "requiresCaptcha": false,
-    "requiresPayment": false,
+    "requiresPayment": true,
     "requiresBacklink": false,
     "captchaVendor": null,
     "thirdPartyForm": false,
-    "price": null,
+    "price": 10,
     "status": "alive",
     "httpStatus": 200,
     "source": "catalog-1",
     "lastCheckedAt": "2026-08-17",
-    "playbook": null,
+    "playbook": "Paid only. /submit-ai-tools-or-product is a checkout flow, not a form: the page says confirm the package, complete the details and continue to PayPal, and the preselected plan is 'Paid Submit' at $10 for a listing reviewed within 3 business days. Their own flow diagram is explicit that successful payment is what places a submission into pending review, so there is no free queue behind it.",
     "catalogs": [
       "catalog-1"
     ]
