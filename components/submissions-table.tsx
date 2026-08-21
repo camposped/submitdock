@@ -35,6 +35,15 @@ function outcomeOf(row: SubmissionRow): { text: string; tone: 'good' | 'bad' | '
     return { text: 'Listing page has no link to the product', tone: 'bad' }
   }
 
+  // The agent's own sign off is not a failure report, whatever its ok flag says.
+  // `submission.done` is marked not ok for any state that is not submitted or
+  // live, so a deliberate skip and a row waiting on a human both used to print
+  // "Submission done" in red over the note that explained them. The note is the
+  // detail of that very event, so it should win.
+  if (row.lastEvent?.action === 'submission.done' && s.notes) {
+    return { text: s.notes, tone: 'muted' }
+  }
+
   // A verify event only describes the current state while a verdict stands. Once
   // the listing URL changes the verdict is cleared, and the old failure with it,
   // otherwise a row would keep reporting a problem that was already dealt with.

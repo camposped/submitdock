@@ -421,7 +421,26 @@ export function listSubmissions(productSlug: string | null): SubmissionRow[] {
   return listCatalog(productSlug)
     .filter((row) => {
       const hit = attempted.get(row.domain)
-      return Boolean(hit) && (hit!.state !== 'todo' || Boolean(row.submission?.listingUrl))
+      if (!hit) return false
+      if (hit.state !== 'todo') return true
+
+      /*
+       * A `todo` that somebody worked belongs here, and this used to drop it.
+       * The rule was "a state was set", which read `todo` as untouched, but an
+       * attempt that ran into a captcha or a login is recorded as `todo` on
+       * purpose: nothing was submitted. Those rows were the most actionable
+       * thing the campaign had and they were the only ones invisible.
+       *
+       * Evidence of work, not the state, is the honest test. A bare row from
+       * opening the sheet has no note, no picture, no clock and no listing.
+       */
+      return Boolean(
+        row.submission?.listingUrl ||
+          row.submission?.notes ||
+          hit.screenshotPath ||
+          hit.durationMs ||
+          hit.attemptStartedAt,
+      )
     })
     .map((row) => ({
       ...row,

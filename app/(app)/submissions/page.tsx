@@ -15,17 +15,29 @@ export const metadata = { title: 'Submissions' }
 
 /** The buckets worth separating, in the order a campaign moves through them. */
 const VIEWS: Record<string, (row: SubmissionRow) => boolean> = {
+  /*
+   * The queue of things the agent started and could not finish: a captcha, a
+   * signup, a button that only answers to a human hand. It is `todo` because
+   * nothing was submitted, and it is here because somebody has to go back and
+   * do it. Every one of these rows carries a note saying exactly what is left.
+   */
+  yourTurn: (row) => row.submission.state === 'todo',
   waiting: (row) => row.submission.state === 'submitted' || row.submission.state === 'verified',
   live: (row) => row.submission.state === 'live',
   confirmed: (row) => Boolean(row.submission.backlinkLive),
   // Matches what the "What happened" column will actually say: a stale verify
-  // failure from before the listing URL changed is not a current problem.
+  // failure from before the listing URL changed is not a current problem, and
+  // neither is the agent's own sign off. `submission.done` is flagged not ok
+  // for every state that is not submitted or live, so without that last clause
+  // a deliberate skip and a row parked for a human both counted as problems
+  // and this tab disagreed with the column beside it.
   problem: (row) =>
     row.submission.state === 'rejected' ||
     row.submission.backlinkLive === false ||
     Boolean(
       row.lastEvent &&
         !row.lastEvent.ok &&
+        row.lastEvent.action !== 'submission.done' &&
         !(row.lastEvent.action.startsWith('verify.') && !row.submission.lastVerifiedAt),
     ),
   skipped: (row) => row.submission.state === 'skipped',
@@ -42,6 +54,7 @@ export default async function SubmissionsPage(props: PageProps<'/submissions'>) 
   const count = (key: string) => all.filter(VIEWS[key]).length
   const tabs: FilterTab[] = [
     { value: '', label: 'All', count: all.length },
+    { value: 'yourTurn', label: 'Your turn', count: count('yourTurn'), tone: 'info' },
     { value: 'waiting', label: 'Waiting', count: count('waiting'), tone: 'info' },
     { value: 'live', label: 'Live', count: count('live'), tone: 'good' },
     { value: 'confirmed', label: 'Link confirmed', count: count('confirmed'), tone: 'good' },
@@ -61,8 +74,9 @@ export default async function SubmissionsPage(props: PageProps<'/submissions'>) 
         <div>
           <h1 className="text-2xl font-semibold tracking-tight">Submissions</h1>
           <p className="text-sm text-muted-foreground">
-            Every directory {product ? product.name : 'this product'} was actually sent to, what
-            came of it, and why. Open a row to change the state or leave a note.
+            Every directory {product ? product.name : 'this product'} was worked on, what came of
+            it, and why. "Your turn" is the ones the agent could not finish alone. Open a row to
+            change the state or leave a note.
           </p>
         </div>
 
