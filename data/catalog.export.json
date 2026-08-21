@@ -841,7 +841,7 @@
   {
     "domain": "airtable.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://airtable.com/developers/extensions/guides/getting-started",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -1783,7 +1783,7 @@
   {
     "domain": "bento.me",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "http://bento.me/signup",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -1909,7 +1909,7 @@
   {
     "domain": "bio.site",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://biosites.com/editor",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -1983,14 +1983,14 @@
   {
     "domain": "business.google.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://business.google.com/create",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
     "categories": [
       "foundational"
     ],
-    "requiresAccount": false,
+    "requiresAccount": true,
     "requiresCaptcha": false,
     "requiresPayment": false,
     "requiresBacklink": false,
@@ -2210,14 +2210,14 @@
   {
     "domain": "crunchbase.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://www.crunchbase.com/add-new",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
     "categories": [
       "foundational"
     ],
-    "requiresAccount": false,
+    "requiresAccount": true,
     "requiresCaptcha": false,
     "requiresPayment": false,
     "requiresBacklink": false,
@@ -2368,7 +2368,7 @@
     "categories": [],
     "requiresAccount": true,
     "requiresCaptcha": false,
-    "requiresPayment": false,
+    "requiresPayment": true,
     "requiresBacklink": false,
     "captchaVendor": null,
     "thirdPartyForm": false,
@@ -2377,7 +2377,7 @@
     "httpStatus": 200,
     "source": "supapin-2025",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
+    "notes": "/submit redirects to login and then to pricing, so a listing is paid.",
     "catalogs": [
       "supapin-2025"
     ]
@@ -2854,14 +2854,14 @@
   {
     "domain": "facebook.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://www.facebook.com/pages/creation",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
     "categories": [
       "foundational"
     ],
-    "requiresAccount": false,
+    "requiresAccount": true,
     "requiresCaptcha": false,
     "requiresPayment": false,
     "requiresBacklink": false,
@@ -3240,7 +3240,7 @@
   {
     "domain": "freestuff.dev",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://github.com/hilmanski/freeStuffDev?tab=readme-ov-file#contribute",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -3291,7 +3291,7 @@
   {
     "domain": "futurepedia.io",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://www.futurepedia.io/submit-tool",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -3467,7 +3467,7 @@
   {
     "domain": "gust.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://gust.com/founder_onboarding",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -4034,14 +4034,14 @@
   {
     "domain": "instagram.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://business.instagram.com/getting-started",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
     "categories": [
       "foundational"
     ],
-    "requiresAccount": false,
+    "requiresAccount": true,
     "requiresCaptcha": false,
     "requiresPayment": false,
     "requiresBacklink": false,
@@ -4206,7 +4206,7 @@
   {
     "domain": "landingfolio.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://www.landingfolio.com/submit",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -4476,7 +4476,7 @@
   {
     "domain": "libhunt.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://www.libhunt.com/repo/submit",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -4527,14 +4527,14 @@
   {
     "domain": "linkedin.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://www.linkedin.com/company/setup/new/",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
     "categories": [
       "foundational"
     ],
-    "requiresAccount": false,
+    "requiresAccount": true,
     "requiresCaptcha": false,
     "requiresPayment": false,
     "requiresBacklink": false,
@@ -4553,7 +4553,7 @@
   {
     "domain": "linktr.ee",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://linktr.ee/register/select-plan",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -4751,7 +4751,7 @@
   {
     "domain": "magnitt.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://magnitt.com/startups/add",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -5375,7 +5375,7 @@
   {
     "domain": "opentools.ai",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://opentoolsai.gumroad.com/l/opentools",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -5474,14 +5474,14 @@
   {
     "domain": "pinterest.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://www.pinterest.ch/business/create/",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
     "categories": [
       "foundational"
     ],
-    "requiresAccount": false,
+    "requiresAccount": true,
     "requiresCaptcha": false,
     "requiresPayment": false,
     "requiresBacklink": false,
@@ -5654,7 +5654,7 @@
   {
     "domain": "producthunt.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://www.producthunt.com/posts/new",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -5826,7 +5826,7 @@
   {
     "domain": "read.cv",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://read.cv/explore",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -5976,7 +5976,7 @@
   {
     "domain": "saashub.com",
     "name": "SaaSHub",
-    "submitUrl": "http://saashub.com/submit",
+    "submitUrl": "https://www.saashub.com/services/submit",
     "tier": "a",
     "authorityScore": 40,
     "linkRel": null,
@@ -5994,7 +5994,7 @@
     "httpStatus": 403,
     "source": "supapin-2025",
     "lastCheckedAt": "2026-08-17",
-    "notes": "submitUrl nao encontrado no HTML estatico, pode ser SPA",
+    "notes": "Their /submit is a marketing list of 107 other directories, not the form. The form is /services/submit, and it asks for categories and competitors.",
     "catalogs": [
       "notion-backlinks",
       "supapin-2025"
@@ -6246,7 +6246,7 @@
   {
     "domain": "sideprojectors.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://www.sideprojectors.com",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -6420,7 +6420,7 @@
   {
     "domain": "softwareworld.co",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://www.softwareworld.co/get-listed/",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -6618,7 +6618,7 @@
   {
     "domain": "starterstory.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://www.starterstory.com/share",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -7315,7 +7315,7 @@
   {
     "domain": "thehiveindex.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://thehiveindex.com/submit/",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -7342,7 +7342,7 @@
   {
     "domain": "theresanaiforthat.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://theresanaiforthat.com/get-featured/",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -7393,7 +7393,7 @@
   {
     "domain": "tinyalternatives.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://www.tinyalternatives.com/submit",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -7882,14 +7882,14 @@
   {
     "domain": "twitter.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://x.com/signup",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
     "categories": [
       "foundational"
     ],
-    "requiresAccount": false,
+    "requiresAccount": true,
     "requiresCaptcha": false,
     "requiresPayment": false,
     "requiresBacklink": false,
@@ -7935,7 +7935,7 @@
   {
     "domain": "unita.co",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://unita.co/add-community/",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
@@ -8438,7 +8438,7 @@
   {
     "domain": "yourstory.com",
     "name": null,
-    "submitUrl": null,
+    "submitUrl": "https://form.jotform.com/232627613591458",
     "tier": null,
     "authorityScore": null,
     "linkRel": null,
