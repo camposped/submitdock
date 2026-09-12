@@ -8512,5 +8512,27 @@
     "catalogs": [
       "catalog-2"
     ]
+  },
+  {
+    "domain": "saascity.io",
+    "name": "SaaSCity",
+    "submitUrl": "https://saascity.io/submit",
+    "tier": null,
+    "authorityScore": 64,
+    "linkRel": "dofollow",
+    "categories": ["directories"],
+    "requiresAccount": false,
+    "requiresCaptcha": false,
+    "requiresPayment": false,
+    "requiresBacklink": false,
+    "captchaVendor": null,
+    "thirdPartyForm": false,
+    "price": null,
+    "status": "alive",
+    "httpStatus": 0,
+    "source": "manual-add",
+    "lastCheckedAt": "",
+    "playbook": "Gamified SaaS directory — every listing becomes a building on a live isometric city map. Free submit form, human review ~24h.",
+    "catalogs": ["manual-add"]
   }
 ]
