@@ -5776,6 +5776,32 @@
     ]
   },
   {
+    "domain": "publicprompts.art",
+    "name": "Public Prompts",
+    "submitUrl": "https://www.publicprompts.art/submit",
+    "tier": null,
+    "authorityScore": null,
+    "linkRel": "nofollow",
+    "categories": [
+      "directories"
+    ],
+    "requiresAccount": true,
+    "requiresCaptcha": false,
+    "requiresPayment": true,
+    "requiresBacklink": false,
+    "captchaVendor": null,
+    "thirdPartyForm": false,
+    "price": 19.99,
+    "status": "alive",
+    "httpStatus": 200,
+    "source": "manual-add",
+    "lastCheckedAt": "2026-10-17",
+    "playbook": "Curated AI-tools directory with free browsing. Tool-owner submissions cost US$19.99 once plus applicable tax before editorial review. Accepted listings publish within two days of payment; rejected or unpublishable submissions are refunded. Published tool links are nofollow. Submission and policy: https://www.publicprompts.art/submit and https://www.publicprompts.art/editorial-policy .",
+    "catalogs": [
+      "manual-add"
+    ]
+  },
+  {
     "domain": "rankanything.online",
     "name": null,
     "submitUrl": null,
